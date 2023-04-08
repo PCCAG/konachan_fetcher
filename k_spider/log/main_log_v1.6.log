@@ -1,0 +1,130 @@
+2023-04-08 17:29:28.208 | SUCCESS  | __main__:get_cookie:68 - get cookie success..
+2023-04-08 17:29:40.480 | INFO     | __main__:<module>:451 - 连接数据库中...........
+2023-04-08 17:29:40.578 | SUCCESS  | __main__:<module>:475 - link dbas 准备导入数据.....
+2023-04-08 17:29:40.586 | SUCCESS  | __main__:mode_a:601 - 单次下载数量:100
+2023-04-08 17:29:40.587 | SUCCESS  | __main__:mode_a:602 - 等待时间:5 并发数:10
+2023-04-08 17:29:40.588 | SUCCESS  | __main__:mode_a:603 - 下载图片路径:F:\database_learn\k_spider\pictures2
+2023-04-08 17:29:41.342 | INFO     | __main__:mode_a:617 - 数据库共有37212条图像数据
+2023-04-08 17:29:41.346 | INFO     | __main__:mode_a:644 - 排除19个重复pid....
+2023-04-08 17:29:41.348 | INFO     | __main__:process_urls:380 - 等待5秒继续并发
+2023-04-08 17:29:42.322 | ERROR    | __main__:get_source:134 - This post was deleted.
+2023-04-08 17:29:42.322 | WARNING  | __main__:get_source:135 - https://konachan.com/post/show/303183/
+2023-04-08 17:29:42.871 | ERROR    | __main__:get_source:134 - This post was deleted.
+2023-04-08 17:29:42.872 | WARNING  | __main__:get_source:135 - https://konachan.com/post/show/303676/
+2023-04-08 17:29:46.359 | INFO     | __main__:process_urls:380 - 等待5秒继续并发
+2023-04-08 17:29:47.550 | ERROR    | __main__:get_source:125 - This post does not exist
+2023-04-08 17:29:47.551 | WARNING  | __main__:get_source:126 - https://konachan.com/post/show/347790/
+2023-04-08 17:29:47.580 | ERROR    | __main__:get_source:125 - This post does not exist
+2023-04-08 17:29:47.581 | WARNING  | __main__:get_source:126 - https://konachan.com/post/show/315026/
+2023-04-08 17:29:47.619 | ERROR    | __main__:get_source:134 - This post was deleted.
+2023-04-08 17:29:47.622 | WARNING  | __main__:get_source:135 - https://konachan.com/post/show/307913/
+2023-04-08 17:29:47.710 | ERROR    | __main__:get_source:125 - This post does not exist
+2023-04-08 17:29:47.713 | WARNING  | __main__:get_source:126 - https://konachan.com/post/show/301261/
+2023-04-08 17:29:51.377 | INFO     | __main__:process_urls:380 - 等待5秒继续并发
+2023-04-08 17:29:52.281 | ERROR    | __main__:get_source:125 - This post does not exist
+2023-04-08 17:29:52.282 | WARNING  | __main__:get_source:126 - https://konachan.com/post/show/314116/
+2023-04-08 17:29:52.379 | ERROR    | __main__:get_source:134 - This post was deleted.
+2023-04-08 17:29:52.381 | WARNING  | __main__:get_source:135 - https://konachan.com/post/show/321750/
+2023-04-08 17:29:56.385 | INFO     | __main__:process_urls:380 - 等待5秒继续并发
+2023-04-08 17:29:58.850 | ERROR    | __main__:get_source:125 - This post does not exist
+2023-04-08 17:29:58.851 | WARNING  | __main__:get_source:126 - https://konachan.com/post/show/314635/
+2023-04-08 17:30:01.387 | INFO     | __main__:process_urls:380 - 等待5秒继续并发
+2023-04-08 17:30:02.466 | ERROR    | __main__:get_source:125 - This post does not exist
+2023-04-08 17:30:02.467 | WARNING  | __main__:get_source:126 - https://konachan.com/post/show/309568/
+2023-04-08 17:30:06.387 | INFO     | __main__:process_urls:380 - 等待5秒继续并发
+2023-04-08 17:30:07.529 | ERROR    | __main__:get_source:125 - This post does not exist
+2023-04-08 17:30:07.530 | WARNING  | __main__:get_source:126 - https://konachan.com/post/show/340363/
+2023-04-08 17:30:11.404 | INFO     | __main__:process_urls:380 - 等待5秒继续并发
+2023-04-08 17:30:12.532 | ERROR    | __main__:get_source:134 - This post was deleted.
+2023-04-08 17:30:12.533 | WARNING  | __main__:get_source:135 - https://konachan.com/post/show/350140/
+2023-04-08 17:30:12.560 | ERROR    | __main__:get_source:125 - This post does not exist
+2023-04-08 17:30:12.561 | WARNING  | __main__:get_source:126 - https://konachan.com/post/show/316836/
+2023-04-08 17:30:12.945 | ERROR    | __main__:get_source:125 - This post does not exist
+2023-04-08 17:30:12.947 | WARNING  | __main__:get_source:126 - https://konachan.com/post/show/301999/
+2023-04-08 17:30:16.406 | INFO     | __main__:process_urls:380 - 等待5秒继续并发
+2023-04-08 17:30:17.415 | ERROR    | __main__:get_source:125 - This post does not exist
+2023-04-08 17:30:17.416 | WARNING  | __main__:get_source:126 - https://konachan.com/post/show/312809/
+2023-04-08 17:30:24.187 | INFO     | __main__:download_imgs:425 - 等待5秒继续并发下载图片
+2023-04-08 17:30:29.174 | INFO     | __main__:download_imgs:425 - 等待5秒继续并发下载图片
+2023-04-08 17:30:34.176 | INFO     | __main__:download_imgs:425 - 等待5秒继续并发下载图片
+2023-04-08 17:30:39.187 | INFO     | __main__:download_imgs:425 - 等待5秒继续并发下载图片
+2023-04-08 17:30:44.178 | INFO     | __main__:download_imgs:425 - 等待5秒继续并发下载图片
+2023-04-08 17:30:49.194 | INFO     | __main__:download_imgs:425 - 等待5秒继续并发下载图片
+2023-04-08 17:31:58.930 | SUCCESS  | __main__:download_imgs:439 - downloaded 66 img ......
+2023-04-08 17:31:58.942 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\331832.jpg
+2023-04-08 17:31:58.950 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\312380.jpg
+2023-04-08 17:31:58.953 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\324635.jpg
+2023-04-08 17:31:58.957 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\345672.jpg
+2023-04-08 17:31:58.961 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\347201.jpg
+2023-04-08 17:31:58.965 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\306252.jpg
+2023-04-08 17:31:58.968 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\304796.jpg
+2023-04-08 17:31:58.972 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\344191.jpg
+2023-04-08 17:31:58.976 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\310430.jpg
+2023-04-08 17:31:58.978 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\343144.jpg
+2023-04-08 17:31:58.981 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\322722.jpg
+2023-04-08 17:31:58.984 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\348882.jpg
+2023-04-08 17:31:58.987 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\335028.jpg
+2023-04-08 17:31:58.992 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\326321.jpg
+2023-04-08 17:31:58.994 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\350884.jpg
+2023-04-08 17:31:58.997 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\323800.jpg
+2023-04-08 17:31:58.999 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\324821.jpg
+2023-04-08 17:31:59.002 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\318198.jpg
+2023-04-08 17:31:59.006 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\305909.jpg
+2023-04-08 17:31:59.009 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\320247.jpg
+2023-04-08 17:31:59.012 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\325383.jpg
+2023-04-08 17:31:59.015 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\339163.jpg
+2023-04-08 17:31:59.017 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\347369.jpg
+2023-04-08 17:31:59.022 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\323335.jpg
+2023-04-08 17:31:59.025 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\327945.jpg
+2023-04-08 17:31:59.028 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\340236.jpg
+2023-04-08 17:31:59.031 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\304930.jpg
+2023-04-08 17:31:59.048 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\338191.jpg
+2023-04-08 17:31:59.065 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\311101.jpg
+2023-04-08 17:31:59.068 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\348477.jpg
+2023-04-08 17:31:59.071 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\313622.jpg
+2023-04-08 17:31:59.074 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\350007.jpg
+2023-04-08 17:31:59.076 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\333635.jpg
+2023-04-08 17:31:59.081 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\323907.jpg
+2023-04-08 17:31:59.084 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\310601.jpg
+2023-04-08 17:31:59.087 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\322886.jpg
+2023-04-08 17:31:59.090 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\313188.jpg
+2023-04-08 17:31:59.093 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\313172.jpg
+2023-04-08 17:31:59.097 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\355172.jpg
+2023-04-08 17:31:59.100 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\302413.jpg
+2023-04-08 17:31:59.102 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\330603.jpg
+2023-04-08 17:31:59.105 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\330064.jpg
+2023-04-08 17:31:59.107 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\351085.jpg
+2023-04-08 17:31:59.112 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\345454.jpg
+2023-04-08 17:31:59.114 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\321902.jpg
+2023-04-08 17:31:59.117 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\307090.jpg
+2023-04-08 17:31:59.120 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\341894.jpg
+2023-04-08 17:31:59.123 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\301956.jpg
+2023-04-08 17:31:59.125 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\312693.jpg
+2023-04-08 17:31:59.128 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\306559.jpg
+2023-04-08 17:31:59.131 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\346013.jpg
+2023-04-08 17:31:59.134 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\325530.jpg
+2023-04-08 17:31:59.137 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\328629.jpg
+2023-04-08 17:31:59.140 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\321954.jpg
+2023-04-08 17:31:59.144 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\351641.jpg
+2023-04-08 17:31:59.147 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\339908.jpg
+2023-04-08 17:31:59.149 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\318412.jpg
+2023-04-08 17:31:59.152 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\325069.jpg
+2023-04-08 17:31:59.155 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\314328.jpg
+2023-04-08 17:31:59.159 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\327667.jpg
+2023-04-08 17:31:59.164 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\325073.jpg
+2023-04-08 17:31:59.166 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\300000.jpg
+2023-04-08 17:31:59.169 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\337896.jpg
+2023-04-08 17:31:59.173 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\311787.jpg
+2023-04-08 17:31:59.176 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\319988.jpg
+2023-04-08 17:31:59.179 | SUCCESS  | __main__:save_img_and_todb:548 - imported: F:\database_learn\k_spider\pictures2\353272.jpg
+2023-04-08 17:31:59.620 | INFO     | __main__:uni_tag:508 - 数据库tag表共有8751条tag
+2023-04-08 17:32:00.441 | INFO     | __main__:uni_tag:512 - 排除334个重复tag
+2023-04-08 17:32:00.443 | SUCCESS  | __main__:save_img_and_todb:564 - 保存24个tag到数据库
+2023-04-08 17:32:00.621 | SUCCESS  | __main__:save_img_and_todb:575 - added 66 img data into testdb....
+2023-04-08 17:32:01.071 | INFO     | __main__:mode_a:617 - 数据库共有37278条图像数据
+2023-04-08 17:32:01.076 | INFO     | __main__:mode_a:644 - 排除21个重复pid....
+2023-04-08 17:32:01.078 | INFO     | __main__:process_urls:380 - 等待5秒继续并发
+2023-04-08 17:32:02.045 | ERROR    | __main__:get_source:134 - This post was deleted.
+2023-04-08 17:32:02.046 | WARNING  | __main__:get_source:135 - https://konachan.com/post/show/324614/
+2023-04-08 17:32:06.096 | INFO     | __main__:process_urls:380 - 等待5秒继续并发
+2023-04-08 17:32:11.110 | INFO     | __main__:process_urls:380 - 等待5秒继续并发
