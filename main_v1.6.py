@@ -463,7 +463,8 @@ if __name__ == "__main__":
     
             engine=\
             create_engine(f"mysql+pymysql://{mysql_user}:{mysql_password}@{mysql_host}/{mysql_database}")
-            
+            engine=engine.connect()
+
             break
         
         except Exception as e:
@@ -603,8 +604,9 @@ if __name__ == "__main__":
         logger.success(f"下载图片路径:{imgpath}")
         
 
-        for _ in tqdm(range(int(os.getenv("times"))),desc="import_db"):#类似无限循环
-        
+        #for _ in tqdm(range(int(os.getenv("times"))),desc="import_db"):#类似无限循环
+        for _ in range(int(os.getenv("times"))):
+
             #排除重复pid
             try:
                 df_pid=pandas.read_sql("select pid from kimg;",engine)
