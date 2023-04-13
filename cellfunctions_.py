@@ -34,7 +34,7 @@ def get_headers():#使用selenium获取cookie
     
     service = Service("chromedriver.exe")
     chrome_options= Options()
-    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--headless") #无头模式
     with webdriver.Chrome(service=service,options=chrome_options) as driver :
         
         try :
