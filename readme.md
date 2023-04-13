@@ -47,7 +47,7 @@ mode=b
 
 ## 注
 - - -
-##### 利用clash api 来做的代理访问 需安装clash且已有配置 或者在 cellfunction_.py自己修改代理
+##### 利用clash api 来做的代理访问 需安装clash且已有配置 或者在 cellfunction_.py自己修改代理 proxies=None 然后 用一个科学上网就好
 ##### 没有数据库就用模式b或者自己看着来改
-##### 利用selenium 无头模式来获取的cookie
+##### 利用selenium 无头模式来获取的cookie chrome浏览器需要安装版本 112.0.5615
 ##### 看报错安装相应的包
