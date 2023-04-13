@@ -41,6 +41,6 @@ pid_list=[331516]
 mode=b
 
 ## 注
-##### 利用clash api 来作代理访问 需安装clash且已有配置 或者在 cellfunction_.py自己修改代理
+##### 利用clash api 来作的代理访问 需安装clash且已有配置 或者在 cellfunction_.py自己修改代理
 ##### 没有数据库就用模式b或者自己看着来改
-
+##### 利用selenium来获取的cookie
