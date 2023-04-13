@@ -18,9 +18,9 @@ mysql_user=S  \
 mysql_password=xxxxx  \
 mysql_host=xx.xx.xx.xx  \
 mysql_database=kimgdb  \
-**保存的表**
-mysql_img_table=kimg 
-mysql_tags_table=tags
+**保存的表**  \  
+mysql_img_table=kimg \ 
+mysql_tags_table=tags \
 
 #### 下载配置
 ##### 随机范围下载模式
