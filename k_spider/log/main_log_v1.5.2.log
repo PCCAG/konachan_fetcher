@@ -1,0 +1,1050 @@
+2023-04-08 02:20:12.674 | SUCCESS  | __main__:get_cookie:65 - get cookie success..
+2023-04-08 02:20:24.934 | INFO     | __main__:<module>:433 - 连接数据库中...........
+2023-04-08 02:20:25.040 | SUCCESS  | __main__:<module>:457 - link dbas 准备导入数据.....
+2023-04-08 02:20:25.047 | SUCCESS  | __main__:<module>:524 - 单次下载数量:10
+2023-04-08 02:20:25.048 | SUCCESS  | __main__:<module>:525 - 等待时间:6 并发数:10
+2023-04-08 02:20:25.049 | SUCCESS  | __main__:<module>:526 - 下载图片路径:F:\database_learn\k_spider\pictures
+2023-04-08 02:20:25.959 | INFO     | __main__:<module>:538 - 数据库共有33960条图像数据
+2023-04-08 02:20:25.965 | INFO     | __main__:process_urls:360 - 等待6秒继续并发
+2023-04-08 02:20:27.489 | ERROR    | __main__:get_source:130 - This post was deleted.
+2023-04-08 02:20:27.491 | WARNING  | __main__:get_source:131 - https://konachan.com/post/show/350533/
+2023-04-08 02:20:43.742 | SUCCESS  | __main__:download_imgs:419 - downloaded 9 img ......
+2023-04-08 02:20:44.334 | INFO     | __main__:uni_tag:490 - 数据库tag表共有8037条tag
+2023-04-08 02:20:45.542 | INFO     | __main__:uni_tag:494 - 排除100个重复tag
+2023-04-08 02:20:57.116 | SUCCESS  | __main__:<module>:596 - 保存8个tag到数据库
+2023-04-08 02:21:01.893 | SUCCESS  | __main__:<module>:607 - added 9 img data into testdb....
+2023-04-08 02:21:04.905 | INFO     | __main__:<module>:538 - 数据库共有33969条图像数据
+2023-04-08 02:21:07.441 | INFO     | __main__:<module>:555 - 排除4个重复pid....
+2023-04-08 02:21:09.104 | ERROR    | __main__:get_source:130 - This post was deleted.
+2023-04-08 02:21:09.106 | WARNING  | __main__:get_source:131 - https://konachan.com/post/show/305300/
+2023-04-08 02:21:23.335 | SUCCESS  | __main__:download_imgs:419 - downloaded 5 img ......
+2023-04-08 02:32:53.626 | SUCCESS  | __main__:get_cookie:67 - get cookie success..
+2023-04-08 02:33:05.942 | INFO     | __main__:<module>:436 - 连接数据库中...........
+2023-04-08 02:33:06.045 | SUCCESS  | __main__:<module>:460 - link dbas 准备导入数据.....
+2023-04-08 02:33:06.056 | SUCCESS  | __main__:<module>:527 - 单次下载数量:10
+2023-04-08 02:33:06.057 | SUCCESS  | __main__:<module>:528 - 等待时间:6 并发数:10
+2023-04-08 02:33:06.058 | SUCCESS  | __main__:<module>:529 - 下载图片路径:F:\database_learn\k_spider\pictures
+2023-04-08 02:33:06.905 | INFO     | __main__:<module>:541 - 数据库共有33969条图像数据
+2023-04-08 02:33:06.923 | INFO     | __main__:<module>:558 - 排除3个重复pid....
+2023-04-08 02:33:08.042 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:33:08.044 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/314324/
+2023-04-08 02:33:08.352 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:33:08.355 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/320195/
+2023-04-08 02:33:08.840 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:33:08.844 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/326100/
+2023-04-08 02:33:17.948 | SUCCESS  | __main__:download_imgs:422 - downloaded 4 img ......
+2023-04-08 02:33:18.433 | INFO     | __main__:uni_tag:493 - 数据库tag表共有8039条tag
+2023-04-08 02:33:19.477 | INFO     | __main__:uni_tag:497 - 排除47个重复tag
+2023-04-08 02:33:27.498 | SUCCESS  | __main__:<module>:599 - 保存2个tag到数据库
+2023-04-08 02:33:27.648 | SUCCESS  | __main__:<module>:610 - added 4 img data into testdb....
+2023-04-08 02:33:28.281 | INFO     | __main__:<module>:541 - 数据库共有33973条图像数据
+2023-04-08 02:33:28.285 | INFO     | __main__:<module>:558 - 排除1个重复pid....
+2023-04-08 02:33:29.335 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:33:29.336 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/318948/
+2023-04-08 02:33:29.344 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:33:29.345 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/324485/
+2023-04-08 02:34:20.082 | SUCCESS  | __main__:get_cookie:67 - get cookie success..
+2023-04-08 02:34:32.351 | INFO     | __main__:<module>:436 - 连接数据库中...........
+2023-04-08 02:34:32.449 | SUCCESS  | __main__:<module>:460 - link dbas 准备导入数据.....
+2023-04-08 02:34:32.461 | SUCCESS  | __main__:<module>:527 - 单次下载数量:10
+2023-04-08 02:34:32.462 | SUCCESS  | __main__:<module>:528 - 等待时间:6 并发数:10
+2023-04-08 02:34:32.463 | SUCCESS  | __main__:<module>:529 - 下载图片路径:F:\database_learn\k_spider\pictures
+2023-04-08 02:34:33.409 | INFO     | __main__:<module>:541 - 数据库共有33973条图像数据
+2023-04-08 02:34:33.413 | INFO     | __main__:<module>:558 - 排除1个重复pid....
+2023-04-08 02:34:34.463 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:34:34.466 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/323964/
+2023-04-08 02:34:47.560 | SUCCESS  | __main__:download_imgs:422 - downloaded 8 img ......
+2023-04-08 02:34:48.114 | INFO     | __main__:uni_tag:493 - 数据库tag表共有8046条tag
+2023-04-08 02:34:49.917 | INFO     | __main__:uni_tag:497 - 排除70个重复tag
+2023-04-08 02:34:49.918 | SUCCESS  | __main__:<module>:599 - 保存7个tag到数据库
+2023-04-08 02:34:50.083 | SUCCESS  | __main__:<module>:610 - added 8 img data into testdb....
+2023-04-08 02:34:50.646 | INFO     | __main__:<module>:541 - 数据库共有33981条图像数据
+2023-04-08 02:34:50.650 | INFO     | __main__:<module>:558 - 排除2个重复pid....
+2023-04-08 02:35:04.344 | SUCCESS  | __main__:download_imgs:422 - downloaded 8 img ......
+2023-04-08 02:35:04.914 | INFO     | __main__:uni_tag:493 - 数据库tag表共有8050条tag
+2023-04-08 02:35:05.696 | INFO     | __main__:uni_tag:497 - 排除88个重复tag
+2023-04-08 02:35:05.703 | SUCCESS  | __main__:<module>:599 - 保存4个tag到数据库
+2023-04-08 02:35:05.884 | SUCCESS  | __main__:<module>:610 - added 16 img data into testdb....
+2023-04-08 02:35:06.500 | INFO     | __main__:<module>:541 - 数据库共有33997条图像数据
+2023-04-08 02:35:06.518 | INFO     | __main__:<module>:558 - 排除1个重复pid....
+2023-04-08 02:35:21.343 | SUCCESS  | __main__:download_imgs:422 - downloaded 9 img ......
+2023-04-08 02:35:21.876 | INFO     | __main__:uni_tag:493 - 数据库tag表共有8055条tag
+2023-04-08 02:35:22.635 | INFO     | __main__:uni_tag:497 - 排除110个重复tag
+2023-04-08 02:35:22.642 | SUCCESS  | __main__:<module>:599 - 保存5个tag到数据库
+2023-04-08 02:35:22.802 | SUCCESS  | __main__:<module>:610 - added 25 img data into testdb....
+2023-04-08 02:35:23.399 | INFO     | __main__:<module>:541 - 数据库共有34022条图像数据
+2023-04-08 02:35:23.403 | INFO     | __main__:<module>:558 - 排除1个重复pid....
+2023-04-08 02:35:25.035 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:35:25.039 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/318200/
+2023-04-08 02:35:36.667 | SUCCESS  | __main__:download_imgs:422 - downloaded 8 img ......
+2023-04-08 02:35:37.192 | INFO     | __main__:uni_tag:493 - 数据库tag表共有8056条tag
+2023-04-08 02:35:38.169 | INFO     | __main__:uni_tag:497 - 排除82个重复tag
+2023-04-08 02:35:38.170 | SUCCESS  | __main__:<module>:599 - 保存1个tag到数据库
+2023-04-08 02:35:38.332 | SUCCESS  | __main__:<module>:610 - added 33 img data into testdb....
+2023-04-08 02:35:38.977 | INFO     | __main__:<module>:541 - 数据库共有34055条图像数据
+2023-04-08 02:35:38.993 | INFO     | __main__:<module>:558 - 排除2个重复pid....
+2023-04-08 02:35:39.847 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:35:39.848 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/314810/
+2023-04-08 02:35:40.450 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:35:40.452 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/315278/
+2023-04-08 02:35:52.259 | SUCCESS  | __main__:download_imgs:422 - downloaded 6 img ......
+2023-04-08 02:35:52.776 | INFO     | __main__:uni_tag:493 - 数据库tag表共有8059条tag
+2023-04-08 02:35:53.539 | INFO     | __main__:uni_tag:497 - 排除65个重复tag
+2023-04-08 02:35:53.546 | SUCCESS  | __main__:<module>:599 - 保存3个tag到数据库
+2023-04-08 02:35:53.707 | SUCCESS  | __main__:<module>:610 - added 39 img data into testdb....
+2023-04-08 02:35:54.316 | INFO     | __main__:<module>:541 - 数据库共有34094条图像数据
+2023-04-08 02:35:54.321 | INFO     | __main__:<module>:558 - 排除1个重复pid....
+2023-04-08 02:35:55.819 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:35:55.820 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/306430/
+2023-04-08 02:35:55.851 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:35:55.852 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/313304/
+2023-04-08 02:36:25.342 | SUCCESS  | __main__:get_cookie:67 - get cookie success..
+2023-04-08 02:36:37.598 | INFO     | __main__:<module>:436 - 连接数据库中...........
+2023-04-08 02:36:37.690 | SUCCESS  | __main__:<module>:460 - link dbas 准备导入数据.....
+2023-04-08 02:36:37.710 | SUCCESS  | __main__:<module>:527 - 单次下载数量:120
+2023-04-08 02:36:37.711 | SUCCESS  | __main__:<module>:528 - 等待时间:6 并发数:10
+2023-04-08 02:36:37.712 | SUCCESS  | __main__:<module>:529 - 下载图片路径:F:\database_learn\k_spider\pictures
+2023-04-08 02:36:38.561 | INFO     | __main__:<module>:541 - 数据库共有34094条图像数据
+2023-04-08 02:36:38.592 | INFO     | __main__:<module>:558 - 排除18个重复pid....
+2023-04-08 02:36:38.594 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:36:39.446 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:36:39.448 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/352284/
+2023-04-08 02:36:39.624 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:36:39.626 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/319664/
+2023-04-08 02:36:39.691 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:36:39.693 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/330273/
+2023-04-08 02:36:44.615 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:36:50.626 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:36:56.637 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:37:02.653 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:37:03.740 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:37:03.742 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/328979/
+2023-04-08 02:37:03.748 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:37:03.749 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/332588/
+2023-04-08 02:37:08.677 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:37:09.735 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:37:09.736 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/307177/
+2023-04-08 02:37:09.794 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:37:09.796 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/329753/
+2023-04-08 02:37:09.867 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:37:09.868 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/317595/
+2023-04-08 02:37:14.687 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:37:15.784 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:37:15.787 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/315469/
+2023-04-08 02:37:15.974 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:37:15.975 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/328914/
+2023-04-08 02:37:15.999 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:37:16.000 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/303767/
+2023-04-08 02:37:16.462 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:37:16.466 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/319679/
+2023-04-08 02:37:20.694 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:37:21.727 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:37:21.729 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/323411/
+2023-04-08 02:37:21.768 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:37:21.769 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/315005/
+2023-04-08 02:37:21.772 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:37:21.772 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/314794/
+2023-04-08 02:37:22.145 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:37:22.147 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/313208/
+2023-04-08 02:37:22.272 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:37:22.275 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/325829/
+2023-04-08 02:37:26.687 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:37:27.603 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:37:27.605 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/326593/
+2023-04-08 02:37:27.650 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:37:27.651 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/351413/
+2023-04-08 02:37:27.893 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:37:27.894 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/313569/
+2023-04-08 02:37:32.711 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:37:33.948 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:37:33.950 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/328227/
+2023-04-08 02:37:46.635 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 02:37:52.624 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 02:37:58.626 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 02:38:04.640 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 02:38:10.645 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 02:38:16.655 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 02:38:22.677 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 02:38:28.669 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 02:38:37.834 | SUCCESS  | __main__:download_imgs:422 - downloaded 81 img ......
+2023-04-08 02:38:38.723 | INFO     | __main__:uni_tag:493 - 数据库tag表共有8102条tag
+2023-04-08 02:38:40.621 | INFO     | __main__:uni_tag:497 - 排除348个重复tag
+2023-04-08 02:38:40.627 | SUCCESS  | __main__:<module>:599 - 保存43个tag到数据库
+2023-04-08 02:38:40.834 | SUCCESS  | __main__:<module>:610 - added 81 img data into testdb....
+2023-04-08 02:38:41.438 | INFO     | __main__:<module>:541 - 数据库共有34175条图像数据
+2023-04-08 02:38:41.467 | INFO     | __main__:<module>:558 - 排除21个重复pid....
+2023-04-08 02:38:41.470 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:38:42.486 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:38:42.489 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/307429/
+2023-04-08 02:38:42.568 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:38:42.570 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/331071/
+2023-04-08 02:38:42.740 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:38:42.743 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/310757/
+2023-04-08 02:38:47.485 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:38:48.674 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:38:48.676 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/304913/
+2023-04-08 02:38:53.483 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:38:54.449 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:38:54.452 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/308332/
+2023-04-08 02:38:59.490 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:39:00.467 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:39:00.471 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/302703/
+2023-04-08 02:39:00.497 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:39:00.498 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/314275/
+2023-04-08 02:39:00.550 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:39:00.552 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/302335/
+2023-04-08 02:39:01.071 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:39:01.074 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/302785/
+2023-04-08 02:39:05.488 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:39:06.469 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:39:06.470 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/305075/
+2023-04-08 02:39:11.505 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:39:12.425 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:39:12.426 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/310477/
+2023-04-08 02:39:12.638 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:39:12.642 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/337300/
+2023-04-08 02:39:12.758 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:39:12.760 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/316071/
+2023-04-08 02:39:17.510 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:39:19.577 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:39:19.582 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/321692/
+2023-04-08 02:39:23.526 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:39:29.548 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:39:30.695 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:39:30.697 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/310257/
+2023-04-08 02:39:36.642 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:39:36.645 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/324980/
+2023-04-08 02:39:37.755 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:39:37.757 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/309576/
+2023-04-08 02:39:37.950 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:39:37.954 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/351913/
+2023-04-08 02:39:43.800 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 02:39:49.796 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 02:39:55.806 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 02:40:01.829 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 02:40:07.841 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 02:40:13.841 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 02:40:19.857 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 02:40:25.844 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 02:40:34.772 | SUCCESS  | __main__:download_imgs:422 - downloaded 81 img ......
+2023-04-08 02:40:35.457 | INFO     | __main__:uni_tag:493 - 数据库tag表共有8154条tag
+2023-04-08 02:40:36.181 | INFO     | __main__:uni_tag:497 - 排除383个重复tag
+2023-04-08 02:40:36.190 | SUCCESS  | __main__:<module>:599 - 保存52个tag到数据库
+2023-04-08 02:40:36.400 | SUCCESS  | __main__:<module>:610 - added 162 img data into testdb....
+2023-04-08 02:40:36.938 | INFO     | __main__:<module>:541 - 数据库共有34337条图像数据
+2023-04-08 02:40:36.970 | INFO     | __main__:<module>:558 - 排除13个重复pid....
+2023-04-08 02:40:36.972 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:40:38.054 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:40:38.056 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/307065/
+2023-04-08 02:40:42.987 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:40:48.991 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:40:50.033 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:40:50.036 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/321444/
+2023-04-08 02:40:50.089 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:40:50.091 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/339659/
+2023-04-08 02:40:50.161 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:40:50.162 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/310095/
+2023-04-08 02:40:50.294 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:40:50.296 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/304216/
+2023-04-08 02:40:54.991 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:40:55.887 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:40:55.889 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/325473/
+2023-04-08 02:40:55.913 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:40:55.914 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/324481/
+2023-04-08 02:40:55.972 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:40:55.974 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/345129/
+2023-04-08 02:41:01.006 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:41:02.194 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:41:02.197 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/328915/
+2023-04-08 02:41:02.288 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:41:02.290 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/315462/
+2023-04-08 02:41:07.024 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:55:16.982 | SUCCESS  | __main__:get_cookie:67 - get cookie success..
+2023-04-08 02:55:29.228 | INFO     | __main__:<module>:436 - 连接数据库中...........
+2023-04-08 02:55:29.322 | SUCCESS  | __main__:<module>:460 - link dbas 准备导入数据.....
+2023-04-08 02:55:29.337 | SUCCESS  | __main__:<module>:527 - 单次下载数量:120
+2023-04-08 02:55:29.339 | SUCCESS  | __main__:<module>:528 - 等待时间:6 并发数:10
+2023-04-08 02:55:29.339 | SUCCESS  | __main__:<module>:529 - 下载图片路径:F:\database_learn\k_spider\pictures
+2023-04-08 02:56:29.073 | SUCCESS  | __main__:get_cookie:67 - get cookie success..
+2023-04-08 02:56:41.282 | INFO     | __main__:<module>:436 - 连接数据库中...........
+2023-04-08 02:56:41.380 | SUCCESS  | __main__:<module>:460 - link dbas 准备导入数据.....
+2023-04-08 02:56:41.395 | SUCCESS  | __main__:<module>:527 - 单次下载数量:120
+2023-04-08 02:56:41.396 | SUCCESS  | __main__:<module>:528 - 等待时间:6 并发数:10
+2023-04-08 02:56:41.397 | SUCCESS  | __main__:<module>:529 - 下载图片路径:F:\database_learn\k_spider\pictures
+2023-04-08 02:56:42.289 | INFO     | __main__:<module>:542 - 数据库共有34337条图像数据
+2023-04-08 02:57:09.201 | INFO     | __main__:<module>:560 - 排除22个重复pid....
+2023-04-08 02:57:09.205 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:57:10.986 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:57:10.987 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/306688/
+2023-04-08 02:57:11.010 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:57:11.012 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/310282/
+2023-04-08 02:57:15.211 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:57:16.177 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:57:16.179 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/326225/
+2023-04-08 02:57:16.787 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:57:16.788 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/314968/
+2023-04-08 02:57:21.224 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:57:22.723 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:57:22.725 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/342166/
+2023-04-08 02:57:22.736 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:57:22.737 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/326260/
+2023-04-08 02:57:22.749 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:57:22.751 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/310922/
+2023-04-08 02:57:27.239 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:57:28.298 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 02:57:28.301 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/338610/
+2023-04-08 02:57:28.393 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:57:28.395 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/329933/
+2023-04-08 02:57:28.749 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:57:28.751 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/325322/
+2023-04-08 02:57:33.251 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 02:57:34.354 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 02:57:34.356 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/318722/
+2023-04-08 03:01:42.841 | SUCCESS  | __main__:get_cookie:67 - get cookie success..
+2023-04-08 03:01:55.172 | INFO     | __main__:<module>:436 - 连接数据库中...........
+2023-04-08 03:01:55.281 | SUCCESS  | __main__:<module>:460 - link dbas 准备导入数据.....
+2023-04-08 03:01:55.288 | SUCCESS  | __main__:<module>:527 - 单次下载数量:120
+2023-04-08 03:01:55.290 | SUCCESS  | __main__:<module>:528 - 等待时间:6 并发数:10
+2023-04-08 03:01:55.291 | SUCCESS  | __main__:<module>:529 - 下载图片路径:F:\database_learn\k_spider\pictures
+2023-04-08 03:01:56.511 | INFO     | __main__:<module>:542 - 数据库共有34337条图像数据
+2023-04-08 03:01:56.516 | INFO     | __main__:<module>:554 - 120
+2023-04-08 03:01:56.517 | INFO     | __main__:<module>:555 - 34337
+2023-04-08 03:02:07.037 | INFO     | __main__:<module>:563 - 排除20个重复pid....
+2023-04-08 03:02:14.566 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 03:02:15.535 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 03:02:15.536 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/336409/
+2023-04-08 03:02:15.682 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:02:15.684 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/318010/
+2023-04-08 03:02:16.104 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:02:16.107 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/349727/
+2023-04-08 03:02:16.123 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:02:16.124 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/306704/
+2023-04-08 03:02:20.572 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 03:02:21.613 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:02:21.615 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/320595/
+2023-04-08 03:02:22.120 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:02:22.122 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/328311/
+2023-04-08 03:02:22.155 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:02:22.156 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/313439/
+2023-04-08 03:05:25.749 | SUCCESS  | __main__:get_cookie:67 - get cookie success..
+2023-04-08 03:05:38.003 | INFO     | __main__:<module>:436 - 连接数据库中...........
+2023-04-08 03:05:38.108 | SUCCESS  | __main__:<module>:460 - link dbas 准备导入数据.....
+2023-04-08 03:05:38.115 | SUCCESS  | __main__:<module>:527 - 单次下载数量:120
+2023-04-08 03:05:38.116 | SUCCESS  | __main__:<module>:528 - 等待时间:6 并发数:10
+2023-04-08 03:05:38.117 | SUCCESS  | __main__:<module>:529 - 下载图片路径:F:\database_learn\k_spider\pictures
+2023-04-08 03:05:38.963 | INFO     | __main__:<module>:542 - 数据库共有1条图像数据
+2023-04-08 03:05:38.969 | INFO     | __main__:<module>:563 - 排除23个重复pid....
+2023-04-08 03:05:38.972 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 03:05:40.035 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:05:40.038 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/316448/
+2023-04-08 03:05:40.566 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:05:40.567 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/329750/
+2023-04-08 03:05:40.905 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:05:40.906 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/319496/
+2023-04-08 03:05:44.974 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 03:05:46.519 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 03:05:46.520 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/300097/
+2023-04-08 03:05:51.000 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 03:05:51.957 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 03:05:51.959 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/314966/
+2023-04-08 03:06:56.589 | SUCCESS  | __main__:get_cookie:67 - get cookie success..
+2023-04-08 03:07:08.904 | INFO     | __main__:<module>:436 - 连接数据库中...........
+2023-04-08 03:07:09.010 | SUCCESS  | __main__:<module>:460 - link dbas 准备导入数据.....
+2023-04-08 03:07:09.018 | SUCCESS  | __main__:<module>:527 - 单次下载数量:120
+2023-04-08 03:07:09.019 | SUCCESS  | __main__:<module>:528 - 等待时间:6 并发数:10
+2023-04-08 03:07:09.020 | SUCCESS  | __main__:<module>:529 - 下载图片路径:F:\database_learn\k_spider\pictures
+2023-04-08 03:07:09.894 | INFO     | __main__:<module>:542 - 数据库共有1条图像数据
+2023-04-08 03:07:09.909 | INFO     | __main__:<module>:563 - 排除16个重复pid....
+2023-04-08 03:07:09.912 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 03:07:10.964 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:07:10.967 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/337418/
+2023-04-08 03:07:11.026 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:07:11.028 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/312336/
+2023-04-08 03:07:11.032 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:07:11.034 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/318471/
+2023-04-08 03:07:11.362 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:07:11.366 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/311303/
+2023-04-08 03:07:11.470 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:07:11.472 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/337417/
+2023-04-08 03:07:15.932 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 03:07:21.941 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 03:07:22.864 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:07:22.866 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/353898/
+2023-04-08 03:07:23.070 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:07:23.071 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/323214/
+2023-04-08 03:07:23.079 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 03:07:23.080 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/330331/
+2023-04-08 03:07:23.552 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 03:07:23.556 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/319123/
+2023-04-08 03:07:27.963 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 03:07:29.012 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:07:29.014 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/323237/
+2023-04-08 03:07:33.974 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 03:07:35.076 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:07:35.078 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/317157/
+2023-04-08 03:07:35.569 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:07:35.571 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/354012/
+2023-04-08 03:07:39.982 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 03:07:41.042 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:07:41.044 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/328474/
+2023-04-08 03:07:45.991 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 03:07:47.004 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:07:47.006 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/330541/
+2023-04-08 03:07:47.356 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 03:07:47.358 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/309546/
+2023-04-08 03:07:51.997 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 03:07:52.983 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:07:52.988 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/340300/
+2023-04-08 03:07:53.257 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:07:53.258 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/320879/
+2023-04-08 03:07:58.003 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 03:07:59.029 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 03:07:59.031 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/310160/
+2023-04-08 03:07:59.044 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:07:59.046 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/301437/
+2023-04-08 03:07:59.195 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:07:59.197 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/330639/
+2023-04-08 03:07:59.202 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 03:07:59.204 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/309640/
+2023-04-08 03:07:59.209 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:07:59.210 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/312178/
+2023-04-08 03:08:04.025 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 03:08:05.211 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:08:05.213 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/347571/
+2023-04-08 03:08:05.310 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 03:08:05.312 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/310729/
+2023-04-08 03:08:17.048 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 03:08:23.048 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 03:08:29.047 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 03:08:35.024 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 03:08:41.022 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 03:08:47.023 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 03:08:53.035 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 03:08:59.050 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 03:09:12.996 | SUCCESS  | __main__:download_imgs:422 - downloaded 80 img ......
+2023-04-08 03:09:13.812 | INFO     | __main__:uni_tag:493 - 数据库tag表共有8199条tag
+2023-04-08 03:09:14.864 | INFO     | __main__:uni_tag:497 - 排除363个重复tag
+2023-04-08 03:09:14.870 | SUCCESS  | __main__:<module>:604 - 保存45个tag到数据库
+2023-04-08 03:09:15.055 | SUCCESS  | __main__:<module>:615 - added 80 img data into testdb....
+2023-04-08 03:09:15.655 | INFO     | __main__:<module>:542 - 数据库共有1条图像数据
+2023-04-08 03:09:15.658 | INFO     | __main__:<module>:563 - 排除23个重复pid....
+2023-04-08 03:09:15.660 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 03:09:16.738 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:09:16.741 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/347176/
+2023-04-08 03:09:16.760 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:09:16.762 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/312358/
+2023-04-08 03:09:21.667 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 03:09:22.673 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:09:22.676 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/332365/
+2023-04-08 03:09:27.673 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 03:09:28.879 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:09:28.880 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/325206/
+2023-04-08 03:13:22.046 | SUCCESS  | __main__:get_cookie:67 - get cookie success..
+2023-04-08 03:13:34.347 | INFO     | __main__:<module>:436 - 连接数据库中...........
+2023-04-08 03:13:34.446 | SUCCESS  | __main__:<module>:460 - link dbas 准备导入数据.....
+2023-04-08 03:13:34.458 | SUCCESS  | __main__:<module>:527 - 单次下载数量:120
+2023-04-08 03:13:34.459 | SUCCESS  | __main__:<module>:528 - 等待时间:6 并发数:10
+2023-04-08 03:13:34.460 | SUCCESS  | __main__:<module>:529 - 下载图片路径:F:\database_learn\k_spider\pictures
+2023-04-08 03:13:35.505 | INFO     | __main__:<module>:542 - 数据库共有1条图像数据
+2023-04-08 03:13:35.522 | INFO     | __main__:<module>:553 - 前pids长度120
+2023-04-08 03:13:35.524 | INFO     | __main__:<module>:557 - 后pids长度98
+2023-04-08 03:13:35.525 | INFO     | __main__:<module>:567 - 排除22个重复pid....
+2023-04-08 03:13:35.527 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 03:13:36.482 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:13:36.487 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/307240/
+2023-04-08 03:13:37.029 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:13:37.032 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/345107/
+2023-04-08 03:13:41.550 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 03:13:42.575 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:13:42.577 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/338518/
+2023-04-08 03:13:47.576 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 03:13:48.612 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:13:48.613 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/318120/
+2023-04-08 03:13:48.708 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 03:13:48.710 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/353963/
+2023-04-08 03:13:48.720 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 03:13:48.722 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/334478/
+2023-04-08 03:13:49.025 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:13:49.027 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/311964/
+2023-04-08 03:13:49.073 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:13:49.075 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/300671/
+2023-04-08 03:13:53.583 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 03:13:54.873 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:13:54.875 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/327862/
+2023-04-08 03:13:59.588 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 03:14:00.744 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 03:14:00.746 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/348951/
+2023-04-08 03:14:14.918 | SUCCESS  | __main__:get_cookie:67 - get cookie success..
+2023-04-08 03:14:27.168 | INFO     | __main__:<module>:436 - 连接数据库中...........
+2023-04-08 03:14:27.266 | SUCCESS  | __main__:<module>:460 - link dbas 准备导入数据.....
+2023-04-08 03:14:27.278 | SUCCESS  | __main__:<module>:527 - 单次下载数量:120
+2023-04-08 03:14:27.280 | SUCCESS  | __main__:<module>:528 - 等待时间:6 并发数:10
+2023-04-08 03:14:27.281 | SUCCESS  | __main__:<module>:529 - 下载图片路径:F:\database_learn\k_spider\pictures
+2023-04-08 03:14:28.534 | INFO     | __main__:<module>:542 - 数据库共有1条图像数据
+2023-04-08 03:14:28.537 | INFO     | __main__:<module>:553 - 前pids长度120
+2023-04-08 03:14:28.540 | INFO     | __main__:<module>:557 - 后pids长度93
+2023-04-08 03:14:28.542 | INFO     | __main__:<module>:567 - 排除27个重复pid....
+2023-04-08 03:14:28.544 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 03:14:29.526 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 03:14:29.528 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/314375/
+2023-04-08 03:14:34.553 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 03:14:35.840 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:14:35.841 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/309882/
+2023-04-08 03:14:35.864 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:14:35.865 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/350821/
+2023-04-08 03:14:40.578 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 03:16:16.751 | SUCCESS  | __main__:get_cookie:67 - get cookie success..
+2023-04-08 03:16:29.035 | INFO     | __main__:<module>:436 - 连接数据库中...........
+2023-04-08 03:16:29.139 | SUCCESS  | __main__:<module>:460 - link dbas 准备导入数据.....
+2023-04-08 03:16:29.146 | SUCCESS  | __main__:<module>:527 - 单次下载数量:2
+2023-04-08 03:16:29.147 | SUCCESS  | __main__:<module>:528 - 等待时间:6 并发数:10
+2023-04-08 03:16:29.148 | SUCCESS  | __main__:<module>:529 - 下载图片路径:F:\database_learn\k_spider\pictures
+2023-04-08 03:16:29.987 | INFO     | __main__:<module>:542 - 数据库共有34417条图像数据
+2023-04-08 03:16:29.994 | INFO     | __main__:<module>:553 - 前pids长度2
+2023-04-08 03:16:29.997 | INFO     | __main__:<module>:557 - 后pids长度2
+2023-04-08 03:16:31.675 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:16:31.677 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/346696/
+2023-04-08 03:16:37.117 | SUCCESS  | __main__:download_imgs:422 - downloaded 1 img ......
+2023-04-08 03:16:37.567 | INFO     | __main__:uni_tag:493 - 数据库tag表共有8199条tag
+2023-04-08 03:16:38.514 | INFO     | __main__:uni_tag:497 - 排除12个重复tag
+2023-04-08 03:16:38.516 | SUCCESS  | __main__:<module>:608 - 保存0个tag到数据库
+2023-04-08 03:16:38.655 | SUCCESS  | __main__:<module>:619 - added 1 img data into testdb....
+2023-04-08 03:16:39.192 | INFO     | __main__:<module>:542 - 数据库共有34418条图像数据
+2023-04-08 03:16:39.194 | INFO     | __main__:<module>:553 - 前pids长度2
+2023-04-08 03:16:39.196 | INFO     | __main__:<module>:557 - 后pids长度1
+2023-04-08 03:16:39.198 | INFO     | __main__:<module>:567 - 排除1个重复pid....
+2023-04-08 03:16:44.826 | SUCCESS  | __main__:download_imgs:422 - downloaded 1 img ......
+2023-04-08 03:16:45.273 | INFO     | __main__:uni_tag:493 - 数据库tag表共有8200条tag
+2023-04-08 03:16:45.922 | INFO     | __main__:uni_tag:497 - 排除15个重复tag
+2023-04-08 03:16:45.927 | SUCCESS  | __main__:<module>:608 - 保存1个tag到数据库
+2023-04-08 03:16:46.045 | SUCCESS  | __main__:<module>:619 - added 2 img data into testdb....
+2023-04-08 03:16:46.606 | INFO     | __main__:<module>:542 - 数据库共有34420条图像数据
+2023-04-08 03:16:46.621 | INFO     | __main__:<module>:553 - 前pids长度2
+2023-04-08 03:16:46.625 | INFO     | __main__:<module>:557 - 后pids长度2
+2023-04-08 03:16:55.207 | SUCCESS  | __main__:download_imgs:422 - downloaded 2 img ......
+2023-04-08 03:16:55.611 | INFO     | __main__:uni_tag:493 - 数据库tag表共有8200条tag
+2023-04-08 03:16:56.204 | INFO     | __main__:uni_tag:497 - 排除34个重复tag
+2023-04-08 03:16:56.211 | SUCCESS  | __main__:<module>:608 - 保存0个tag到数据库
+2023-04-08 03:16:56.330 | SUCCESS  | __main__:<module>:619 - added 4 img data into testdb....
+2023-04-08 03:16:56.897 | INFO     | __main__:<module>:542 - 数据库共有34424条图像数据
+2023-04-08 03:16:56.900 | INFO     | __main__:<module>:553 - 前pids长度2
+2023-04-08 03:16:56.904 | INFO     | __main__:<module>:557 - 后pids长度2
+2023-04-08 03:17:05.931 | SUCCESS  | __main__:download_imgs:422 - downloaded 2 img ......
+2023-04-08 03:17:06.385 | INFO     | __main__:uni_tag:493 - 数据库tag表共有8201条tag
+2023-04-08 03:19:12.137 | SUCCESS  | __main__:get_cookie:67 - get cookie success..
+2023-04-08 03:19:24.415 | INFO     | __main__:<module>:436 - 连接数据库中...........
+2023-04-08 03:19:24.513 | SUCCESS  | __main__:<module>:460 - link dbas 准备导入数据.....
+2023-04-08 03:19:24.528 | SUCCESS  | __main__:<module>:527 - 单次下载数量:2
+2023-04-08 03:19:24.530 | SUCCESS  | __main__:<module>:528 - 等待时间:6 并发数:10
+2023-04-08 03:19:24.531 | SUCCESS  | __main__:<module>:529 - 下载图片路径:F:\database_learn\k_spider\pictures
+2023-04-08 03:19:25.569 | INFO     | __main__:<module>:542 - 数据库共有34424条图像数据
+2023-04-08 03:19:32.765 | SUCCESS  | __main__:download_imgs:422 - downloaded 2 img ......
+2023-04-08 03:19:33.433 | INFO     | __main__:uni_tag:493 - 数据库tag表共有8201条tag
+2023-04-08 03:19:34.506 | INFO     | __main__:uni_tag:497 - 排除25个重复tag
+2023-04-08 03:19:34.510 | SUCCESS  | __main__:<module>:609 - 保存0个tag到数据库
+2023-04-08 03:19:34.700 | SUCCESS  | __main__:<module>:620 - added 2 img data into testdb....
+2023-04-08 03:19:35.292 | INFO     | __main__:<module>:542 - 数据库共有34426条图像数据
+2023-04-08 03:19:43.092 | SUCCESS  | __main__:download_imgs:422 - downloaded 2 img ......
+2023-04-08 03:19:43.699 | INFO     | __main__:uni_tag:493 - 数据库tag表共有8202条tag
+2023-04-08 03:19:44.590 | INFO     | __main__:uni_tag:497 - 排除31个重复tag
+2023-04-08 03:19:44.598 | SUCCESS  | __main__:<module>:609 - 保存1个tag到数据库
+2023-04-08 03:19:44.789 | SUCCESS  | __main__:<module>:620 - added 4 img data into testdb....
+2023-04-08 03:19:45.426 | INFO     | __main__:<module>:542 - 数据库共有34430条图像数据
+2023-04-08 03:19:45.434 | INFO     | __main__:<module>:568 - 排除1个重复pid....
+2023-04-08 03:19:51.744 | SUCCESS  | __main__:download_imgs:422 - downloaded 1 img ......
+2023-04-08 03:19:52.301 | INFO     | __main__:uni_tag:493 - 数据库tag表共有8202条tag
+2023-04-08 03:19:53.169 | INFO     | __main__:uni_tag:497 - 排除16个重复tag
+2023-04-08 03:19:53.175 | SUCCESS  | __main__:<module>:609 - 保存0个tag到数据库
+2023-04-08 03:19:53.367 | SUCCESS  | __main__:<module>:620 - added 5 img data into testdb....
+2023-04-08 03:19:54.012 | INFO     | __main__:<module>:542 - 数据库共有34435条图像数据
+2023-04-08 03:19:54.843 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 03:19:54.845 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/348898/
+2023-04-08 03:19:59.368 | SUCCESS  | __main__:download_imgs:422 - downloaded 1 img ......
+2023-04-08 03:19:59.968 | INFO     | __main__:uni_tag:493 - 数据库tag表共有8202条tag
+2023-04-08 03:20:00.825 | INFO     | __main__:uni_tag:497 - 排除13个重复tag
+2023-04-08 03:20:00.833 | SUCCESS  | __main__:<module>:609 - 保存0个tag到数据库
+2023-04-08 03:20:01.021 | SUCCESS  | __main__:<module>:620 - added 6 img data into testdb....
+2023-04-08 03:20:01.659 | INFO     | __main__:<module>:542 - 数据库共有34441条图像数据
+2023-04-08 10:52:11.054 | SUCCESS  | __main__:get_cookie:67 - get cookie success..
+2023-04-08 10:52:23.274 | INFO     | __main__:<module>:436 - 连接数据库中...........
+2023-04-08 10:52:23.426 | SUCCESS  | __main__:<module>:460 - link dbas 准备导入数据.....
+2023-04-08 10:52:23.437 | SUCCESS  | __main__:<module>:527 - 单次下载数量:120
+2023-04-08 10:52:23.438 | SUCCESS  | __main__:<module>:528 - 等待时间:6 并发数:10
+2023-04-08 10:52:23.439 | SUCCESS  | __main__:<module>:529 - 下载图片路径:F:\database_learn\k_spider\pictures
+2023-04-08 10:52:24.535 | INFO     | __main__:<module>:542 - 数据库共有34441条图像数据
+2023-04-08 10:52:24.540 | INFO     | __main__:<module>:568 - 排除20个重复pid....
+2023-04-08 10:52:24.542 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 10:52:30.546 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 10:52:36.546 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 10:52:42.552 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 10:52:43.402 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 10:52:43.404 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/309937/
+2023-04-08 10:52:43.666 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 10:52:43.669 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/308890/
+2023-04-08 10:52:44.024 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 10:52:44.025 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/305826/
+2023-04-08 10:52:44.072 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 10:52:44.073 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/300708/
+2023-04-08 10:52:48.580 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 10:52:49.700 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 10:52:49.702 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/334047/
+2023-04-08 10:52:54.585 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 10:53:00.614 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 10:53:02.061 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 10:53:02.063 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/355096/
+2023-04-08 10:53:02.206 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 10:53:02.208 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/349473/
+2023-04-08 10:53:06.633 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 10:53:07.679 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 10:53:07.681 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/329065/
+2023-04-08 10:53:12.642 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 10:53:13.731 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 10:53:13.734 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/334246/
+2023-04-08 10:53:14.240 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 10:53:14.243 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/311751/
+2023-04-08 10:53:18.649 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 10:53:19.845 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 10:53:19.849 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/313331/
+2023-04-08 10:53:19.855 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 10:53:19.856 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/321007/
+2023-04-08 10:53:30.863 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 10:53:36.851 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 10:53:42.850 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 10:53:48.851 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 10:53:54.861 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 10:54:00.854 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 10:54:06.851 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 10:54:12.860 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 10:56:06.051 | SUCCESS  | __main__:download_imgs:422 - downloaded 88 img ......
+2023-04-08 10:56:07.027 | INFO     | __main__:uni_tag:493 - 数据库tag表共有8244条tag
+2023-04-08 10:56:08.100 | INFO     | __main__:uni_tag:497 - 排除389个重复tag
+2023-04-08 10:56:08.108 | SUCCESS  | __main__:<module>:609 - 保存42个tag到数据库
+2023-04-08 10:56:08.322 | SUCCESS  | __main__:<module>:620 - added 88 img data into testdb....
+2023-04-08 10:56:09.250 | INFO     | __main__:<module>:542 - 数据库共有34529条图像数据
+2023-04-08 10:56:09.264 | INFO     | __main__:<module>:568 - 排除18个重复pid....
+2023-04-08 10:56:09.267 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 10:56:10.718 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 10:56:10.723 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/311826/
+2023-04-08 10:56:15.271 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 10:56:16.491 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 10:56:16.493 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/321087/
+2023-04-08 10:56:21.280 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 10:56:22.180 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 10:56:22.182 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/305791/
+2023-04-08 10:56:22.184 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 10:56:22.186 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/305795/
+2023-04-08 10:56:22.348 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 10:56:22.350 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/316525/
+2023-04-08 10:56:22.876 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 10:56:22.878 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/336529/
+2023-04-08 10:56:23.527 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 10:56:23.529 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/307329/
+2023-04-08 10:56:27.296 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 10:56:28.345 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 10:56:28.347 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/340657/
+2023-04-08 10:56:28.632 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 10:56:28.634 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/307380/
+2023-04-08 10:56:28.701 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 10:56:28.702 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/308371/
+2023-04-08 10:56:33.296 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 10:56:34.560 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 10:56:34.561 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/344299/
+2023-04-08 10:56:34.625 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 10:56:34.627 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/345296/
+2023-04-08 10:56:39.304 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 10:56:40.921 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 10:56:40.923 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/306473/
+2023-04-08 10:56:40.929 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 10:56:40.930 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/327976/
+2023-04-08 10:56:45.335 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 10:56:46.512 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 10:56:46.515 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/313132/
+2023-04-08 10:56:46.539 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 10:56:46.540 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/336723/
+2023-04-08 10:56:51.354 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 10:56:52.376 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 10:56:52.378 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/311677/
+2023-04-08 10:56:52.390 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 10:56:52.391 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/310142/
+2023-04-08 10:56:52.960 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 10:56:52.964 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/303994/
+2023-04-08 10:56:57.370 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 10:56:58.591 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 10:56:58.594 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/308624/
+2023-04-08 10:56:58.635 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 10:56:58.637 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/341498/
+2023-04-08 10:56:58.651 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 10:56:58.652 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/323478/
+2023-04-08 10:57:03.376 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 10:57:10.708 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 10:57:10.710 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/339962/
+2023-04-08 10:57:16.693 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 10:57:22.700 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 10:57:28.696 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 10:57:34.698 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 10:57:40.695 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 10:57:46.695 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 10:57:52.697 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 10:59:41.310 | SUCCESS  | __main__:download_imgs:422 - downloaded 79 img ......
+2023-04-08 10:59:42.126 | INFO     | __main__:uni_tag:493 - 数据库tag表共有8282条tag
+2023-04-08 10:59:43.004 | INFO     | __main__:uni_tag:497 - 排除361个重复tag
+2023-04-08 10:59:43.012 | SUCCESS  | __main__:<module>:609 - 保存38个tag到数据库
+2023-04-08 10:59:43.224 | SUCCESS  | __main__:<module>:620 - added 167 img data into testdb....
+2023-04-08 10:59:43.904 | INFO     | __main__:<module>:542 - 数据库共有34696条图像数据
+2023-04-08 10:59:43.923 | INFO     | __main__:<module>:568 - 排除22个重复pid....
+2023-04-08 10:59:43.925 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 10:59:49.921 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 10:59:50.887 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 10:59:50.891 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/313454/
+2023-04-08 10:59:51.716 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 10:59:51.718 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/324708/
+2023-04-08 10:59:55.928 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 10:59:56.802 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 10:59:56.804 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/317587/
+2023-04-08 10:59:57.066 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 10:59:57.068 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/354438/
+2023-04-08 10:59:57.497 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 10:59:57.500 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/319113/
+2023-04-08 11:00:01.941 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:00:02.828 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:00:02.831 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/323245/
+2023-04-08 11:00:03.090 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:00:03.091 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/319669/
+2023-04-08 11:00:07.953 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:00:09.740 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:00:09.743 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/318162/
+2023-04-08 11:00:13.967 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:00:14.974 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:00:14.977 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/324879/
+2023-04-08 11:00:15.054 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:00:15.056 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/326425/
+2023-04-08 11:00:15.594 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:00:15.596 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/345874/
+2023-04-08 11:00:19.980 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:00:25.982 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:00:27.088 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:00:27.090 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/309640/
+2023-04-08 11:00:27.183 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:00:27.185 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/323948/
+2023-04-08 11:00:27.531 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:00:27.534 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/330081/
+2023-04-08 11:00:27.588 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:00:27.589 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/303987/
+2023-04-08 11:00:31.991 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:00:33.150 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:00:33.152 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/319908/
+2023-04-08 11:00:46.194 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:00:52.194 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:00:58.195 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:01:04.195 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:01:10.196 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:01:16.194 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:01:22.194 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:01:28.195 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:01:55.410 | SUCCESS  | __main__:download_imgs:422 - downloaded 82 img ......
+2023-04-08 11:01:56.259 | INFO     | __main__:uni_tag:493 - 数据库tag表共有8312条tag
+2023-04-08 11:01:57.078 | INFO     | __main__:uni_tag:497 - 排除370个重复tag
+2023-04-08 11:01:57.085 | SUCCESS  | __main__:<module>:609 - 保存30个tag到数据库
+2023-04-08 11:01:57.293 | SUCCESS  | __main__:<module>:620 - added 249 img data into testdb....
+2023-04-08 11:01:57.941 | INFO     | __main__:<module>:542 - 数据库共有34945条图像数据
+2023-04-08 11:01:57.945 | INFO     | __main__:<module>:568 - 排除18个重复pid....
+2023-04-08 11:01:57.947 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:01:58.941 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:01:58.943 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/321026/
+2023-04-08 11:01:58.963 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:01:58.965 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/347160/
+2023-04-08 11:01:59.505 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:01:59.506 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/339474/
+2023-04-08 11:02:03.974 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:02:09.987 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:02:15.995 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:02:17.078 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:02:17.080 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/315595/
+2023-04-08 11:02:22.002 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:02:23.297 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:02:23.299 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/323314/
+2023-04-08 11:02:23.387 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:02:23.389 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/315115/
+2023-04-08 11:02:23.528 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:02:23.531 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/317664/
+2023-04-08 11:02:24.589 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:02:24.593 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/337640/
+2023-04-08 11:02:28.009 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:02:29.607 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:02:29.608 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/304397/
+2023-04-08 11:02:34.020 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:02:35.044 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:02:35.046 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/302399/
+2023-04-08 11:02:35.627 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:02:35.629 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/311588/
+2023-04-08 11:02:40.037 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:02:46.046 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:02:47.652 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:02:47.654 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/338808/
+2023-04-08 11:02:48.602 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:02:48.606 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/328111/
+2023-04-08 11:02:52.074 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:02:53.066 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:02:53.067 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/300503/
+2023-04-08 11:03:04.888 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:03:10.898 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:03:16.920 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:03:22.898 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:03:28.899 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:03:34.897 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:03:40.903 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:03:46.901 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:10:34.297 | WARNING  | __main__:save_img:283 - relink dowmload img 1次.....
+2023-04-08 11:10:38.591 | SUCCESS  | __main__:download_imgs:422 - downloaded 88 img ......
+2023-04-08 11:10:59.085 | INFO     | __main__:uni_tag:493 - 数据库tag表共有8363条tag
+2023-04-08 11:11:00.178 | INFO     | __main__:uni_tag:497 - 排除416个重复tag
+2023-04-08 11:11:00.180 | SUCCESS  | __main__:<module>:609 - 保存51个tag到数据库
+2023-04-08 11:11:00.510 | SUCCESS  | __main__:<module>:620 - added 337 img data into testdb....
+2023-04-08 11:11:01.505 | INFO     | __main__:<module>:542 - 数据库共有35282条图像数据
+2023-04-08 11:11:01.522 | INFO     | __main__:<module>:568 - 排除20个重复pid....
+2023-04-08 11:11:01.525 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:11:02.614 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:11:02.616 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/305183/
+2023-04-08 11:11:03.398 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:11:03.400 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/334900/
+2023-04-08 11:11:03.676 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:11:03.678 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/354349/
+2023-04-08 11:11:07.540 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:11:09.276 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:11:09.277 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/311378/
+2023-04-08 11:11:13.547 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:11:14.745 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:11:14.747 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/306307/
+2023-04-08 11:11:15.191 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:11:15.193 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/305802/
+2023-04-08 11:11:15.204 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:11:15.206 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/300156/
+2023-04-08 11:11:15.287 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:11:15.289 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/303245/
+2023-04-08 11:11:19.562 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:11:20.668 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:11:20.669 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/310429/
+2023-04-08 11:11:20.961 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:11:20.963 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/323218/
+2023-04-08 11:11:21.297 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:11:21.299 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/304312/
+2023-04-08 11:11:25.575 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:11:26.821 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:11:26.822 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/331976/
+2023-04-08 11:11:26.874 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:11:26.877 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/300282/
+2023-04-08 11:11:27.158 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:11:27.158 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/350920/
+2023-04-08 11:11:31.583 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:11:37.618 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:11:43.632 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:11:44.819 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:11:44.819 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/301373/
+2023-04-08 11:11:49.642 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:11:51.288 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:11:51.288 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/341942/
+2023-04-08 11:11:51.420 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:11:51.420 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/304047/
+2023-04-08 11:11:55.657 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:11:56.713 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:11:56.714 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/302545/
+2023-04-08 11:11:57.040 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:11:57.042 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/316914/
+2023-04-08 11:12:05.922 | ERROR    | __mp_main__:parse:240 - 未知 parse error 1....
+2023-04-08 11:12:05.922 | ERROR    | __mp_main__:parse:241 - https://konachan.com/images/stubs/explicit.png
+2023-04-08 11:12:05.930 | ERROR    | __mp_main__:parse:242 - https://konachan.com/post/show/340179/
+2023-04-08 11:12:07.588 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:12:13.572 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:12:19.569 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:12:25.569 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:12:31.575 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:12:37.584 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:12:43.574 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:12:49.572 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:13:07.583 | SUCCESS  | __main__:download_imgs:422 - downloaded 81 img ......
+2023-04-08 11:13:08.655 | INFO     | __main__:uni_tag:493 - 数据库tag表共有8399条tag
+2023-04-08 11:13:09.631 | INFO     | __main__:uni_tag:497 - 排除377个重复tag
+2023-04-08 11:13:09.632 | SUCCESS  | __main__:<module>:609 - 保存36个tag到数据库
+2023-04-08 11:13:09.956 | SUCCESS  | __main__:<module>:620 - added 418 img data into testdb....
+2023-04-08 11:13:10.796 | INFO     | __main__:<module>:542 - 数据库共有35700条图像数据
+2023-04-08 11:13:10.801 | INFO     | __main__:<module>:568 - 排除14个重复pid....
+2023-04-08 11:13:10.803 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:13:12.112 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:13:12.115 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/337442/
+2023-04-08 11:13:12.417 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:13:12.419 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/300569/
+2023-04-08 11:13:16.829 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:13:17.756 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:13:17.758 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/307279/
+2023-04-08 11:13:17.920 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:13:17.921 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/331344/
+2023-04-08 11:13:17.976 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:13:17.977 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/303148/
+2023-04-08 11:13:18.439 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:13:18.441 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/304733/
+2023-04-08 11:13:22.830 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:13:24.045 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:13:24.046 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/312969/
+2023-04-08 11:13:24.162 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:13:24.163 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/339072/
+2023-04-08 11:13:24.443 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:13:24.445 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/307331/
+2023-04-08 11:13:28.831 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:13:29.829 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:13:29.831 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/352421/
+2023-04-08 11:13:29.838 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:13:29.840 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/328352/
+2023-04-08 11:13:30.240 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:13:30.241 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/319163/
+2023-04-08 11:13:34.859 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:13:35.909 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:13:35.910 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/300239/
+2023-04-08 11:13:40.865 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:13:41.842 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:13:41.844 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/329463/
+2023-04-08 11:13:41.928 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:13:41.930 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/337704/
+2023-04-08 11:13:46.883 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:13:48.000 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:13:48.002 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/352052/
+2023-04-08 11:13:48.097 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:13:48.098 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/312156/
+2023-04-08 11:13:52.909 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:13:54.120 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:13:54.123 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/318302/
+2023-04-08 11:13:54.132 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:13:54.134 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/329070/
+2023-04-08 11:13:58.907 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:14:00.004 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:14:00.006 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/333742/
+2023-04-08 11:14:00.169 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:14:00.170 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/331181/
+2023-04-08 11:14:04.914 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:14:18.491 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:14:24.494 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:14:30.492 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:14:36.503 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:14:42.491 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:14:48.494 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:14:54.491 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:15:00.492 | INFO     | __main__:download_imgs:408 - 等待6秒继续并发下载图片
+2023-04-08 11:22:35.801 | SUCCESS  | __main__:download_imgs:422 - downloaded 85 img ......
+2023-04-08 11:22:56.078 | INFO     | __main__:uni_tag:493 - 数据库tag表共有8460条tag
+2023-04-08 11:22:57.170 | INFO     | __main__:uni_tag:497 - 排除394个重复tag
+2023-04-08 11:22:57.177 | SUCCESS  | __main__:<module>:609 - 保存61个tag到数据库
+2023-04-08 11:22:57.463 | SUCCESS  | __main__:<module>:620 - added 503 img data into testdb....
+2023-04-08 11:22:58.196 | INFO     | __main__:<module>:542 - 数据库共有36203条图像数据
+2023-04-08 11:22:58.201 | INFO     | __main__:<module>:568 - 排除28个重复pid....
+2023-04-08 11:22:58.203 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:22:59.318 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:22:59.319 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/309302/
+2023-04-08 11:23:04.201 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:23:05.769 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:23:05.771 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/309333/
+2023-04-08 11:23:10.210 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:23:11.364 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:23:11.365 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/321684/
+2023-04-08 11:23:11.756 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:23:11.758 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/310470/
+2023-04-08 11:23:16.218 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:23:17.162 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:23:17.163 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/323785/
+2023-04-08 11:23:17.273 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:23:17.275 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/311531/
+2023-04-08 11:23:17.356 | ERROR    | __main__:get_source:133 - This post was deleted.
+2023-04-08 11:23:17.358 | WARNING  | __main__:get_source:134 - https://konachan.com/post/show/320731/
+2023-04-08 11:23:22.214 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 11:23:23.982 | ERROR    | __main__:get_source:124 - This post does not exist
+2023-04-08 11:23:23.984 | WARNING  | __main__:get_source:125 - https://konachan.com/post/show/312569/
+2023-04-08 11:23:28.228 | INFO     | __main__:process_urls:363 - 等待6秒继续并发
+2023-04-08 12:32:31.166 | SUCCESS  | __main__:get_cookie:68 - get cookie success..
+2023-04-08 12:32:43.506 | INFO     | __main__:<module>:441 - 连接数据库中...........
+2023-04-08 12:32:43.607 | SUCCESS  | __main__:<module>:465 - link dbas 准备导入数据.....
+2023-04-08 12:32:43.621 | SUCCESS  | __main__:<module>:532 - 单次下载数量:120
+2023-04-08 12:32:43.622 | SUCCESS  | __main__:<module>:533 - 等待时间:6 并发数:10
+2023-04-08 12:32:43.623 | SUCCESS  | __main__:<module>:534 - 下载图片路径:F:\database_learn\k_spider\pictures
+2023-04-08 12:32:45.129 | INFO     | __main__:<module>:547 - 数据库共有36203条图像数据
+2023-04-08 12:32:45.136 | INFO     | __main__:<module>:573 - 排除15个重复pid....
+2023-04-08 12:33:40.816 | INFO     | __main__:process_urls:367 - 等待6秒继续并发
+2023-04-08 12:33:42.647 | ERROR    | __main__:get_source:134 - This post was deleted.
+2023-04-08 12:33:42.649 | WARNING  | __main__:get_source:135 - https://konachan.com/post/show/311350/
+2023-04-08 12:33:46.822 | INFO     | __main__:process_urls:367 - 等待6秒继续并发
+2023-04-08 12:33:47.945 | ERROR    | __main__:get_source:134 - This post was deleted.
+2023-04-08 12:33:47.946 | WARNING  | __main__:get_source:135 - https://konachan.com/post/show/331321/
+2023-04-08 12:33:52.842 | INFO     | __main__:process_urls:367 - 等待6秒继续并发
+2023-04-08 12:33:53.744 | ERROR    | __main__:get_source:134 - This post was deleted.
+2023-04-08 12:33:53.746 | WARNING  | __main__:get_source:135 - https://konachan.com/post/show/354437/
+2023-04-08 12:33:53.878 | ERROR    | __main__:get_source:134 - This post was deleted.
+2023-04-08 12:33:53.880 | WARNING  | __main__:get_source:135 - https://konachan.com/post/show/323214/
+2023-04-08 12:33:58.858 | INFO     | __main__:process_urls:367 - 等待6秒继续并发
+2023-04-08 12:34:00.063 | ERROR    | __main__:get_source:134 - This post was deleted.
+2023-04-08 12:34:00.064 | WARNING  | __main__:get_source:135 - https://konachan.com/post/show/306837/
+2023-04-08 12:34:04.859 | INFO     | __main__:process_urls:367 - 等待6秒继续并发
+2023-04-08 12:34:05.937 | ERROR    | __main__:get_source:134 - This post was deleted.
+2023-04-08 12:34:05.939 | WARNING  | __main__:get_source:135 - https://konachan.com/post/show/307422/
+2023-04-08 12:34:07.318 | ERROR    | __main__:get_source:134 - This post was deleted.
+2023-04-08 12:34:07.321 | WARNING  | __main__:get_source:135 - https://konachan.com/post/show/317655/
+2023-04-08 12:34:10.858 | INFO     | __main__:process_urls:367 - 等待6秒继续并发
+2023-04-08 12:34:13.963 | ERROR    | __main__:get_source:134 - This post was deleted.
+2023-04-08 12:34:13.967 | WARNING  | __main__:get_source:135 - https://konachan.com/post/show/302327/
+2023-04-08 12:34:16.883 | INFO     | __main__:process_urls:367 - 等待6秒继续并发
+2023-04-08 12:34:18.140 | ERROR    | __main__:get_source:134 - This post was deleted.
+2023-04-08 12:34:18.142 | WARNING  | __main__:get_source:135 - https://konachan.com/post/show/311631/
+2023-04-08 12:34:18.470 | ERROR    | __main__:get_source:134 - This post was deleted.
+2023-04-08 12:34:18.472 | WARNING  | __main__:get_source:135 - https://konachan.com/post/show/349001/
+2023-04-08 12:34:22.904 | INFO     | __main__:process_urls:367 - 等待6秒继续并发
+2023-04-08 12:34:24.866 | ERROR    | __main__:get_source:125 - This post does not exist
+2023-04-08 12:34:24.868 | WARNING  | __main__:get_source:126 - https://konachan.com/post/show/345424/
+2023-04-08 12:34:28.924 | INFO     | __main__:process_urls:367 - 等待6秒继续并发
+2023-04-08 12:34:30.028 | ERROR    | __main__:get_source:134 - This post was deleted.
+2023-04-08 12:34:30.030 | WARNING  | __main__:get_source:135 - https://konachan.com/post/show/323499/
+2023-04-08 12:34:30.240 | ERROR    | __main__:get_source:134 - This post was deleted.
+2023-04-08 12:34:30.242 | WARNING  | __main__:get_source:135 - https://konachan.com/post/show/327074/
+2023-04-08 12:34:34.924 | INFO     | __main__:process_urls:367 - 等待6秒继续并发
+2023-04-08 12:34:36.503 | ERROR    | __main__:get_source:134 - This post was deleted.
+2023-04-08 12:34:36.505 | WARNING  | __main__:get_source:135 - https://konachan.com/post/show/342454/
+2023-04-08 12:34:36.812 | ERROR    | __main__:get_source:134 - This post was deleted.
+2023-04-08 12:34:36.814 | WARNING  | __main__:get_source:135 - https://konachan.com/post/show/310228/
+2023-04-08 12:34:37.158 | ERROR    | __main__:get_source:134 - This post was deleted.
+2023-04-08 12:34:37.161 | WARNING  | __main__:get_source:135 - https://konachan.com/post/show/315824/
+2023-04-08 12:34:41.086 | ERROR    | __main__:<module>:580 - asyncio.tasks.gather() argument after * must be an iterable, not Queue
+2023-04-08 12:40:22.102 | SUCCESS  | __main__:get_cookie:68 - get cookie success..
+2023-04-08 12:40:34.409 | INFO     | __main__:<module>:441 - 连接数据库中...........
+2023-04-08 12:40:34.507 | SUCCESS  | __main__:<module>:465 - link dbas 准备导入数据.....
+2023-04-08 12:40:34.520 | SUCCESS  | __main__:<module>:532 - 单次下载数量:20
+2023-04-08 12:40:34.521 | SUCCESS  | __main__:<module>:533 - 等待时间:6 并发数:10
+2023-04-08 12:40:34.522 | SUCCESS  | __main__:<module>:534 - 下载图片路径:F:\database_learn\k_spider\pictures
+2023-04-08 12:40:35.477 | INFO     | __main__:<module>:547 - 数据库共有36203条图像数据
+2023-04-08 12:40:35.481 | INFO     | __main__:<module>:573 - 排除2个重复pid....
+2023-04-08 12:40:41.448 | INFO     | __main__:process_urls:367 - 等待6秒继续并发
+2023-04-08 12:40:42.987 | ERROR    | __main__:get_source:125 - This post does not exist
+2023-04-08 12:40:42.989 | WARNING  | __main__:get_source:126 - https://konachan.com/post/show/344001/
+2023-04-08 12:40:43.108 | ERROR    | __main__:get_source:134 - This post was deleted.
+2023-04-08 12:40:43.110 | WARNING  | __main__:get_source:135 - https://konachan.com/post/show/312972/
+2023-04-08 12:40:47.742 | ERROR    | __main__:<module>:580 - max_workers must be greater than 0
+2023-04-08 12:45:47.081 | SUCCESS  | __main__:get_cookie:68 - get cookie success..
+2023-04-08 12:45:59.386 | INFO     | __main__:<module>:439 - 连接数据库中...........
+2023-04-08 12:45:59.480 | SUCCESS  | __main__:<module>:463 - link dbas 准备导入数据.....
+2023-04-08 12:45:59.501 | SUCCESS  | __main__:<module>:530 - 单次下载数量:20
+2023-04-08 12:45:59.502 | SUCCESS  | __main__:<module>:531 - 等待时间:6 并发数:10
+2023-04-08 12:45:59.503 | SUCCESS  | __main__:<module>:532 - 下载图片路径:F:\database_learn\k_spider\pictures
+2023-04-08 12:46:00.648 | INFO     | __main__:<module>:545 - 数据库共有36203条图像数据
+2023-04-08 12:46:00.656 | INFO     | __main__:<module>:571 - 排除2个重复pid....
+2023-04-08 12:46:06.451 | INFO     | __main__:process_urls:366 - 等待6秒继续并发
+2023-04-08 12:46:08.006 | ERROR    | __main__:get_source:125 - This post does not exist
+2023-04-08 12:46:08.009 | WARNING  | __main__:get_source:126 - https://konachan.com/post/show/321005/
+2023-04-08 12:46:35.293 | INFO     | __main__:download_imgs:411 - 等待6秒继续并发下载图片
+2023-04-08 12:47:08.632 | SUCCESS  | __main__:download_imgs:425 - downloaded 17 img ......
+2023-04-08 12:47:09.310 | INFO     | __main__:uni_tag:496 - 数据库tag表共有8465条tag
+2023-04-08 12:47:10.587 | INFO     | __main__:uni_tag:500 - 排除147个重复tag
+2023-04-08 12:47:10.595 | SUCCESS  | __main__:<module>:612 - 保存5个tag到数据库
+2023-04-08 12:47:10.793 | SUCCESS  | __main__:<module>:623 - added 17 img data into testdb....
+2023-04-08 12:47:11.461 | INFO     | __main__:<module>:545 - 数据库共有36220条图像数据
+2023-04-08 12:47:11.473 | INFO     | __main__:<module>:571 - 排除4个重复pid....
+2023-04-08 12:47:11.475 | INFO     | __main__:process_urls:366 - 等待6秒继续并发
+2023-04-08 12:47:12.601 | ERROR    | __main__:get_source:125 - This post does not exist
+2023-04-08 12:47:12.604 | WARNING  | __main__:get_source:126 - https://konachan.com/post/show/329595/
+2023-04-08 12:47:12.960 | ERROR    | __main__:get_source:125 - This post does not exist
+2023-04-08 12:47:12.961 | WARNING  | __main__:get_source:126 - https://konachan.com/post/show/305386/
+2023-04-08 12:47:18.691 | ERROR    | __main__:get_source:134 - This post was deleted.
+2023-04-08 12:47:18.694 | WARNING  | __main__:get_source:135 - https://konachan.com/post/show/305306/
