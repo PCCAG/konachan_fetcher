@@ -14,10 +14,10 @@
 ##### IMG_PATH=C:\Users\S\Desktop\database_learn\k_spider\pictures
 
 #### MYSQL 连接信息
-mysql_user=S
-mysql_password=xxxxx
-mysql_host=xx.xx.xx.xx
-mysql_database=kimgdb
+mysql_user=S  \
+mysql_password=xxxxx  \
+mysql_host=xx.xx.xx.xx  \
+mysql_database=kimgdb  \
 **保存的表**
 mysql_img_table=kimg 
 mysql_tags_table=tags
