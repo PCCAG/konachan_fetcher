@@ -38,13 +38,14 @@ wait_time=3
 #### 下载源码,图片的最大并发数 不能太大
 sem_times=10
 #### 下载范围[low,upper]
-low=300000
-upper=350000
+low=300000 \
+upper=350000 
 #### 指定模式 a(随机范围下载模式) 或者 b(指定pid_kist列表下载模式) 
-pid_list=[331516]
+pid_list=[331516] \
 mode=b
 
 ## 注
+- - -
 ##### 利用clash api 来做的代理访问 需安装clash且已有配置 或者在 cellfunction_.py自己修改代理
 ##### 没有数据库就用模式b或者自己看着来改
 ##### 利用selenium 无头模式来获取的cookie
