@@ -1,4 +1,5 @@
-#### 这个程序完成如下功能 启动 main.py
+### 使用 启动 main.py
+#### 这个爬虫程序完成如下功能
 ##### 爬k站图片 仅当个人数据处理练习,学习用用
 ##### 保存图片到本地 保存运行日志
 ##### 保存图片数据到数据库两个表中 mysql或者其他关系数据库 
@@ -24,7 +25,7 @@ mysql_user=S  \
 mysql_password=xxxxx  \
 mysql_host=xx.xx.xx.xx  \
 mysql_database=kimgdb  \
-**保存的表**  \  
+**保存的表**  
 mysql_img_table=kimg \ 
 mysql_tags_table=tags \
 
@@ -47,3 +48,4 @@ mode=b
 ##### 利用clash api 来做的代理访问 需安装clash且已有配置 或者在 cellfunction_.py自己修改代理
 ##### 没有数据库就用模式b或者自己看着来改
 ##### 利用selenium 无头模式来获取的cookie
+##### 看报错安装相应的包
