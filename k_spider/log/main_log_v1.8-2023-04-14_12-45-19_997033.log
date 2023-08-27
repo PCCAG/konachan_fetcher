@@ -1,0 +1,36 @@
+2023-04-14 12:45:23.183 | ERROR    | cellfunctions_:get_headers:56 - get cookie error..
+2023-04-14 12:45:27.262 | ERROR    | __main__:<module>:35 - An error has been caught in function '<module>', process 'MainProcess' (8764), thread 'MainThread' (13028):
+Traceback (most recent call last):
+
+> File "f:\k_grab\main_v1.8.py", line 35, in <module>
+    headers=get_headers()
+            └ <function get_headers at 0x00000189654EF7F0>
+
+  File "f:\k_grab\cellfunctions_.py", line 63, in get_headers
+    for pin, i in enumerate(cookies)
+
+UnboundLocalError: local variable 'cookies' referenced before assignment
+2023-04-14 12:45:35.416 | SUCCESS  | __main__:mode_a:270 - 单次下载数量:5
+2023-04-14 12:45:35.418 | SUCCESS  | __main__:mode_a:271 - 等待时间:1 并发数:12
+2023-04-14 12:45:35.419 | SUCCESS  | __main__:mode_a:272 - 下载图片路径:F:\database_learn\k_spider\pictures7
+2023-04-14 12:45:35.419 | INFO     | __main__:link_db:140 - 连接数据库中...........
+2023-04-14 12:45:35.525 | SUCCESS  | __main__:link_db:160 - 图像数据表: kimg
+2023-04-14 12:45:35.526 | SUCCESS  | __main__:link_db:161 - tag数据表: tags
+2023-04-14 12:45:35.527 | SUCCESS  | __main__:link_db:163 - link dbas 准备导入数据.....
+2023-04-14 12:45:35.729 | INFO     | __main__:mode_a:287 - 数据库共有28807条图像数据
+2023-04-14 12:45:35.734 | INFO     | __main__:mode_a:314 - 排除1个重复pid....
+2023-04-14 12:45:41.792 | ERROR    | cellfunctions_:get_source:116 - nothing!
+2023-04-14 12:45:41.793 | ERROR    | cellfunctions_:get_source:117 - https://konachan.com/post/show/353698/
+2023-04-14 12:45:41.886 | ERROR    | cellfunctions_:get_source:116 - nothing!
+2023-04-14 12:45:41.888 | ERROR    | cellfunctions_:get_source:117 - https://konachan.com/post/show/342248/
+2023-04-14 12:45:42.861 | ERROR    | cellfunctions_:get_source:116 - nothing!
+2023-04-14 12:45:42.861 | ERROR    | cellfunctions_:get_source:117 - https://konachan.com/post/show/345928/
+2023-04-14 12:45:45.892 | ERROR    | cellfunctions_:get_source:116 - nothing!
+2023-04-14 12:45:45.893 | ERROR    | cellfunctions_:get_source:117 - https://konachan.com/post/show/344851/
+2023-04-14 12:45:45.899 | WARNING  | __main__:save_img_and_todb:192 - 没有得到数据
+2023-04-14 12:45:45.901 | SUCCESS  | __main__:mode_a:318 - added 0 img data....
+2023-04-14 12:45:45.902 | INFO     | __main__:link_db:140 - 连接数据库中...........
+2023-04-14 12:45:45.907 | SUCCESS  | __main__:link_db:160 - 图像数据表: kimg
+2023-04-14 12:45:45.907 | SUCCESS  | __main__:link_db:161 - tag数据表: tags
+2023-04-14 12:45:45.908 | SUCCESS  | __main__:link_db:163 - link dbas 准备导入数据.....
+2023-04-14 12:45:46.096 | INFO     | __main__:mode_a:287 - 数据库共有28807条图像数据

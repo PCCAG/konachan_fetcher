@@ -1,0 +1,283 @@
+2023-04-14 16:30:54.118 | SUCCESS  | cellfunctions_:get_headers:54 - get cookie success..
+2023-04-14 16:31:06.348 | INFO     | __main__:link_db:139 - 连接数据库中...........
+2023-04-14 16:31:06.455 | SUCCESS  | __main__:link_db:159 - 图像数据表: kimg
+2023-04-14 16:31:06.458 | SUCCESS  | __main__:link_db:160 - tag数据表: tags
+2023-04-14 16:31:06.459 | SUCCESS  | __main__:link_db:162 - link dbas 准备导入数据.....
+2023-04-14 16:31:07.822 | SUCCESS  | cellfunctions_:get_source:109 - 获取源码成功
+2023-04-14 16:31:08.008 | SUCCESS  | cellfunctions_:get_source:109 - 获取源码成功
+2023-04-14 16:31:08.058 | SUCCESS  | cellfunctions_:get_source:109 - 获取源码成功
+2023-04-14 16:31:08.352 | SUCCESS  | cellfunctions_:get_source:109 - 获取源码成功
+2023-04-14 16:31:08.788 | SUCCESS  | cellfunctions_:get_source:109 - 获取源码成功
+2023-04-14 16:31:11.683 | SUCCESS  | cellfunctions_:get_source:109 - 获取源码成功
+2023-04-14 16:31:17.304 | SUCCESS  | cellfunctions_:save_img:189 - 下载图片成功
+2023-04-14 16:31:18.351 | SUCCESS  | cellfunctions_:save_img:189 - 下载图片成功
+2023-04-14 16:31:22.258 | SUCCESS  | cellfunctions_:save_img:189 - 下载图片成功
+2023-04-14 16:31:22.915 | SUCCESS  | cellfunctions_:save_img:189 - 下载图片成功
+2023-04-14 16:31:26.908 | SUCCESS  | cellfunctions_:save_img:189 - 下载图片成功
+2023-04-14 16:31:35.772 | SUCCESS  | cellfunctions_:save_img:189 - 下载图片成功
+2023-04-14 16:31:35.774 | SUCCESS  | __main__:download_imgs:125 - downloaded 6 img ......
+2023-04-14 16:31:35.776 | SUCCESS  | __main__:save_img_and_todb:217 - imported: F:\database_learn\k_spider\pictures7\343131.jpg
+2023-04-14 16:31:35.778 | SUCCESS  | __main__:save_img_and_todb:217 - imported: F:\database_learn\k_spider\pictures7\344094.jpg
+2023-04-14 16:31:35.781 | SUCCESS  | __main__:save_img_and_todb:217 - imported: F:\database_learn\k_spider\pictures7\344095.jpg
+2023-04-14 16:31:35.783 | SUCCESS  | __main__:save_img_and_todb:217 - imported: F:\database_learn\k_spider\pictures7\344096.jpg
+2023-04-14 16:31:35.785 | SUCCESS  | __main__:save_img_and_todb:217 - imported: F:\database_learn\k_spider\pictures7\344097.jpg
+2023-04-14 16:31:35.787 | SUCCESS  | __main__:save_img_and_todb:217 - imported: F:\database_learn\k_spider\pictures7\344098.jpg
+2023-04-14 16:31:35.827 | ERROR    | __main__:mode_b:335 - An error has been caught in function 'mode_b', process 'MainProcess' (16104), thread 'MainThread' (9364):
+Traceback (most recent call last):
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1880, in _execute_context
+    self.dialect.do_executemany(
+    │    │       └ <function MySQLDialect_mysqldb.do_executemany at 0x0000024119E2AA70>
+    │    └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x0000024119CFE9E0>
+    └ <sqlalchemy.engine.base.Connection object at 0x0000024119CFEB00>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\dialects\mysql\mysqldb.py", line 193, in do_executemany
+    rowcount = cursor.executemany(statement, parameters)
+               │      │           │          └ ({'pid': 343131, 'tags': 'animal animal_ears barefoot bikini breasts cherry_blossoms flowers granblue_fantasy gray_hair mouse...
+               │      │           └ 'INSERT INTO kimg (pid, tags, link, path, status, time) VALUES (%(pid)s, %(tags)s, %(link)s, %(path)s, %(status)s, %(time)s)'
+               │      └ <function Cursor.executemany at 0x0000024119EF6DD0>
+               └ <pymysql.cursors.Cursor object at 0x000002411A17FF40>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 173, in executemany
+    return self._do_execute_many(
+           │    └ <function Cursor._do_execute_many at 0x0000024119EF6E60>
+           └ <pymysql.cursors.Cursor object at 0x000002411A17FF40>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 211, in _do_execute_many
+    rows += self.execute(sql + postfix)
+    │       │    │       │     └ b''
+    │       │    │       └ bytearray(b"INSERT INTO kimg (pid, tags, link, path, status, time) VALUES (343131, \'animal animal_ears barefoot bikini breas...
+    │       │    └ <function Cursor.execute at 0x0000024119EF6D40>
+    │       └ <pymysql.cursors.Cursor object at 0x000002411A17FF40>
+    └ 0
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+             │    │      └ bytearray(b"INSERT INTO kimg (pid, tags, link, path, status, time) VALUES (343131, \'animal animal_ears barefoot bikini breas...
+             │    └ <function Cursor._query at 0x0000024119EF71C0>
+             └ <pymysql.cursors.Cursor object at 0x000002411A17FF40>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+    │    │     └ bytearray(b"INSERT INTO kimg (pid, tags, link, path, status, time) VALUES (343131, \'animal animal_ears barefoot bikini breas...
+    │    └ <function Connection.query at 0x0000024119FD2680>
+    └ <pymysql.connections.Connection object at 0x0000024119C4C9A0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+    │    │                │    │                             └ False
+    │    │                │    └ <function Connection._read_query_result at 0x0000024119FD2CB0>
+    │    │                └ <pymysql.connections.Connection object at 0x0000024119C4C9A0>
+    │    └ 1
+    └ <pymysql.connections.Connection object at 0x0000024119C4C9A0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+    │      └ <function MySQLResult.read at 0x0000024119FD3490>
+    └ <pymysql.connections.MySQLResult object at 0x000002411A17DBA0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+                   │    └ None
+                   └ <pymysql.connections.MySQLResult object at 0x000002411A17DBA0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+    │      └ <function MysqlPacket.raise_for_error at 0x0000024119FD0E50>
+    └ <pymysql.protocol.MysqlPacket object at 0x000002411A17C040>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    │   │                     │    └ <member '_data' of 'MysqlPacket' objects>
+    │   │                     └ <pymysql.protocol.MysqlPacket object at 0x000002411A17C040>
+    │   └ <function raise_mysql_exception at 0x0000024119D468C0>
+    └ <module 'pymysql.err' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pymysql\\err.py'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+          │          │      └ "Duplicate entry '344097' for key 'kimg.PRIMARY'"
+          │          └ 1062
+          └ <class 'pymysql.err.IntegrityError'>
+
+pymysql.err.IntegrityError: (1062, "Duplicate entry '344097' for key 'kimg.PRIMARY'")
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+  File "f:\k_grab\main_v1.8.py", line 342, in <module>
+    mode_b()
+    └ <function mode_b at 0x0000024119CA2C20>
+
+> File "f:\k_grab\main_v1.8.py", line 335, in mode_b
+    save_img_and_todb(pids,int(os.getenv("wait_time")),int(os.getenv("sem_times")),engine,kimg_table,tags_table)
+    │                 │        │  │                        │  │                    │      │          └ 'tags'
+    │                 │        │  │                        │  │                    │      └ 'kimg'
+    │                 │        │  │                        │  │                    └ <sqlalchemy.engine.base.Connection object at 0x0000024119CFEB00>
+    │                 │        │  │                        │  └ <function getenv at 0x000002417D120310>
+    │                 │        │  │                        └ <module 'os' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\os.py'>
+    │                 │        │  └ <function getenv at 0x000002417D120310>
+    │                 │        └ <module 'os' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\os.py'>
+    │                 └ [343131, 344094, 344095, 344096, 344097, 344098]
+    └ <function save_img_and_todb at 0x0000024119CA2200>
+
+  File "f:\k_grab\main_v1.8.py", line 238, in save_img_and_todb
+    df.to_sql(kimg_table,engine,if_exists="append",index=False)
+    │  │      │          └ <sqlalchemy.engine.base.Connection object at 0x0000024119CFEB00>
+    │  │      └ 'kimg'
+    │  └ <function NDFrame.to_sql at 0x0000024117731000>
+    └            pid                                               tags  ... status                 time
+      343131  343131  animal ani...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\generic.py", line 2987, in to_sql
+    return sql.to_sql(
+           │   └ <function to_sql at 0x0000024117AD28C0>
+           └ <module 'pandas.io.sql' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pandas\\io\\sql....
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\sql.py", line 695, in to_sql
+    return pandas_sql.to_sql(
+           │          └ <function SQLDatabase.to_sql at 0x0000024117AD3D00>
+           └ <pandas.io.sql.SQLDatabase object at 0x0000024119D07280>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\sql.py", line 1738, in to_sql
+    total_inserted = sql_engine.insert_records(
+                     │          └ <function SQLAlchemyEngine.insert_records at 0x0000024117AD36D0>
+                     └ <pandas.io.sql.SQLAlchemyEngine object at 0x000002411A17C520>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\sql.py", line 1335, in insert_records
+    raise err
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\sql.py", line 1325, in insert_records
+    return table.insert(chunksize=chunksize, method=method)
+           │     │                │                 └ None
+           │     │                └ None
+           │     └ <function SQLTable.insert at 0x0000024117AD2F80>
+           └ <pandas.io.sql.SQLTable object at 0x000002411A17FF70>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\sql.py", line 946, in insert
+    num_inserted = exec_insert(conn, keys, chunk_iter)
+                   │           │     │     └ <zip object at 0x000002411A151D80>
+                   │           │     └ ['pid', 'tags', 'link', 'path', 'status', 'time']
+                   │           └ <sqlalchemy.engine.base.Connection object at 0x0000024119CFEB00>
+                   └ <bound method SQLTable._execute_insert of <pandas.io.sql.SQLTable object at 0x000002411A17FF70>>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\io\sql.py", line 853, in _execute_insert
+    result = conn.execute(self.table.insert(), data)
+             │    │       │    │     │         └ [{'pid': 343131, 'tags': 'animal animal_ears barefoot bikini breasts cherry_blossoms flowers granblue_fantasy gray_hair mouse...
+             │    │       │    │     └ <function TableClause.insert at 0x000002417FB2A320>
+             │    │       │    └ Table('kimg', MetaData(), Column('pid', BigInteger(), table=<kimg>), Column('tags', Text(), table=<kimg>), Column('link', Tex...
+             │    │       └ <pandas.io.sql.SQLTable object at 0x000002411A17FF70>
+             │    └ <function Connection.execute at 0x000002417FC05990>
+             └ <sqlalchemy.engine.base.Connection object at 0x0000024119CFEB00>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1380, in execute
+    return meth(self, multiparams, params, _EMPTY_EXECUTION_OPTS)
+           │    │     │            │       └ immutabledict({})
+           │    │     │            └ {}
+           │    │     └ ([{'pid': 343131, 'tags': 'animal animal_ears barefoot bikini breasts cherry_blossoms flowers granblue_fantasy gray_hair mous...
+           │    └ <sqlalchemy.engine.base.Connection object at 0x0000024119CFEB00>
+           └ <bound method ClauseElement._execute_on_connection of <sqlalchemy.sql.dml.Insert object at 0x000002411A17C4F0>>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\elements.py", line 333, in _execute_on_connection
+    return connection._execute_clauseelement(
+           │          └ <function Connection._execute_clauseelement at 0x000002417FC05C60>
+           └ <sqlalchemy.engine.base.Connection object at 0x0000024119CFEB00>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1572, in _execute_clauseelement
+    ret = self._execute_context(
+          │    └ <function Connection._execute_context at 0x000002417FC05F30>
+          └ <sqlalchemy.engine.base.Connection object at 0x0000024119CFEB00>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1943, in _execute_context
+    self._handle_dbapi_exception(
+    │    └ <function Connection._handle_dbapi_exception at 0x000002417FC060E0>
+    └ <sqlalchemy.engine.base.Connection object at 0x0000024119CFEB00>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2124, in _handle_dbapi_exception
+    util.raise_(
+    │    └ <function raise_ at 0x000002417F3FB010>
+    └ <module 'sqlalchemy.util' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalchemy\\ut...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1880, in _execute_context
+    self.dialect.do_executemany(
+    │    │       └ <function MySQLDialect_mysqldb.do_executemany at 0x0000024119E2AA70>
+    │    └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x0000024119CFE9E0>
+    └ <sqlalchemy.engine.base.Connection object at 0x0000024119CFEB00>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\dialects\mysql\mysqldb.py", line 193, in do_executemany
+    rowcount = cursor.executemany(statement, parameters)
+               │      │           │          └ ({'pid': 343131, 'tags': 'animal animal_ears barefoot bikini breasts cherry_blossoms flowers granblue_fantasy gray_hair mouse...
+               │      │           └ 'INSERT INTO kimg (pid, tags, link, path, status, time) VALUES (%(pid)s, %(tags)s, %(link)s, %(path)s, %(status)s, %(time)s)'
+               │      └ <function Cursor.executemany at 0x0000024119EF6DD0>
+               └ <pymysql.cursors.Cursor object at 0x000002411A17FF40>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 173, in executemany
+    return self._do_execute_many(
+           │    └ <function Cursor._do_execute_many at 0x0000024119EF6E60>
+           └ <pymysql.cursors.Cursor object at 0x000002411A17FF40>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 211, in _do_execute_many
+    rows += self.execute(sql + postfix)
+    │       │    │       │     └ b''
+    │       │    │       └ bytearray(b"INSERT INTO kimg (pid, tags, link, path, status, time) VALUES (343131, \'animal animal_ears barefoot bikini breas...
+    │       │    └ <function Cursor.execute at 0x0000024119EF6D40>
+    │       └ <pymysql.cursors.Cursor object at 0x000002411A17FF40>
+    └ 0
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+             │    │      └ bytearray(b"INSERT INTO kimg (pid, tags, link, path, status, time) VALUES (343131, \'animal animal_ears barefoot bikini breas...
+             │    └ <function Cursor._query at 0x0000024119EF71C0>
+             └ <pymysql.cursors.Cursor object at 0x000002411A17FF40>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+    │    │     └ bytearray(b"INSERT INTO kimg (pid, tags, link, path, status, time) VALUES (343131, \'animal animal_ears barefoot bikini breas...
+    │    └ <function Connection.query at 0x0000024119FD2680>
+    └ <pymysql.connections.Connection object at 0x0000024119C4C9A0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+    │    │                │    │                             └ False
+    │    │                │    └ <function Connection._read_query_result at 0x0000024119FD2CB0>
+    │    │                └ <pymysql.connections.Connection object at 0x0000024119C4C9A0>
+    │    └ 1
+    └ <pymysql.connections.Connection object at 0x0000024119C4C9A0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+    │      └ <function MySQLResult.read at 0x0000024119FD3490>
+    └ <pymysql.connections.MySQLResult object at 0x000002411A17DBA0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+                   │    └ None
+                   └ <pymysql.connections.MySQLResult object at 0x000002411A17DBA0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+    │      └ <function MysqlPacket.raise_for_error at 0x0000024119FD0E50>
+    └ <pymysql.protocol.MysqlPacket object at 0x000002411A17C040>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    │   │                     │    └ <member '_data' of 'MysqlPacket' objects>
+    │   │                     └ <pymysql.protocol.MysqlPacket object at 0x000002411A17C040>
+    │   └ <function raise_mysql_exception at 0x0000024119D468C0>
+    └ <module 'pymysql.err' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pymysql\\err.py'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+          │          │      └ "Duplicate entry '344097' for key 'kimg.PRIMARY'"
+          │          └ 1062
+          └ <class 'pymysql.err.IntegrityError'>
+
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1062, "Duplicate entry '344097' for key 'kimg.PRIMARY'")
+[SQL: INSERT INTO kimg (pid, tags, link, path, status, time) VALUES (%(pid)s, %(tags)s, %(link)s, %(path)s, %(status)s, %(time)s)]
+[parameters: ({'pid': 343131, 'tags': 'animal animal_ears barefoot bikini breasts cherry_blossoms flowers granblue_fantasy gray_hair mouse mousegirl navel nipples nipple_slip pussy red_eyes see_through signed skirt swimsuit uncensored vikala_(granblue_fantasy) yellowpaint.', 'link': 'https://konachan.com/jpeg/695840743c506b33eaf89ea724d05fab/Konachan.com%20-%20343131%20animal%20animal_ears%20barefoot%20bikini%20breasts%20flowers%20gray_hair%20mouse%20mousegirl%20navel%20nipples%20pussy%20red_eyes%20see_through%20signed%20skirt%20swimsuit%20uncensored.jpg', 'path': 'F:\\database_learn\\k_spider\\pictures7\\343131.jpg', 'status': 1, 'time': '2023-04-14 16:31:35'}, {'pid': 344094, 'tags': 'granblue_fantasy pussy vikala_(granblue_fantasy) yellowpaint.', 'link': 'https://konachan.com/image/afd2eb580a7b572028f0f27024cda70e/Konachan.com%20-%20344094%20granblue_fantasy%20pussy%20vikala_%28granblue_fantasy%29%20yellowpaint..jpg', 'path': 'F:\\database_learn\\k_spider\\pictures7\\344094.jpg', 'status': 1, 'time': '2023-04-14 16:31:35'}, {'pid': 344095, 'tags': 'animal animal_ears barefoot bikini brown_hair cameltoe cherry_blossoms flowers granblue_fantasy mouse mousegirl navel red_eyes see_through signed skirt swimsuit tears vikala_(granblue_fantasy) yellowpaint.', 'link': 'https://konachan.com/image/56eedb8e86f968c2bbffd356eadfb233/Konachan.com%20-%20344095%20animal%20animal_ears%20barefoot%20bikini%20brown_hair%20cameltoe%20flowers%20mouse%20mousegirl%20navel%20red_eyes%20see_through%20signed%20skirt%20swimsuit%20tears%20yellowpaint..jpg', 'path': 'F:\\database_learn\\k_spider\\pictures7\\344095.jpg', 'status': 1, 'time': '2023-04-14 16:31:35'}, {'pid': 344096, 'tags': 'animal animal_ears barefoot bikini breasts brown_hair cherry_blossoms flowers granblue_fantasy mouse mousegirl navel nipples pussy red_eyes see_through signed swimsuit tears uncensored vikala_(granblue_fantasy) yellowpaint.', 'link': 'https://konachan.com/image/a1daf2fb01d955efe2fcfd2dcad5a63c/Konachan.com%20-%20344096%20animal%20barefoot%20bikini%20breasts%20brown_hair%20flowers%20mouse%20mousegirl%20navel%20nipples%20pussy%20red_eyes%20see_through%20signed%20swimsuit%20tears%20uncensored.jpg', 'path': 'F:\\database_learn\\k_spider\\pictures7\\344096.jpg', 'status': 1, 'time': '2023-04-14 16:31:35'}, {'pid': 344097, 'tags': 'animal animal_ears barefoot blush breasts brown_hair cherry_blossoms flowers granblue_fantasy mouse mousegirl navel pussy red_eyes short_hair tears uncensored vikala_(granblue_fantasy) yellowpaint.', 'link': 'https://konachan.com/image/f80e11acb6e1d301d562f5e30908e1c2/Konachan.com%20-%20344097%20animal%20animal_ears%20barefoot%20blush%20breasts%20brown_hair%20flowers%20mouse%20mousegirl%20navel%20pussy%20red_eyes%20short_hair%20tears%20uncensored%20yellowpaint..jpg', 'path': 'F:\\database_learn\\k_spider\\pictures7\\344097.jpg', 'status': 1, 'time': '2023-04-14 16:31:35'}, {'pid': 344098, 'tags': 'animal animal_ears barefoot cherry_blossoms flowers granblue_fantasy mouse mousegirl navel pussy uncensored vikala_(granblue_fantasy) yellowpaint.', 'link': 'https://konachan.com/image/99803523191d05c212676ac4034f3b47/Konachan.com%20-%20344098%20animal%20animal_ears%20barefoot%20cherry_blossoms%20flowers%20granblue_fantasy%20mouse%20mousegirl%20navel%20pussy%20uncensored%20vikala_%28granblue_fantasy%29%20yellowpaint..jpg', 'path': 'F:\\database_learn\\k_spider\\pictures7\\344098.jpg', 'status': 1, 'time': '2023-04-14 16:31:35'})]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)

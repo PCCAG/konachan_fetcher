@@ -1,0 +1,1375 @@
+2023-04-14 13:05:35.528 | SUCCESS  | cellfunctions_:get_headers:54 - get cookie success..
+2023-04-14 13:05:47.767 | SUCCESS  | __main__:mode_a:275 - 单次下载数量:2
+2023-04-14 13:05:47.769 | SUCCESS  | __main__:mode_a:276 - 等待时间:1 并发数:12
+2023-04-14 13:05:47.770 | SUCCESS  | __main__:mode_a:277 - 下载图片路径:F:\database_learn\k_spider\pictures7
+2023-04-14 13:05:47.770 | INFO     | __main__:link_db:139 - 连接数据库中...........
+2023-04-14 13:05:55.989 | ERROR    | __main__:mode_a:285 - An error has been caught in function 'mode_a', process 'MainProcess' (15040), thread 'MainThread' (6900):
+Traceback (most recent call last):
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 613, in connect
+    sock = socket.create_connection(
+           │      └ <function create_connection at 0x000001A218A67F40>
+           └ <module 'socket' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\socket.py'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\socket.py", line 845, in create_connection
+    raise err
+          └ None
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+    │    │       └ ('127.0.0.1', 3306)
+    │    └ <method 'connect' of '_socket.socket' objects>
+    └ <socket.socket [closed] fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>
+
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3361, in _wrap_pool_connect
+    return fn()
+           └ <bound method Pool.connect of <sqlalchemy.pool.impl.QueuePool object at 0x000001A234FA0310>>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 320, in connect
+    return _ConnectionFairy._checkout(self)
+           │                │         └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A234FA0310>
+           │                └ <classmethod(<function _ConnectionFairy._checkout at 0x000001A21AF8C040>)>
+           └ <class 'sqlalchemy.pool.base._ConnectionFairy'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 884, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            │                 │        └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A234FA0310>
+            │                 └ <classmethod(<function _ConnectionRecord.checkout at 0x000001A21AF736D0>)>
+            └ <class 'sqlalchemy.pool.base._ConnectionRecord'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 486, in checkout
+    rec = pool._do_get()
+          │    └ <function QueuePool._do_get at 0x000001A21AF8E7A0>
+          └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A234FA0310>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 145, in _do_get
+    with util.safe_reraise():
+         │    └ <class 'sqlalchemy.util.langhelpers.safe_reraise'>
+         └ <module 'sqlalchemy.util' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalchemy\\ut...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+    │      └ <function raise_ at 0x000001A21A73B010>
+    └ <module 'sqlalchemy.util.compat' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalch...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 143, in _do_get
+    return self._create_connection()
+           │    └ <function Pool._create_connection at 0x000001A21AF72E60>
+           └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A234FA0310>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 266, in _create_connection
+    return _ConnectionRecord(self)
+           │                 └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A234FA0310>
+           └ <class 'sqlalchemy.pool.base._ConnectionRecord'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 381, in __init__
+    self.__connect()
+    └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A234F8E200>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 677, in __connect
+    with util.safe_reraise():
+         │    └ <class 'sqlalchemy.util.langhelpers.safe_reraise'>
+         └ <module 'sqlalchemy.util' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalchemy\\ut...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+    │      └ <function raise_ at 0x000001A21A73B010>
+    └ <module 'sqlalchemy.util.compat' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalch...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 673, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+    │    │                               │    │               └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A234F8E200>
+    │    │                               │    └ <function create_engine.<locals>.connect at 0x000001A234FE1990>
+    │    │                               └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A234FA0310>
+    │    └ None
+    └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A234F8E200>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+           │       │        │        └ {'host': 'localhost', 'database': 'kimgdb', 'user': 'root', 'password': '778899vvbbnnmm', 'client_flag': 2}
+           │       │        └ []
+           │       └ <function DefaultDialect.connect at 0x000001A21AF9A8C0>
+           └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x000001A23503E830>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           │    │     │        │        └ {'host': 'localhost', 'database': 'kimgdb', 'user': 'root', 'password': '778899vvbbnnmm', 'client_flag': 2}
+           │    │     │        └ ()
+           │    │     └ <class 'pymysql.connections.Connection'>
+           │    └ <module 'pymysql' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pymysql\\__init__.py'>
+           └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x000001A23503E830>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 353, in __init__
+    self.connect()
+    │    └ <function Connection.connect at 0x000001A2352BE9E0>
+    └ <pymysql.connections.Connection object at 0x000001A234F8F7C0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 664, in connect
+    raise exc
+          └ OperationalError(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+  File "f:\k_grab\main_v1.8.py", line 340, in <module>
+    mode_a()
+    └ <function mode_a at 0x000001A234FE1240>
+
+> File "f:\k_grab\main_v1.8.py", line 285, in mode_a
+    engine,kimg_table,tags_table=link_db()
+                                 └ <function link_db at 0x000001A234FE3D90>
+
+  File "f:\k_grab\main_v1.8.py", line 167, in link_db
+    raise e
+
+  File "f:\k_grab\main_v1.8.py", line 154, in link_db
+    engine=engine.connect()
+           │      └ <function Engine.connect at 0x000001A21AF596C0>
+           └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3315, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           │    │               │                       └ False
+           │    │               └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+           │    └ <class 'sqlalchemy.engine.base.Connection'>
+           └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 96, in __init__
+    else engine.raw_connection()
+         │      └ <function Engine.raw_connection at 0x000001A21AF59B40>
+         └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3394, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           │    │                  │    │    │        └ None
+           │    │                  │    │    └ <function Pool.connect at 0x000001A21AF730A0>
+           │    │                  │    └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A234FA0310>
+           │    │                  └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+           │    └ <function Engine._wrap_pool_connect at 0x000001A21AF59750>
+           └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3364, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+    │          └ <classmethod(<function Connection._handle_dbapi_exception_noconnection at 0x000001A21AF56170>)>
+    └ <class 'sqlalchemy.engine.base.Connection'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2198, in _handle_dbapi_exception_noconnection
+    util.raise_(
+    │    └ <function raise_ at 0x000001A21A73B010>
+    └ <module 'sqlalchemy.util' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalchemy\\ut...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3361, in _wrap_pool_connect
+    return fn()
+           └ <bound method Pool.connect of <sqlalchemy.pool.impl.QueuePool object at 0x000001A234FA0310>>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 320, in connect
+    return _ConnectionFairy._checkout(self)
+           │                │         └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A234FA0310>
+           │                └ <classmethod(<function _ConnectionFairy._checkout at 0x000001A21AF8C040>)>
+           └ <class 'sqlalchemy.pool.base._ConnectionFairy'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 884, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            │                 │        └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A234FA0310>
+            │                 └ <classmethod(<function _ConnectionRecord.checkout at 0x000001A21AF736D0>)>
+            └ <class 'sqlalchemy.pool.base._ConnectionRecord'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 486, in checkout
+    rec = pool._do_get()
+          │    └ <function QueuePool._do_get at 0x000001A21AF8E7A0>
+          └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A234FA0310>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 145, in _do_get
+    with util.safe_reraise():
+         │    └ <class 'sqlalchemy.util.langhelpers.safe_reraise'>
+         └ <module 'sqlalchemy.util' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalchemy\\ut...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+    │      └ <function raise_ at 0x000001A21A73B010>
+    └ <module 'sqlalchemy.util.compat' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalch...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 143, in _do_get
+    return self._create_connection()
+           │    └ <function Pool._create_connection at 0x000001A21AF72E60>
+           └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A234FA0310>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 266, in _create_connection
+    return _ConnectionRecord(self)
+           │                 └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A234FA0310>
+           └ <class 'sqlalchemy.pool.base._ConnectionRecord'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 381, in __init__
+    self.__connect()
+    └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A234F8E200>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 677, in __connect
+    with util.safe_reraise():
+         │    └ <class 'sqlalchemy.util.langhelpers.safe_reraise'>
+         └ <module 'sqlalchemy.util' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalchemy\\ut...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+    │      └ <function raise_ at 0x000001A21A73B010>
+    └ <module 'sqlalchemy.util.compat' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalch...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 673, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+    │    │                               │    │               └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A234F8E200>
+    │    │                               │    └ <function create_engine.<locals>.connect at 0x000001A234FE1990>
+    │    │                               └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A234FA0310>
+    │    └ None
+    └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A234F8E200>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+           │       │        │        └ {'host': 'localhost', 'database': 'kimgdb', 'user': 'root', 'password': '778899vvbbnnmm', 'client_flag': 2}
+           │       │        └ []
+           │       └ <function DefaultDialect.connect at 0x000001A21AF9A8C0>
+           └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x000001A23503E830>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           │    │     │        │        └ {'host': 'localhost', 'database': 'kimgdb', 'user': 'root', 'password': '778899vvbbnnmm', 'client_flag': 2}
+           │    │     │        └ ()
+           │    │     └ <class 'pymysql.connections.Connection'>
+           │    └ <module 'pymysql' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pymysql\\__init__.py'>
+           └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x000001A23503E830>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 353, in __init__
+    self.connect()
+    │    └ <function Connection.connect at 0x000001A2352BE9E0>
+    └ <pymysql.connections.Connection object at 0x000001A234F8F7C0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 664, in connect
+    raise exc
+          └ OperationalError(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2023-04-14 13:05:56.099 | ERROR    | __main__:mode_a:287 - 没有数据库连接,检查数据库是否启用
+2023-04-14 13:05:56.100 | INFO     | __main__:link_db:139 - 连接数据库中...........
+2023-04-14 13:06:04.260 | ERROR    | __main__:mode_a:285 - An error has been caught in function 'mode_a', process 'MainProcess' (15040), thread 'MainThread' (6900):
+Traceback (most recent call last):
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 613, in connect
+    sock = socket.create_connection(
+           │      └ <function create_connection at 0x000001A218A67F40>
+           └ <module 'socket' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\socket.py'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\socket.py", line 845, in create_connection
+    raise err
+          └ None
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+    │    │       └ ('127.0.0.1', 3306)
+    │    └ <method 'connect' of '_socket.socket' objects>
+    └ <socket.socket [closed] fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>
+
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3361, in _wrap_pool_connect
+    return fn()
+           └ <bound method Pool.connect of <sqlalchemy.pool.impl.QueuePool object at 0x000001A235037AC0>>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 320, in connect
+    return _ConnectionFairy._checkout(self)
+           │                │         └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235037AC0>
+           │                └ <classmethod(<function _ConnectionFairy._checkout at 0x000001A21AF8C040>)>
+           └ <class 'sqlalchemy.pool.base._ConnectionFairy'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 884, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            │                 │        └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235037AC0>
+            │                 └ <classmethod(<function _ConnectionRecord.checkout at 0x000001A21AF736D0>)>
+            └ <class 'sqlalchemy.pool.base._ConnectionRecord'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 486, in checkout
+    rec = pool._do_get()
+          │    └ <function QueuePool._do_get at 0x000001A21AF8E7A0>
+          └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235037AC0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 145, in _do_get
+    with util.safe_reraise():
+         │    └ <class 'sqlalchemy.util.langhelpers.safe_reraise'>
+         └ <module 'sqlalchemy.util' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalchemy\\ut...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+    │      └ <function raise_ at 0x000001A21A73B010>
+    └ <module 'sqlalchemy.util.compat' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalch...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 143, in _do_get
+    return self._create_connection()
+           │    └ <function Pool._create_connection at 0x000001A21AF72E60>
+           └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235037AC0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 266, in _create_connection
+    return _ConnectionRecord(self)
+           │                 └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235037AC0>
+           └ <class 'sqlalchemy.pool.base._ConnectionRecord'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 381, in __init__
+    self.__connect()
+    └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A235037940>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 677, in __connect
+    with util.safe_reraise():
+         │    └ <class 'sqlalchemy.util.langhelpers.safe_reraise'>
+         └ <module 'sqlalchemy.util' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalchemy\\ut...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+    │      └ <function raise_ at 0x000001A21A73B010>
+    └ <module 'sqlalchemy.util.compat' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalch...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 673, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+    │    │                               │    │               └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A235037940>
+    │    │                               │    └ <function create_engine.<locals>.connect at 0x000001A2352C3910>
+    │    │                               └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235037AC0>
+    │    └ None
+    └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A235037940>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+           │       │        │        └ {'host': 'localhost', 'database': 'kimgdb', 'user': 'root', 'password': '778899vvbbnnmm', 'client_flag': 2}
+           │       │        └ []
+           │       └ <function DefaultDialect.connect at 0x000001A21AF9A8C0>
+           └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x000001A235036AD0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           │    │     │        │        └ {'host': 'localhost', 'database': 'kimgdb', 'user': 'root', 'password': '778899vvbbnnmm', 'client_flag': 2}
+           │    │     │        └ ()
+           │    │     └ <class 'pymysql.connections.Connection'>
+           │    └ <module 'pymysql' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pymysql\\__init__.py'>
+           └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x000001A235036AD0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 353, in __init__
+    self.connect()
+    │    └ <function Connection.connect at 0x000001A2352BE9E0>
+    └ <pymysql.connections.Connection object at 0x000001A2350375E0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 664, in connect
+    raise exc
+          └ OperationalError(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+  File "f:\k_grab\main_v1.8.py", line 340, in <module>
+    mode_a()
+    └ <function mode_a at 0x000001A234FE1240>
+
+> File "f:\k_grab\main_v1.8.py", line 285, in mode_a
+    engine,kimg_table,tags_table=link_db()
+                                 └ <function link_db at 0x000001A234FE3D90>
+
+  File "f:\k_grab\main_v1.8.py", line 167, in link_db
+    raise e
+
+  File "f:\k_grab\main_v1.8.py", line 154, in link_db
+    engine=engine.connect()
+           │      └ <function Engine.connect at 0x000001A21AF596C0>
+           └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3315, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           │    │               │                       └ False
+           │    │               └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+           │    └ <class 'sqlalchemy.engine.base.Connection'>
+           └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 96, in __init__
+    else engine.raw_connection()
+         │      └ <function Engine.raw_connection at 0x000001A21AF59B40>
+         └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3394, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           │    │                  │    │    │        └ None
+           │    │                  │    │    └ <function Pool.connect at 0x000001A21AF730A0>
+           │    │                  │    └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235037AC0>
+           │    │                  └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+           │    └ <function Engine._wrap_pool_connect at 0x000001A21AF59750>
+           └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3364, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+    │          └ <classmethod(<function Connection._handle_dbapi_exception_noconnection at 0x000001A21AF56170>)>
+    └ <class 'sqlalchemy.engine.base.Connection'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2198, in _handle_dbapi_exception_noconnection
+    util.raise_(
+    │    └ <function raise_ at 0x000001A21A73B010>
+    └ <module 'sqlalchemy.util' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalchemy\\ut...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3361, in _wrap_pool_connect
+    return fn()
+           └ <bound method Pool.connect of <sqlalchemy.pool.impl.QueuePool object at 0x000001A235037AC0>>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 320, in connect
+    return _ConnectionFairy._checkout(self)
+           │                │         └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235037AC0>
+           │                └ <classmethod(<function _ConnectionFairy._checkout at 0x000001A21AF8C040>)>
+           └ <class 'sqlalchemy.pool.base._ConnectionFairy'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 884, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            │                 │        └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235037AC0>
+            │                 └ <classmethod(<function _ConnectionRecord.checkout at 0x000001A21AF736D0>)>
+            └ <class 'sqlalchemy.pool.base._ConnectionRecord'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 486, in checkout
+    rec = pool._do_get()
+          │    └ <function QueuePool._do_get at 0x000001A21AF8E7A0>
+          └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235037AC0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 145, in _do_get
+    with util.safe_reraise():
+         │    └ <class 'sqlalchemy.util.langhelpers.safe_reraise'>
+         └ <module 'sqlalchemy.util' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalchemy\\ut...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+    │      └ <function raise_ at 0x000001A21A73B010>
+    └ <module 'sqlalchemy.util.compat' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalch...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 143, in _do_get
+    return self._create_connection()
+           │    └ <function Pool._create_connection at 0x000001A21AF72E60>
+           └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235037AC0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 266, in _create_connection
+    return _ConnectionRecord(self)
+           │                 └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235037AC0>
+           └ <class 'sqlalchemy.pool.base._ConnectionRecord'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 381, in __init__
+    self.__connect()
+    └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A235037940>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 677, in __connect
+    with util.safe_reraise():
+         │    └ <class 'sqlalchemy.util.langhelpers.safe_reraise'>
+         └ <module 'sqlalchemy.util' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalchemy\\ut...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+    │      └ <function raise_ at 0x000001A21A73B010>
+    └ <module 'sqlalchemy.util.compat' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalch...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 673, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+    │    │                               │    │               └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A235037940>
+    │    │                               │    └ <function create_engine.<locals>.connect at 0x000001A2352C3910>
+    │    │                               └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235037AC0>
+    │    └ None
+    └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A235037940>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+           │       │        │        └ {'host': 'localhost', 'database': 'kimgdb', 'user': 'root', 'password': '778899vvbbnnmm', 'client_flag': 2}
+           │       │        └ []
+           │       └ <function DefaultDialect.connect at 0x000001A21AF9A8C0>
+           └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x000001A235036AD0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           │    │     │        │        └ {'host': 'localhost', 'database': 'kimgdb', 'user': 'root', 'password': '778899vvbbnnmm', 'client_flag': 2}
+           │    │     │        └ ()
+           │    │     └ <class 'pymysql.connections.Connection'>
+           │    └ <module 'pymysql' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pymysql\\__init__.py'>
+           └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x000001A235036AD0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 353, in __init__
+    self.connect()
+    │    └ <function Connection.connect at 0x000001A2352BE9E0>
+    └ <pymysql.connections.Connection object at 0x000001A2350375E0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 664, in connect
+    raise exc
+          └ OperationalError(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2023-04-14 13:06:04.354 | ERROR    | __main__:mode_a:287 - 没有数据库连接,检查数据库是否启用
+2023-04-14 13:06:04.355 | INFO     | __main__:link_db:139 - 连接数据库中...........
+2023-04-14 13:06:12.553 | ERROR    | __main__:mode_a:285 - An error has been caught in function 'mode_a', process 'MainProcess' (15040), thread 'MainThread' (6900):
+Traceback (most recent call last):
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 613, in connect
+    sock = socket.create_connection(
+           │      └ <function create_connection at 0x000001A218A67F40>
+           └ <module 'socket' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\socket.py'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\socket.py", line 845, in create_connection
+    raise err
+          └ None
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+    │    │       └ ('127.0.0.1', 3306)
+    │    └ <method 'connect' of '_socket.socket' objects>
+    └ <socket.socket [closed] fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>
+
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3361, in _wrap_pool_connect
+    return fn()
+           └ <bound method Pool.connect of <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035660>>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 320, in connect
+    return _ConnectionFairy._checkout(self)
+           │                │         └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035660>
+           │                └ <classmethod(<function _ConnectionFairy._checkout at 0x000001A21AF8C040>)>
+           └ <class 'sqlalchemy.pool.base._ConnectionFairy'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 884, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            │                 │        └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035660>
+            │                 └ <classmethod(<function _ConnectionRecord.checkout at 0x000001A21AF736D0>)>
+            └ <class 'sqlalchemy.pool.base._ConnectionRecord'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 486, in checkout
+    rec = pool._do_get()
+          │    └ <function QueuePool._do_get at 0x000001A21AF8E7A0>
+          └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035660>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 145, in _do_get
+    with util.safe_reraise():
+         │    └ <class 'sqlalchemy.util.langhelpers.safe_reraise'>
+         └ <module 'sqlalchemy.util' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalchemy\\ut...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+    │      └ <function raise_ at 0x000001A21A73B010>
+    └ <module 'sqlalchemy.util.compat' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalch...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 143, in _do_get
+    return self._create_connection()
+           │    └ <function Pool._create_connection at 0x000001A21AF72E60>
+           └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035660>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 266, in _create_connection
+    return _ConnectionRecord(self)
+           │                 └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035660>
+           └ <class 'sqlalchemy.pool.base._ConnectionRecord'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 381, in __init__
+    self.__connect()
+    └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A235035900>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 677, in __connect
+    with util.safe_reraise():
+         │    └ <class 'sqlalchemy.util.langhelpers.safe_reraise'>
+         └ <module 'sqlalchemy.util' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalchemy\\ut...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+    │      └ <function raise_ at 0x000001A21A73B010>
+    └ <module 'sqlalchemy.util.compat' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalch...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 673, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+    │    │                               │    │               └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A235035900>
+    │    │                               │    └ <function create_engine.<locals>.connect at 0x000001A235312830>
+    │    │                               └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035660>
+    │    └ None
+    └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A235035900>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+           │       │        │        └ {'host': 'localhost', 'database': 'kimgdb', 'user': 'root', 'password': '778899vvbbnnmm', 'client_flag': 2}
+           │       │        └ []
+           │       └ <function DefaultDialect.connect at 0x000001A21AF9A8C0>
+           └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x000001A235035210>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           │    │     │        │        └ {'host': 'localhost', 'database': 'kimgdb', 'user': 'root', 'password': '778899vvbbnnmm', 'client_flag': 2}
+           │    │     │        └ ()
+           │    │     └ <class 'pymysql.connections.Connection'>
+           │    └ <module 'pymysql' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pymysql\\__init__.py'>
+           └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x000001A235035210>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 353, in __init__
+    self.connect()
+    │    └ <function Connection.connect at 0x000001A2352BE9E0>
+    └ <pymysql.connections.Connection object at 0x000001A2350359F0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 664, in connect
+    raise exc
+          └ OperationalError(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+  File "f:\k_grab\main_v1.8.py", line 340, in <module>
+    mode_a()
+    └ <function mode_a at 0x000001A234FE1240>
+
+> File "f:\k_grab\main_v1.8.py", line 285, in mode_a
+    engine,kimg_table,tags_table=link_db()
+                                 └ <function link_db at 0x000001A234FE3D90>
+
+  File "f:\k_grab\main_v1.8.py", line 167, in link_db
+    raise e
+
+  File "f:\k_grab\main_v1.8.py", line 154, in link_db
+    engine=engine.connect()
+           │      └ <function Engine.connect at 0x000001A21AF596C0>
+           └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3315, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           │    │               │                       └ False
+           │    │               └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+           │    └ <class 'sqlalchemy.engine.base.Connection'>
+           └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 96, in __init__
+    else engine.raw_connection()
+         │      └ <function Engine.raw_connection at 0x000001A21AF59B40>
+         └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3394, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           │    │                  │    │    │        └ None
+           │    │                  │    │    └ <function Pool.connect at 0x000001A21AF730A0>
+           │    │                  │    └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035660>
+           │    │                  └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+           │    └ <function Engine._wrap_pool_connect at 0x000001A21AF59750>
+           └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3364, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+    │          └ <classmethod(<function Connection._handle_dbapi_exception_noconnection at 0x000001A21AF56170>)>
+    └ <class 'sqlalchemy.engine.base.Connection'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2198, in _handle_dbapi_exception_noconnection
+    util.raise_(
+    │    └ <function raise_ at 0x000001A21A73B010>
+    └ <module 'sqlalchemy.util' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalchemy\\ut...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3361, in _wrap_pool_connect
+    return fn()
+           └ <bound method Pool.connect of <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035660>>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 320, in connect
+    return _ConnectionFairy._checkout(self)
+           │                │         └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035660>
+           │                └ <classmethod(<function _ConnectionFairy._checkout at 0x000001A21AF8C040>)>
+           └ <class 'sqlalchemy.pool.base._ConnectionFairy'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 884, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            │                 │        └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035660>
+            │                 └ <classmethod(<function _ConnectionRecord.checkout at 0x000001A21AF736D0>)>
+            └ <class 'sqlalchemy.pool.base._ConnectionRecord'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 486, in checkout
+    rec = pool._do_get()
+          │    └ <function QueuePool._do_get at 0x000001A21AF8E7A0>
+          └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035660>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 145, in _do_get
+    with util.safe_reraise():
+         │    └ <class 'sqlalchemy.util.langhelpers.safe_reraise'>
+         └ <module 'sqlalchemy.util' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalchemy\\ut...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+    │      └ <function raise_ at 0x000001A21A73B010>
+    └ <module 'sqlalchemy.util.compat' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalch...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 143, in _do_get
+    return self._create_connection()
+           │    └ <function Pool._create_connection at 0x000001A21AF72E60>
+           └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035660>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 266, in _create_connection
+    return _ConnectionRecord(self)
+           │                 └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035660>
+           └ <class 'sqlalchemy.pool.base._ConnectionRecord'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 381, in __init__
+    self.__connect()
+    └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A235035900>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 677, in __connect
+    with util.safe_reraise():
+         │    └ <class 'sqlalchemy.util.langhelpers.safe_reraise'>
+         └ <module 'sqlalchemy.util' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalchemy\\ut...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+    │      └ <function raise_ at 0x000001A21A73B010>
+    └ <module 'sqlalchemy.util.compat' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalch...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 673, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+    │    │                               │    │               └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A235035900>
+    │    │                               │    └ <function create_engine.<locals>.connect at 0x000001A235312830>
+    │    │                               └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035660>
+    │    └ None
+    └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A235035900>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+           │       │        │        └ {'host': 'localhost', 'database': 'kimgdb', 'user': 'root', 'password': '778899vvbbnnmm', 'client_flag': 2}
+           │       │        └ []
+           │       └ <function DefaultDialect.connect at 0x000001A21AF9A8C0>
+           └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x000001A235035210>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           │    │     │        │        └ {'host': 'localhost', 'database': 'kimgdb', 'user': 'root', 'password': '778899vvbbnnmm', 'client_flag': 2}
+           │    │     │        └ ()
+           │    │     └ <class 'pymysql.connections.Connection'>
+           │    └ <module 'pymysql' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pymysql\\__init__.py'>
+           └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x000001A235035210>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 353, in __init__
+    self.connect()
+    │    └ <function Connection.connect at 0x000001A2352BE9E0>
+    └ <pymysql.connections.Connection object at 0x000001A2350359F0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 664, in connect
+    raise exc
+          └ OperationalError(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2023-04-14 13:06:12.650 | ERROR    | __main__:mode_a:287 - 没有数据库连接,检查数据库是否启用
+2023-04-14 13:06:12.651 | INFO     | __main__:link_db:139 - 连接数据库中...........
+2023-04-14 13:06:20.838 | ERROR    | __main__:mode_a:285 - An error has been caught in function 'mode_a', process 'MainProcess' (15040), thread 'MainThread' (6900):
+Traceback (most recent call last):
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 613, in connect
+    sock = socket.create_connection(
+           │      └ <function create_connection at 0x000001A218A67F40>
+           └ <module 'socket' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\socket.py'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\socket.py", line 845, in create_connection
+    raise err
+          └ None
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+    │    │       └ ('127.0.0.1', 3306)
+    │    └ <method 'connect' of '_socket.socket' objects>
+    └ <socket.socket [closed] fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>
+
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3361, in _wrap_pool_connect
+    return fn()
+           └ <bound method Pool.connect of <sqlalchemy.pool.impl.QueuePool object at 0x000001A234F5E230>>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 320, in connect
+    return _ConnectionFairy._checkout(self)
+           │                │         └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A234F5E230>
+           │                └ <classmethod(<function _ConnectionFairy._checkout at 0x000001A21AF8C040>)>
+           └ <class 'sqlalchemy.pool.base._ConnectionFairy'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 884, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            │                 │        └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A234F5E230>
+            │                 └ <classmethod(<function _ConnectionRecord.checkout at 0x000001A21AF736D0>)>
+            └ <class 'sqlalchemy.pool.base._ConnectionRecord'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 486, in checkout
+    rec = pool._do_get()
+          │    └ <function QueuePool._do_get at 0x000001A21AF8E7A0>
+          └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A234F5E230>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 145, in _do_get
+    with util.safe_reraise():
+         │    └ <class 'sqlalchemy.util.langhelpers.safe_reraise'>
+         └ <module 'sqlalchemy.util' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalchemy\\ut...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+    │      └ <function raise_ at 0x000001A21A73B010>
+    └ <module 'sqlalchemy.util.compat' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalch...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 143, in _do_get
+    return self._create_connection()
+           │    └ <function Pool._create_connection at 0x000001A21AF72E60>
+           └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A234F5E230>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 266, in _create_connection
+    return _ConnectionRecord(self)
+           │                 └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A234F5E230>
+           └ <class 'sqlalchemy.pool.base._ConnectionRecord'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 381, in __init__
+    self.__connect()
+    └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A234F5D3C0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 677, in __connect
+    with util.safe_reraise():
+         │    └ <class 'sqlalchemy.util.langhelpers.safe_reraise'>
+         └ <module 'sqlalchemy.util' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalchemy\\ut...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+    │      └ <function raise_ at 0x000001A21A73B010>
+    └ <module 'sqlalchemy.util.compat' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalch...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 673, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+    │    │                               │    │               └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A234F5D3C0>
+    │    │                               │    └ <function create_engine.<locals>.connect at 0x000001A235312B00>
+    │    │                               └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A234F5E230>
+    │    └ None
+    └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A234F5D3C0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+           │       │        │        └ {'host': 'localhost', 'database': 'kimgdb', 'user': 'root', 'password': '778899vvbbnnmm', 'client_flag': 2}
+           │       │        └ []
+           │       └ <function DefaultDialect.connect at 0x000001A21AF9A8C0>
+           └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x000001A234F5DB10>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           │    │     │        │        └ {'host': 'localhost', 'database': 'kimgdb', 'user': 'root', 'password': '778899vvbbnnmm', 'client_flag': 2}
+           │    │     │        └ ()
+           │    │     └ <class 'pymysql.connections.Connection'>
+           │    └ <module 'pymysql' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pymysql\\__init__.py'>
+           └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x000001A234F5DB10>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 353, in __init__
+    self.connect()
+    │    └ <function Connection.connect at 0x000001A2352BE9E0>
+    └ <pymysql.connections.Connection object at 0x000001A234F5D3F0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 664, in connect
+    raise exc
+          └ OperationalError(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+  File "f:\k_grab\main_v1.8.py", line 340, in <module>
+    mode_a()
+    └ <function mode_a at 0x000001A234FE1240>
+
+> File "f:\k_grab\main_v1.8.py", line 285, in mode_a
+    engine,kimg_table,tags_table=link_db()
+                                 └ <function link_db at 0x000001A234FE3D90>
+
+  File "f:\k_grab\main_v1.8.py", line 167, in link_db
+    raise e
+
+  File "f:\k_grab\main_v1.8.py", line 154, in link_db
+    engine=engine.connect()
+           │      └ <function Engine.connect at 0x000001A21AF596C0>
+           └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3315, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           │    │               │                       └ False
+           │    │               └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+           │    └ <class 'sqlalchemy.engine.base.Connection'>
+           └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 96, in __init__
+    else engine.raw_connection()
+         │      └ <function Engine.raw_connection at 0x000001A21AF59B40>
+         └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3394, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           │    │                  │    │    │        └ None
+           │    │                  │    │    └ <function Pool.connect at 0x000001A21AF730A0>
+           │    │                  │    └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A234F5E230>
+           │    │                  └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+           │    └ <function Engine._wrap_pool_connect at 0x000001A21AF59750>
+           └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3364, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+    │          └ <classmethod(<function Connection._handle_dbapi_exception_noconnection at 0x000001A21AF56170>)>
+    └ <class 'sqlalchemy.engine.base.Connection'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2198, in _handle_dbapi_exception_noconnection
+    util.raise_(
+    │    └ <function raise_ at 0x000001A21A73B010>
+    └ <module 'sqlalchemy.util' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalchemy\\ut...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3361, in _wrap_pool_connect
+    return fn()
+           └ <bound method Pool.connect of <sqlalchemy.pool.impl.QueuePool object at 0x000001A234F5E230>>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 320, in connect
+    return _ConnectionFairy._checkout(self)
+           │                │         └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A234F5E230>
+           │                └ <classmethod(<function _ConnectionFairy._checkout at 0x000001A21AF8C040>)>
+           └ <class 'sqlalchemy.pool.base._ConnectionFairy'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 884, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            │                 │        └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A234F5E230>
+            │                 └ <classmethod(<function _ConnectionRecord.checkout at 0x000001A21AF736D0>)>
+            └ <class 'sqlalchemy.pool.base._ConnectionRecord'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 486, in checkout
+    rec = pool._do_get()
+          │    └ <function QueuePool._do_get at 0x000001A21AF8E7A0>
+          └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A234F5E230>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 145, in _do_get
+    with util.safe_reraise():
+         │    └ <class 'sqlalchemy.util.langhelpers.safe_reraise'>
+         └ <module 'sqlalchemy.util' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalchemy\\ut...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+    │      └ <function raise_ at 0x000001A21A73B010>
+    └ <module 'sqlalchemy.util.compat' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalch...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 143, in _do_get
+    return self._create_connection()
+           │    └ <function Pool._create_connection at 0x000001A21AF72E60>
+           └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A234F5E230>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 266, in _create_connection
+    return _ConnectionRecord(self)
+           │                 └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A234F5E230>
+           └ <class 'sqlalchemy.pool.base._ConnectionRecord'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 381, in __init__
+    self.__connect()
+    └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A234F5D3C0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 677, in __connect
+    with util.safe_reraise():
+         │    └ <class 'sqlalchemy.util.langhelpers.safe_reraise'>
+         └ <module 'sqlalchemy.util' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalchemy\\ut...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+    │      └ <function raise_ at 0x000001A21A73B010>
+    └ <module 'sqlalchemy.util.compat' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalch...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 673, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+    │    │                               │    │               └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A234F5D3C0>
+    │    │                               │    └ <function create_engine.<locals>.connect at 0x000001A235312B00>
+    │    │                               └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A234F5E230>
+    │    └ None
+    └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A234F5D3C0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+           │       │        │        └ {'host': 'localhost', 'database': 'kimgdb', 'user': 'root', 'password': '778899vvbbnnmm', 'client_flag': 2}
+           │       │        └ []
+           │       └ <function DefaultDialect.connect at 0x000001A21AF9A8C0>
+           └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x000001A234F5DB10>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           │    │     │        │        └ {'host': 'localhost', 'database': 'kimgdb', 'user': 'root', 'password': '778899vvbbnnmm', 'client_flag': 2}
+           │    │     │        └ ()
+           │    │     └ <class 'pymysql.connections.Connection'>
+           │    └ <module 'pymysql' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pymysql\\__init__.py'>
+           └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x000001A234F5DB10>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 353, in __init__
+    self.connect()
+    │    └ <function Connection.connect at 0x000001A2352BE9E0>
+    └ <pymysql.connections.Connection object at 0x000001A234F5D3F0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 664, in connect
+    raise exc
+          └ OperationalError(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2023-04-14 13:06:20.934 | ERROR    | __main__:mode_a:287 - 没有数据库连接,检查数据库是否启用
+2023-04-14 13:06:20.935 | INFO     | __main__:link_db:139 - 连接数据库中...........
+2023-04-14 13:06:29.082 | ERROR    | __main__:mode_a:285 - An error has been caught in function 'mode_a', process 'MainProcess' (15040), thread 'MainThread' (6900):
+Traceback (most recent call last):
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 613, in connect
+    sock = socket.create_connection(
+           │      └ <function create_connection at 0x000001A218A67F40>
+           └ <module 'socket' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\socket.py'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\socket.py", line 845, in create_connection
+    raise err
+          └ None
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connection
+    sock.connect(sa)
+    │    │       └ ('127.0.0.1', 3306)
+    │    └ <method 'connect' of '_socket.socket' objects>
+    └ <socket.socket [closed] fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>
+
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3361, in _wrap_pool_connect
+    return fn()
+           └ <bound method Pool.connect of <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035900>>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 320, in connect
+    return _ConnectionFairy._checkout(self)
+           │                │         └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035900>
+           │                └ <classmethod(<function _ConnectionFairy._checkout at 0x000001A21AF8C040>)>
+           └ <class 'sqlalchemy.pool.base._ConnectionFairy'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 884, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            │                 │        └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035900>
+            │                 └ <classmethod(<function _ConnectionRecord.checkout at 0x000001A21AF736D0>)>
+            └ <class 'sqlalchemy.pool.base._ConnectionRecord'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 486, in checkout
+    rec = pool._do_get()
+          │    └ <function QueuePool._do_get at 0x000001A21AF8E7A0>
+          └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035900>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 145, in _do_get
+    with util.safe_reraise():
+         │    └ <class 'sqlalchemy.util.langhelpers.safe_reraise'>
+         └ <module 'sqlalchemy.util' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalchemy\\ut...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+    │      └ <function raise_ at 0x000001A21A73B010>
+    └ <module 'sqlalchemy.util.compat' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalch...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 143, in _do_get
+    return self._create_connection()
+           │    └ <function Pool._create_connection at 0x000001A21AF72E60>
+           └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035900>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 266, in _create_connection
+    return _ConnectionRecord(self)
+           │                 └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035900>
+           └ <class 'sqlalchemy.pool.base._ConnectionRecord'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 381, in __init__
+    self.__connect()
+    └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A2350357B0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 677, in __connect
+    with util.safe_reraise():
+         │    └ <class 'sqlalchemy.util.langhelpers.safe_reraise'>
+         └ <module 'sqlalchemy.util' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalchemy\\ut...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+    │      └ <function raise_ at 0x000001A21A73B010>
+    └ <module 'sqlalchemy.util.compat' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalch...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 673, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+    │    │                               │    │               └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A2350357B0>
+    │    │                               │    └ <function create_engine.<locals>.connect at 0x000001A2352C3A30>
+    │    │                               └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035900>
+    │    └ None
+    └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A2350357B0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+           │       │        │        └ {'host': 'localhost', 'database': 'kimgdb', 'user': 'root', 'password': '778899vvbbnnmm', 'client_flag': 2}
+           │       │        └ []
+           │       └ <function DefaultDialect.connect at 0x000001A21AF9A8C0>
+           └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x000001A235035660>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           │    │     │        │        └ {'host': 'localhost', 'database': 'kimgdb', 'user': 'root', 'password': '778899vvbbnnmm', 'client_flag': 2}
+           │    │     │        └ ()
+           │    │     └ <class 'pymysql.connections.Connection'>
+           │    └ <module 'pymysql' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pymysql\\__init__.py'>
+           └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x000001A235035660>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 353, in __init__
+    self.connect()
+    │    └ <function Connection.connect at 0x000001A2352BE9E0>
+    └ <pymysql.connections.Connection object at 0x000001A2350355D0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 664, in connect
+    raise exc
+          └ OperationalError(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+  File "f:\k_grab\main_v1.8.py", line 340, in <module>
+    mode_a()
+    └ <function mode_a at 0x000001A234FE1240>
+
+> File "f:\k_grab\main_v1.8.py", line 285, in mode_a
+    engine,kimg_table,tags_table=link_db()
+                                 └ <function link_db at 0x000001A234FE3D90>
+
+  File "f:\k_grab\main_v1.8.py", line 167, in link_db
+    raise e
+
+  File "f:\k_grab\main_v1.8.py", line 154, in link_db
+    engine=engine.connect()
+           │      └ <function Engine.connect at 0x000001A21AF596C0>
+           └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3315, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           │    │               │                       └ False
+           │    │               └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+           │    └ <class 'sqlalchemy.engine.base.Connection'>
+           └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 96, in __init__
+    else engine.raw_connection()
+         │      └ <function Engine.raw_connection at 0x000001A21AF59B40>
+         └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3394, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           │    │                  │    │    │        └ None
+           │    │                  │    │    └ <function Pool.connect at 0x000001A21AF730A0>
+           │    │                  │    └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035900>
+           │    │                  └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+           │    └ <function Engine._wrap_pool_connect at 0x000001A21AF59750>
+           └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3364, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+    │          └ <classmethod(<function Connection._handle_dbapi_exception_noconnection at 0x000001A21AF56170>)>
+    └ <class 'sqlalchemy.engine.base.Connection'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2198, in _handle_dbapi_exception_noconnection
+    util.raise_(
+    │    └ <function raise_ at 0x000001A21A73B010>
+    └ <module 'sqlalchemy.util' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalchemy\\ut...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 3361, in _wrap_pool_connect
+    return fn()
+           └ <bound method Pool.connect of <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035900>>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 320, in connect
+    return _ConnectionFairy._checkout(self)
+           │                │         └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035900>
+           │                └ <classmethod(<function _ConnectionFairy._checkout at 0x000001A21AF8C040>)>
+           └ <class 'sqlalchemy.pool.base._ConnectionFairy'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 884, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            │                 │        └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035900>
+            │                 └ <classmethod(<function _ConnectionRecord.checkout at 0x000001A21AF736D0>)>
+            └ <class 'sqlalchemy.pool.base._ConnectionRecord'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 486, in checkout
+    rec = pool._do_get()
+          │    └ <function QueuePool._do_get at 0x000001A21AF8E7A0>
+          └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035900>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 145, in _do_get
+    with util.safe_reraise():
+         │    └ <class 'sqlalchemy.util.langhelpers.safe_reraise'>
+         └ <module 'sqlalchemy.util' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalchemy\\ut...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+    │      └ <function raise_ at 0x000001A21A73B010>
+    └ <module 'sqlalchemy.util.compat' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalch...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\impl.py", line 143, in _do_get
+    return self._create_connection()
+           │    └ <function Pool._create_connection at 0x000001A21AF72E60>
+           └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035900>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 266, in _create_connection
+    return _ConnectionRecord(self)
+           │                 └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035900>
+           └ <class 'sqlalchemy.pool.base._ConnectionRecord'>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 381, in __init__
+    self.__connect()
+    └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A2350357B0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 677, in __connect
+    with util.safe_reraise():
+         │    └ <class 'sqlalchemy.util.langhelpers.safe_reraise'>
+         └ <module 'sqlalchemy.util' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalchemy\\ut...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+    │      └ <function raise_ at 0x000001A21A73B010>
+    └ <module 'sqlalchemy.util.compat' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\sqlalch...
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\pool\base.py", line 673, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+    │    │                               │    │               └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A2350357B0>
+    │    │                               │    └ <function create_engine.<locals>.connect at 0x000001A2352C3A30>
+    │    │                               └ <sqlalchemy.pool.impl.QueuePool object at 0x000001A235035900>
+    │    └ None
+    └ <sqlalchemy.pool.base._ConnectionRecord object at 0x000001A2350357B0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+           │       │        │        └ {'host': 'localhost', 'database': 'kimgdb', 'user': 'root', 'password': '778899vvbbnnmm', 'client_flag': 2}
+           │       │        └ []
+           │       └ <function DefaultDialect.connect at 0x000001A21AF9A8C0>
+           └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x000001A235035660>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           │    │     │        │        └ {'host': 'localhost', 'database': 'kimgdb', 'user': 'root', 'password': '778899vvbbnnmm', 'client_flag': 2}
+           │    │     │        └ ()
+           │    │     └ <class 'pymysql.connections.Connection'>
+           │    └ <module 'pymysql' from 'C:\\Users\\S\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\pymysql\\__init__.py'>
+           └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x000001A235035660>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 353, in __init__
+    self.connect()
+    │    └ <function Connection.connect at 0x000001A2352BE9E0>
+    └ <pymysql.connections.Connection object at 0x000001A2350355D0>
+
+  File "C:\Users\S\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 664, in connect
+    raise exc
+          └ OperationalError(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2023-04-14 13:06:29.185 | ERROR    | __main__:mode_a:287 - 没有数据库连接,检查数据库是否启用
+2023-04-14 13:06:29.186 | INFO     | __main__:link_db:139 - 连接数据库中...........
