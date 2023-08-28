@@ -8,7 +8,7 @@ import contextlib
 import random
 import os
 from dotenv import load_dotenv  # pip install python-dotenv
-from cellfunctions_ import get_headers, get_source, parse, save_img
+from cellfunctions_ import get_headers
 import json
 
 
@@ -22,7 +22,7 @@ load_dotenv()
 # 连接数据库 mysql
 @logger.catch()
 def link_db():  # return engine, kimg_table, tags_table
-    logger.info("连接数据库中...........")
+    logger.debug("连接数据库中...........")
 
     # 连接数据库
     try:
@@ -45,6 +45,7 @@ def link_db():  # return engine, kimg_table, tags_table
         )  # mysql_img_table=kimg mysql_tags_table=tags
         tags_table = os.getenv("mysql_tags_table")
 
+        logger.success(f"数据表: {mysql_database}")
         logger.success(f"图像数据表: {kimg_table}")
         logger.success(f"tag数据表: {tags_table}")
 
@@ -52,14 +53,15 @@ def link_db():  # return engine, kimg_table, tags_table
         return engine, kimg_table, tags_table
 
     except Exception as e:
-        raise e
+        logger.error("连接数据库失败")
+        breakpoint()
+        # raise e
 
 
 # 保存数据到本地与数据库
 @logger.catch()
 def save_img_and_todb(pids, engine, kimg_table, tags_table):
-    global df
-    number__ = 0  # 内部变量
+    total_add_db_data_number__ = 0  # 内部变量
 
     # 初始化
     # 表结构
@@ -77,6 +79,8 @@ def save_img_and_todb(pids, engine, kimg_table, tags_table):
         logger.warning("没有得到数据")
         return False
     except Exception as e:
+        logger.error("未知错误:save_img_and_todb执行main最后从main函数没有得到数据")
+        breakpoint()
         raise e
         # logger.error(e)
 
@@ -102,7 +106,7 @@ def save_img_and_todb(pids, engine, kimg_table, tags_table):
             times = pandas.Timestamp.now().strftime("%Y-%m-%d %H:%M:%S")
             df.loc[pid] = [pid, tags, img_path, img_link, 1, times]
             logger.success(f"imported: {img_link}")
-            number__ += 1
+            total_add_db_data_number__ += 1
 
             for tag in tags.split(" "):
                 if len(tag.strip()) != 0:
@@ -140,6 +144,28 @@ def save_img_and_todb(pids, engine, kimg_table, tags_table):
     SELECT count(DISTINCT tag) from tags_unique;
     """
 
+    # breakpoint()
+
+    # 决定这里创建一个tags_unique表,😅
+    try:
+        logger.debug("创建一个tags_unique表")
+
+        engine.execute(text("DROP TABLE if EXISTS tags_unique;"))
+        engine.execute(
+            text(f"CREATE TABLE if not EXISTS tags_unique LIKE {tags_table};")
+        )
+        engine.execute(
+            text(f"INSERT into tags_unique SELECT DISTINCT * from {tags_table};")
+        )
+
+        tags_unique_number = engine.execute(
+            text("SELECT count(*) FROM tags_unique;")
+        ).fetchone()
+        logger.info(f"{tags_table} 表当前唯一tag数为 : {tags_unique_number}")
+
+    except Exception as e:
+        logger.warning("创建一个tags_unique表,失败")
+
     # 保存图像数据到数据库
     # 可以不用创建表,没有自动建表有则添加
     df.to_sql(kimg_table, engine, if_exists="append", index=False)
@@ -156,15 +182,15 @@ def save_img_and_todb(pids, engine, kimg_table, tags_table):
         AttributeError
     ):  # AttributeError: 'Connection' object has no attribute 'commit'
         engine.commit()
-    logger.success(f"DataBase had added {number__} img data...")
+    logger.success(f"DataBase had added {total_add_db_data_number__} img data...")
 
-    addition = int(number__)
+    addition = int(total_add_db_data_number__)
     # 增加的部分
-    del number__  # 删除内部变量
+    del total_add_db_data_number__  # 删除内部变量
 
-    global number  # 外部变量
+    global total_add_db_data_number  # 外部变量
 
-    number += addition
+    total_add_db_data_number += addition
 
 
 # 封装一个下载模式
@@ -215,9 +241,9 @@ def mode_a():  # 随机范围下载模式 从范围内生成一堆数量的图�
                 df_pid = df_pid["pid"]
             except Exception as e:
                 df_pid = []
-                logger.error(f"无法从{kimg_table}找到pid")
-                breakpoint()
-                raise e
+                logger.warning(f"无法从{kimg_table}找到pid,可能为新表")
+                # breakpoint()
+                # raise e
 
             logger.info(f"数据库共有{len(df_pid)}条图像数据")
 
@@ -250,7 +276,7 @@ def mode_a():  # 随机范围下载模式 从范围内生成一堆数量的图�
 
             save_img_and_todb(pids, engine, kimg_table, tags_table)
 
-        logger.success(f"totally DataBase had added {number} img data....")
+        logger.success(f"数据库一共添加了 {total_add_db_data_number} img data....")
 
 
 # 封装一个下载模式 这个拿来测试的
@@ -273,7 +299,6 @@ def mode_b(pids: list = eval(os.getenv("pid_list"))):  # 指定下载模式
             raise e
         save_img_and_todb(
             pids,
-            int(os.getenv("wait_time")),
             int(os.getenv("sem_times")),
             engine,
             kimg_table,
@@ -285,12 +310,12 @@ def mode_b(pids: list = eval(os.getenv("pid_list"))):  # 指定下载模式
 if __name__ == "__main__":
     # 外部全局变量 记录一次运行加入数据库数据量
 
-    number = 0
+    total_add_db_data_number = 0
 
     for _ in range(1):  # 可能会出现cookie过期
         try:
             # headers在main函数里面使用,全局
-            logger.info("获取headers.......")
+            logger.debug("尝试从headers_firefox.json获取headers.......")
             with open("headers_firefox.json", encoding="utf-8") as f:
                 try:
                     dread = dict(json.load(f))
@@ -303,7 +328,9 @@ if __name__ == "__main__":
                     # print(headers)
                 except Exception as e:
                     # raise NameError("Not found headers") from e
-                    logger.info("自动获取headers.......")
+                    logger.warning(
+                        "失败,将用函数get_headers()采用playwright无头模式下自动获取headers......."
+                    )
                     headers = get_headers()
 
             logger.success("获取headers成功......")
@@ -316,6 +343,8 @@ if __name__ == "__main__":
             else:
                 continue
         except Exception as e:
+            logger.error("在main.py 起始位置出错.......")
+            breakpoint()
             raise e
             # continue
     # raise TimeoutError("下载已完成")

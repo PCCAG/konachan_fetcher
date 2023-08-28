@@ -27,8 +27,11 @@ def f_tags(soup: BeautifulSoup):
             tags = check(i, soup)
             if (tags != False) and (isinstance(tags, str)) and (len(tags) > 2):
                 return tags
+        logger.warning("没有解析到tag")
         return False
     except Exception as e:
+        logger.warning("没有解析到tag")
+        breakpoint()
         raise e
 
 
@@ -59,6 +62,9 @@ def f_link(soup: BeautifulSoup):
                 except Exception:
                     continue
 
+        logger.warning("没有解析到图片链接")
         return False
     except Exception as e:
+        logger.warning("没有解析到图片链接")
+        breakpoint()
         raise e

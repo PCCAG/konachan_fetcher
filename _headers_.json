@@ -1,10 +1,9 @@
 {
-  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-  "upgrade-insecure-requests": "1",
-  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/116.0.5845.82 Safari/537.36",
-  "sec-ch-ua": "\"Chromium\";v=\"116\", \"Not)A;Brand\";v=\"24\", \"HeadlessChrome\";v=\"116\"",
-  "sec-ch-ua-mobile": "?0",
-  "sec-ch-ua-platform": "\"Windows\"",
-  "cookie": "country=--;blacklisted_tags=%5B%22%22%5D;konachan.com=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWZlNTA4NWQwM2ZjN2U1ZWQyOWM3NTk5MWRlMzU5ZjkyBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTZFZDB1NS84L2lCblhOTnNWTS9hcnJkcG9TZXVXNVNLdDR2MXQrVDBhaUE9BjsARg%3D%3D--78da3253c73516093aa199bc0cb68f7499b07df3;__utma=235754395.1723997795.1693216906.1693216906.1693216906.1;__utmc=235754395;__utmz=235754395.1693216906.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none);__utmt=1;vote=1;LBSERVERID=ded6974;forum_post_last_read_at=%222023-08-28T12%3A07%3A40%2B02%3A00%22;__utmb=235754395.3.10.1693216906",
+  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "sec-fetch-dest": "document",
+  "sec-fetch-mode": "navigate",
+  "sec-fetch-site": "none",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.4 Safari/605.1.15",
+  "cookie": "country=--;blacklisted_tags=%5B%22%22%5D;konachan.com=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJThlNzE5ZGRhOTBiNjQ0YTJlYzkxNDA1Mzc5NWYzMGU2BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTluYkJUNWQyNk5RU0hvMlcwaHJvUmJNT29IZDVTVFNQekxkd0dsM1g1WTg9BjsARg%3D%3D--73f251a221494b645eb7fc287ba3d9e99a74000a;vote=1;forum_post_last_read_at=%222023-08-28T17%3A48%3A43%2B02%3A00%22",
   "Referer": "https://konachan.com/post"
 }

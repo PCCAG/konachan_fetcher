@@ -63,12 +63,12 @@ def get_headers() -> dict[str, str]:
     # 启动演奏
     with sync_playwright() as p:
         try:
-            logger.info("利用playwright获取cookie及headers......")
+            logger.debug("利用playwright获取cookie及headers......")
             # 启动浏览器
-            b = p.chromium.launch(
+            b = p.webkit.launch(
                 headless=True, proxy={"server": proxies[list(proxies.keys())[0]]}
             )
-            logger.info("启动浏览器上下文....")
+            logger.debug("启动浏览器上下文....")
             # 启动浏览器上下文
             context = b.new_context()
 
@@ -88,7 +88,7 @@ def get_headers() -> dict[str, str]:
             page.wait_for_load_state("domcontentloaded", timeout=10000)
             page.click("#post-list-posts > li > div > a")
 
-            page.wait_for_load_state("load", timeout=10000)
+            page.wait_for_load_state("domcontentloaded", timeout=10000)
 
             # 获取所有cookie
             cookies = context.cookies()
@@ -113,16 +113,17 @@ def get_headers() -> dict[str, str]:
 
             return headers
         except Exception as e:
-            logger.error("取cookie及headers失败")
+            logger.error("取cookie及headers失败,请尝试检查代理是否出错")
             breakpoint()
             raise e
 
 
 # 获取单个页面源码
 async def get_source(pid: int, url: str, headers: dict):
+    # sourcery skip: remove-unreachable-code
     # 异步上下文菜单管理器
     async with httpx.AsyncClient(proxies=proxies) as client:
-        # 这个是重试四次
+        # 这个是重试四次,2333
         for i in range(4):
             try:
                 headers["user-agent"] = UserAgent().random
@@ -147,13 +148,13 @@ async def get_source(pid: int, url: str, headers: dict):
                     logger.success("获取源码成功")
                     return (pid, res)
             except Exception as e:
-                raise e
+                # raise e
                 logger.warning(f"下载源码重试: https://konachan.com/post/show/{pid}")
                 await asyncio.sleep(random.randint(1, 4))
                 # raise e
                 # lg.warning("re link")
                 continue
-        logger.error("nothing!")
+        logger.error("源码 nothing!")
         # logger.error(f"https://konachan.com/post/show/{pid}/")
         return (pid, "寄")
 
@@ -197,7 +198,7 @@ def parse(pid: int, source: str):
 
 # 下载图片
 async def save_img(pid: int, img_link: str, tags: str, headers: dict, imgpath: str):
-    async def check():
+    async def check_ifsuccess_return_responce():
         async with httpx.AsyncClient(proxies=proxies) as clinet:
             for _ in range(3):
                 try:
@@ -211,22 +212,21 @@ async def save_img(pid: int, img_link: str, tags: str, headers: dict, imgpath: s
             return False
 
     try:
-        try:
-            re = await check()
+        re = await check_ifsuccess_return_responce()
 
-            # 这里非异步
+        # 这里非异步
 
-            if re == False:
-                logger.error("请求图片链接错误")
-                logger.error(f"https://konachan.com/post/show/{pid}/")
-                return (pid, "寄", "寄", "寄")
-            # logger.debug(f"请求图片状态码:{re.status_code}")
+        if re == False:
+            logger.error("请求图片链接错误")
+            logger.error(f"https://konachan.com/post/show/{pid}/")
+            return (pid, "寄", "寄", "寄")
+        # logger.debug(f"请求图片状态码:{re.status_code}")
 
-            elif re.status_code != 200:
-                logger.error(f"请求图片状态码:{re.status_code}")
-                logger.error(f"https://konachan.com/post/show/{pid}/")
-                return (pid, "寄", "寄", "寄")
-
+        elif re.status_code != 200:
+            logger.error(f"请求图片状态码:{re.status_code}")
+            logger.error(f"https://konachan.com/post/show/{pid}/")
+            return (pid, "寄", "寄", "寄")
+        else:
             img_type = img_link.split(".")[-1]
             # logger.info(f"图片类型: {img_type}")
 
@@ -239,45 +239,24 @@ async def save_img(pid: int, img_link: str, tags: str, headers: dict, imgpath: s
 
             async with aiofiles.open(img_path, "wb") as f:
                 await f.write(re.content)
-                logger.info(f"保存图片中......{pid}")
+                logger.debug(f"保存图片中......{pid}")
 
-        except Exception as e:
-            logger.error("保存图片到路径错误")
-
-            logger.error(f"https://konachan.com/post/show/{pid}/")
-
-            status_code = re.status_code
-
-            logger.error(f"{status_code}")
-            # breakpoint()
-
-            return (pid, "寄", "寄", "寄")
-
-        try:
             if tags != "寄" and img_link != "寄" and img_path != "寄":
                 logger.success("下载图片成功")
                 return (pid, tags, img_link, img_path)
 
-            logger.error("没有有效的值")
+            else:
+                logger.error("没有有效的值,下载图片失败")
 
-            logger.error(f"https://konachan.com/post/show/{pid}/")
+                logger.error(f"https://konachan.com/post/show/{pid}/")
 
-            return (pid, "寄", "寄", "寄")
-
-        except Exception as e:
-            logger.error("未知错误1")
-
-            logger.error(f"https://konachan.com/post/show/{pid}/")
-
-            breakpoint()
-
-            return (pid, "寄", "寄", "寄")
+                return (pid, "寄", "寄", "寄")
 
     except Exception as e:
-        logger.error("未知错误2")
+        logger.error("保存图片到路径错误")
 
         logger.error(f"https://konachan.com/post/show/{pid}/")
 
-        # breakpoint()
+        breakpoint()
 
         return (pid, "寄", "寄", "寄")

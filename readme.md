@@ -1,3 +1,4 @@
+
 ### 使用：
 
 * 有数据库启动 main.py
@@ -7,9 +8,9 @@
 
 * .env
 
-### 包依赖：
+### 依赖：
 
-* packages.txt
+* packages.txt ,  requirements.txt
 
 ```bash
 # -i https://pypi.tuna.tsinghua.edu.cn/simple
@@ -59,12 +60,31 @@ pip install pymysql mysql
 #### 下载范围[low,upper]
 
 * low=300000
-  upper=350000
+* upper=350000
 
 #### 单次循环次数
 
 * times=10
 
-#### 代理
+#### 代理(http):
 
 * http_proxy=http://127.0.0.1:10809
+
+### 表样式:
+
+数据库会产生三个表:
+
+* kimg
+* tags
+* tags_unique
+
+![1693236442027](image/readme/1693236442027.png)
+
+![1693236410201](image/readme/1693236410201.png)![1693236471373](image/readme/1693236471373.png)
+
+### 其他:
+
+测试选项无需修改
+
+* pid_list=[343131,344094,344095,344096,344097,344098,35543]
+* mode=a
