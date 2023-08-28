@@ -13,11 +13,11 @@ from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 from fake_useragent import UserAgent
 from loguru import logger
-from playwright.async_api import async_playwright
+from playwright.sync_api import sync_playwright, Playwright
 
 # 一个playwright的插件用来伪装无头模式
 # pip install playwright-stealth
-from playwright_stealth import stealth_async
+from playwright_stealth import stealth_sync
 
 from parse_tags_link import f_link, f_tags
 
@@ -59,52 +59,54 @@ async def current_ip():
 
 # 利用playwright获取cookie及headers
 @logger.catch()
-async def get_headers() -> dict[str, str]:
+def get_headers() -> dict[str, str]:
     # 启动演奏
-    async with async_playwright() as p:
+    with sync_playwright() as p:
         try:
             logger.info("利用playwright获取cookie及headers......")
             # 启动浏览器
-            b = await p.chromium.launch(
-                headless=False, proxy={"server": proxies[list(proxies.keys())[0]]}
+            b = p.chromium.launch(
+                headless=True, proxy={"server": proxies[list(proxies.keys())[0]]}
             )
             logger.info("启动浏览器上下文....")
             # 启动浏览器上下文
-            context = await b.new_context()
+            context = b.new_context()
 
-            page = await context.new_page()
+            page = context.new_page()
             # 无头模式伪装
-            await stealth_async(page)
+            stealth_sync(page)
 
             # 路由,流产图片,实现无图模式
-            # await page.route(
-            #    re__.compile(r"(\.png$)|(\.jpg$)", re__.S),
-            #    lambda route: route.abort(),
-            # )
+            page.route(
+                re__.compile(r"(\.png$)|(\.jpg$)|(\.gif$)", re__.S),
+                lambda route: route.abort(),
+            )
 
-            re = await page.goto(host)
-            await page.click("#links > a:nth-child(1)")
+            re = page.goto(host)
+            page.click("#links > a:nth-child(1)")
 
-            await page.wait_for_load_state("domcontentloaded", timeout=10000)
-            await page.click("#post-list-posts > li > div > a")
+            page.wait_for_load_state("domcontentloaded", timeout=10000)
+            page.click("#post-list-posts > li > div > a")
 
-            await page.wait_for_load_state("load", timeout=10000)
+            page.wait_for_load_state("load", timeout=10000)
 
             # 获取所有cookie
-            cookies = await context.cookies()
+            cookies = context.cookies()
             # 获取请求头
-            headers = await re.request.all_headers()
+            headers = re.request.headers
             headers["cookie"] = "".join(
                 f"{i['name']}={i['value']};"
                 if pin != len(cookies) - 1
                 else f"{i['name']}={i['value']}"
                 for pin, i in enumerate(cookies)
             )
+            headers["Referer"] = r"https://konachan.com/post"
 
             with open("_headers_.json", "w", encoding="UTF-8", errors="ignore") as f:
                 json.dump(headers, fp=f, ensure_ascii=False, indent=2)
 
-            await context.close()
+            page.close()
+            context.close()
             b.close
 
             logger.success("获取cookie及headers成功")
@@ -145,6 +147,7 @@ async def get_source(pid: int, url: str, headers: dict):
                     logger.success("获取源码成功")
                     return (pid, res)
             except Exception as e:
+                raise e
                 logger.warning(f"下载源码重试: https://konachan.com/post/show/{pid}")
                 await asyncio.sleep(random.randint(1, 4))
                 # raise e

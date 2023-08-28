@@ -135,7 +135,7 @@ if __name__ == "__main__":
             int(os.getenv("down_number")),
         )
         print(pids.__len__())
-        headers = asyncio.run(get_headers())
+        headers = get_headers()
 
         rows = asyncio.run(main(pids, headers=headers))
 

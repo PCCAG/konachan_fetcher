@@ -304,7 +304,7 @@ if __name__ == "__main__":
                 except Exception as e:
                     # raise NameError("Not found headers") from e
                     logger.info("自动获取headers.......")
-                    headers = asyncio.run(get_headers())
+                    headers = get_headers()
 
             logger.success("获取headers成功......")
 
