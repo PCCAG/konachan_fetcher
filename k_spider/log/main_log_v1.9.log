@@ -1,0 +1,658 @@
+2023-08-28 15:50:58.387 | INFO     | __main__:<module>:397 - 获取headers.......
+2023-08-28 15:50:58.390 | INFO     | __main__:<module>:410 - 获取headers.......
+2023-08-28 16:22:08.614 | INFO     | __main__:<module>:290 - 获取headers.......
+2023-08-28 16:22:08.617 | INFO     | __main__:<module>:303 - 自动获取headers.......
+2023-08-28 16:22:09.217 | INFO     | cellfunctions_:get_headers:66 - 利用playwright获取cookie及headers......
+2023-08-28 16:22:09.690 | INFO     | cellfunctions_:get_headers:71 - 启动浏览器上下文....
+2023-08-28 16:22:18.018 | ERROR    | cellfunctions_:get_headers:113 - 取cookie及headers失败
+2023-08-28 16:23:39.759 | INFO     | __main__:<module>:290 - 获取headers.......
+2023-08-28 16:23:39.762 | INFO     | __main__:<module>:303 - 自动获取headers.......
+2023-08-28 16:23:40.543 | INFO     | cellfunctions_:get_headers:66 - 利用playwright获取cookie及headers......
+2023-08-28 16:23:41.007 | INFO     | cellfunctions_:get_headers:71 - 启动浏览器上下文....
+2023-08-28 16:23:49.361 | ERROR    | cellfunctions_:get_headers:113 - 取cookie及headers失败
+2023-08-28 16:24:30.467 | INFO     | __main__:<module>:290 - 获取headers.......
+2023-08-28 16:24:30.467 | INFO     | __main__:<module>:303 - 自动获取headers.......
+2023-08-28 16:24:31.029 | INFO     | cellfunctions_:get_headers:66 - 利用playwright获取cookie及headers......
+2023-08-28 16:24:31.514 | INFO     | cellfunctions_:get_headers:71 - 启动浏览器上下文....
+2023-08-28 16:24:40.064 | ERROR    | cellfunctions_:get_headers:113 - 取cookie及headers失败
+2023-08-28 16:25:25.929 | INFO     | __main__:<module>:290 - 获取headers.......
+2023-08-28 16:25:25.933 | INFO     | __main__:<module>:303 - 自动获取headers.......
+2023-08-28 16:25:26.514 | INFO     | cellfunctions_:get_headers:66 - 利用playwright获取cookie及headers......
+2023-08-28 16:25:26.994 | INFO     | cellfunctions_:get_headers:71 - 启动浏览器上下文....
+2023-08-28 16:25:33.724 | SUCCESS  | cellfunctions_:get_headers:109 - 获取cookie及headers成功
+2023-08-28 16:25:33.851 | SUCCESS  | __main__:<module>:306 - 获取headers成功......
+2023-08-28 16:25:33.851 | SUCCESS  | __main__:mode_a:195 - 单次下载数量:2
+2023-08-28 16:25:33.851 | SUCCESS  | __main__:mode_a:196 - 并发数:20
+2023-08-28 16:25:33.851 | SUCCESS  | __main__:mode_a:197 - 下载图片路径:.\pictures
+2023-08-28 16:25:33.851 | SUCCESS  | __main__:mode_a:198 - 下载次数:200
+2023-08-28 16:25:33.867 | INFO     | __main__:link_db:25 - 连接数据库中...........
+2023-08-28 16:25:33.918 | ERROR    | __main__:mode_a:204 - An error has been caught in function 'mode_a', process 'MainProcess' (9052), thread 'MainThread' (11248):
+Traceback (most recent call last):
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 310, in <module>
+    mode_a()
+    └ <function mode_a at 0x000001F7D89022A0>
+
+> File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 204, in mode_a
+    engine, kimg_table, tags_table = link_db()
+                                     └ <function link_db at 0x000001F7D8901B20>
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 55, in link_db
+    raise e
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 38, in link_db
+    engine = create_engine(
+             └ <function create_engine at 0x000001F7CF67F920>
+
+  File "<string>", line 2, in create_engine
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\util\deprecations.py", line 281, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+           │   │       └ {}
+           │   └ ('mysql+pymysql://root:@localhost/kimgdb',)
+           └ <function create_engine at 0x000001F7CF67F600>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 601, in create_engine
+    dbapi = dbapi_meth(**dbapi_args)
+            │            └ {}
+            └ <bound method MySQLDialect_pymysql.import_dbapi of <class 'sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql'>>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\pymysql.py", line 75, in import_dbapi
+    return __import__("pymysql")
+
+ModuleNotFoundError: No module named 'pymysql'
+2023-08-28 16:25:33.933 | ERROR    | __main__:mode_a:206 - 没有数据库连接,请检查数据库是否启用
+2023-08-28 16:25:33.935 | ERROR    | __main__:<module>:310 - An error has been caught in function '<module>', process 'MainProcess' (9052), thread 'MainThread' (11248):
+Traceback (most recent call last):
+
+> File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 310, in <module>
+    mode_a()
+    └ <function mode_a at 0x000001F7D89022A0>
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 207, in mode_a
+    raise e
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 204, in mode_a
+    engine, kimg_table, tags_table = link_db()
+                                     └ <function link_db at 0x000001F7D8901B20>
+
+TypeError: cannot unpack non-iterable NoneType object
+2023-08-28 16:25:33.942 | SUCCESS  | __main__:<module>:319 - 下载任务完成
+2023-08-28 16:53:30.537 | INFO     | __main__:<module>:291 - 获取headers.......
+2023-08-28 16:53:30.537 | INFO     | __main__:<module>:304 - 自动获取headers.......
+2023-08-28 16:53:31.116 | INFO     | cellfunctions_:get_headers:66 - 利用playwright获取cookie及headers......
+2023-08-28 16:53:31.581 | INFO     | cellfunctions_:get_headers:71 - 启动浏览器上下文....
+2023-08-28 16:53:39.391 | SUCCESS  | cellfunctions_:get_headers:109 - 获取cookie及headers成功
+2023-08-28 16:53:39.457 | SUCCESS  | __main__:<module>:307 - 获取headers成功......
+2023-08-28 16:53:39.458 | SUCCESS  | __main__:mode_a:195 - 单次下载数量:2
+2023-08-28 16:53:39.459 | SUCCESS  | __main__:mode_a:196 - 并发数:20
+2023-08-28 16:53:39.460 | SUCCESS  | __main__:mode_a:197 - 下载图片路径:.\pictures
+2023-08-28 16:53:39.461 | SUCCESS  | __main__:mode_a:198 - 下载次数:200
+2023-08-28 16:53:39.462 | INFO     | __main__:link_db:25 - 连接数据库中...........
+2023-08-28 16:53:39.492 | ERROR    | __main__:mode_a:204 - An error has been caught in function 'mode_a', process 'MainProcess' (3108), thread 'MainThread' (9748):
+Traceback (most recent call last):
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 311, in <module>
+    mode_a()
+    └ <function mode_a at 0x000001938F2362A0>
+
+> File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 204, in mode_a
+    engine, kimg_table, tags_table = link_db()
+                                     └ <function link_db at 0x000001938F235B20>
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 55, in link_db
+    raise e
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 38, in link_db
+    engine = create_engine(
+             └ <function create_engine at 0x0000019385FAF920>
+
+  File "<string>", line 2, in create_engine
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\util\deprecations.py", line 281, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+           │   │       └ {}
+           │   └ ('mysql+pymysql://root:@localhost/kimgdb',)
+           └ <function create_engine at 0x0000019385FAF600>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 601, in create_engine
+    dbapi = dbapi_meth(**dbapi_args)
+            │            └ {}
+            └ <bound method MySQLDialect_pymysql.import_dbapi of <class 'sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql'>>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\pymysql.py", line 75, in import_dbapi
+    return __import__("pymysql")
+
+ModuleNotFoundError: No module named 'pymysql'
+2023-08-28 16:53:39.505 | ERROR    | __main__:mode_a:206 - 没有数据库连接,请检查数据库是否启用
+2023-08-28 17:18:19.755 | INFO     | __main__:<module>:291 - 获取headers.......
+2023-08-28 17:18:19.755 | INFO     | __main__:<module>:304 - 自动获取headers.......
+2023-08-28 17:18:20.377 | INFO     | cellfunctions_:get_headers:66 - 利用playwright获取cookie及headers......
+2023-08-28 17:18:20.782 | INFO     | cellfunctions_:get_headers:71 - 启动浏览器上下文....
+2023-08-28 17:18:29.130 | ERROR    | cellfunctions_:get_headers:113 - 取cookie及headers失败
+2023-08-28 17:19:29.300 | INFO     | __main__:<module>:291 - 获取headers.......
+2023-08-28 17:19:29.300 | INFO     | __main__:<module>:304 - 自动获取headers.......
+2023-08-28 17:19:29.935 | INFO     | cellfunctions_:get_headers:66 - 利用playwright获取cookie及headers......
+2023-08-28 17:19:30.303 | INFO     | cellfunctions_:get_headers:71 - 启动浏览器上下文....
+2023-08-28 17:19:38.628 | ERROR    | cellfunctions_:get_headers:113 - 取cookie及headers失败
+2023-08-28 17:20:04.764 | INFO     | __main__:<module>:291 - 获取headers.......
+2023-08-28 17:20:04.766 | INFO     | __main__:<module>:304 - 自动获取headers.......
+2023-08-28 17:20:05.401 | INFO     | cellfunctions_:get_headers:66 - 利用playwright获取cookie及headers......
+2023-08-28 17:20:05.805 | INFO     | cellfunctions_:get_headers:71 - 启动浏览器上下文....
+2023-08-28 17:20:14.120 | ERROR    | cellfunctions_:get_headers:114 - 取cookie及headers失败
+2023-08-28 17:21:09.262 | ERROR    | asyncio.events:_run:80 - An error has been caught in function '_run', process 'MainProcess' (5620), thread 'MainThread' (2476):
+Traceback (most recent call last):
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 294, in <module>
+    dread = dict(json.load(f))
+                 │    │    └ <_io.TextIOWrapper name='headers_firefox.json' mode='r' encoding='utf-8'>
+                 │    └ <function load at 0x000001E01398B240>
+                 └ <module 'json' from 'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\json\\__init__.py'>
+
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+           │     │  └ <method 'read' of '_io.TextIOWrapper' objects>
+           │     └ <_io.TextIOWrapper name='headers_firefox.json' mode='r' encoding='utf-8'>
+           └ <function loads at 0x000001E01398B2E0>
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           │                │      └ '\n'
+           │                └ <function JSONDecoder.decode at 0x000001E01398AB60>
+           └ <json.decoder.JSONDecoder object at 0x000001E0139E7490>
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               │    │          │      │  └ '\n'
+               │    │          │      └ <built-in method match of re.Pattern object at 0x000001E013A058A0>
+               │    │          └ '\n'
+               │    └ <function JSONDecoder.raw_decode at 0x000001E01398AC00>
+               └ <json.decoder.JSONDecoder object at 0x000001E0139E7490>
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+          │                                  └ '\n'
+          └ <class 'json.decoder.JSONDecodeError'>
+
+json.decoder.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 305, in <module>
+    headers = asyncio.run(get_headers())
+              │       │   └ <function get_headers at 0x000001E01D625620>
+              │       └ <function run at 0x000001E012D5B420>
+              └ <module 'asyncio' from 'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\__init__.py'>
+
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           │      │   └ <coroutine object get_headers at 0x000001E01D5BA540>
+           │      └ <function Runner.run at 0x000001E012E1E3E0>
+           └ <asyncio.runners.Runner object at 0x000001E01D0DB090>
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<get_headers() running at c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\l...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x000001E012E13F60>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x000001E01D0DB090>
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 640, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x000001E012EE7EC0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 607, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000001E012E1DD00>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1922, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000001E012D5BD80>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+> File "C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\cellfunctions_.py", line 116, in get_headers
+    raise e
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\cellfunctions_.py", line 85, in get_headers
+    re = await page.goto(host)
+               │    │    └ 'https://konachan.com'
+               │    └ <function Page.goto at 0x000001E01D53BEC0>
+               └ <Page url='about:blank'>
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\playwright\async_api\_generated.py", line 9251, in goto
+    await self._impl_obj.goto(
+          │    │         └ <function Page.goto at 0x000001E01D4F1760>
+          │    └ <Page url='about:blank'>
+          └ <Page url='about:blank'>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\playwright\_impl\_page.py", line 479, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+                 │    │           │      └ <function locals_to_params at 0x000001E01D205B20>
+                 │    │           └ <function Frame.goto at 0x000001E01D2BFA60>
+                 │    └ <Frame name= url='about:blank'>
+                 └ <Page url='about:blank'>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\playwright\_impl\_frame.py", line 147, in goto
+    await self._channel.send("goto", locals_to_params(locals()))
+          │    │        │            └ <function locals_to_params at 0x000001E01D205B20>
+          │    │        └ <function Channel.send at 0x000001E01D206840>
+          │    └ <playwright._impl._connection.Channel object at 0x000001E01D92B590>
+          └ <Frame name= url='about:blank'>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+                 │    │           └ <function Connection.wrap_api_call at 0x000001E01D260680>
+                 │    └ <playwright._impl._connection.Connection object at 0x000001E01CDFBF90>
+                 └ <playwright._impl._connection.Channel object at 0x000001E01D92B590>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 482, in wrap_api_call
+    return await cb()
+                 └ <function Channel.send.<locals>.<lambda> at 0x000001E01D91E8E0>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\playwright\_impl\_connection.py", line 97, in inner_send
+    result = next(iter(done)).result()
+                       └ {<Future finished exception=Error('net::ERR_TIMED_OUT at https://konachan.com/\n=========================== logs ============...
+
+playwright._impl._api_types.Error: net::ERR_TIMED_OUT at https://konachan.com/
+=========================== logs ===========================
+navigating to "https://konachan.com/", waiting until "load"
+============================================================
+2023-08-28 17:21:09.291 | SUCCESS  | __main__:<module>:307 - 获取headers成功......
+2023-08-28 17:21:09.293 | SUCCESS  | __main__:mode_a:195 - 单次下载数量:20
+2023-08-28 17:21:09.294 | SUCCESS  | __main__:mode_a:196 - 并发数:20
+2023-08-28 17:21:09.297 | SUCCESS  | __main__:mode_a:197 - 下载图片路径:.\pictures
+2023-08-28 17:21:09.299 | SUCCESS  | __main__:mode_a:198 - 下载次数:200
+2023-08-28 17:21:09.301 | INFO     | __main__:link_db:25 - 连接数据库中...........
+2023-08-28 17:21:09.351 | ERROR    | __main__:mode_a:204 - An error has been caught in function 'mode_a', process 'MainProcess' (5620), thread 'MainThread' (2476):
+Traceback (most recent call last):
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 311, in <module>
+    mode_a()
+    └ <function mode_a at 0x000001E01D626520>
+
+> File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 204, in mode_a
+    engine, kimg_table, tags_table = link_db()
+                                     └ <function link_db at 0x000001E01D625DA0>
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 55, in link_db
+    raise e
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 38, in link_db
+    engine = create_engine(
+             └ <function create_engine at 0x000001E01438F920>
+
+  File "<string>", line 2, in create_engine
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\util\deprecations.py", line 281, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+           │   │       └ {}
+           │   └ ('mysql+pymysql://root:@localhost/kimgdb',)
+           └ <function create_engine at 0x000001E01438F600>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 601, in create_engine
+    dbapi = dbapi_meth(**dbapi_args)
+            │            └ {}
+            └ <bound method MySQLDialect_pymysql.import_dbapi of <class 'sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql'>>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\pymysql.py", line 75, in import_dbapi
+    return __import__("pymysql")
+
+ModuleNotFoundError: No module named 'pymysql'
+2023-08-28 17:21:09.371 | ERROR    | __main__:mode_a:206 - 没有数据库连接,请检查数据库是否启用
+2023-08-28 17:21:21.175 | INFO     | __main__:<module>:291 - 获取headers.......
+2023-08-28 17:21:21.177 | INFO     | __main__:<module>:304 - 自动获取headers.......
+2023-08-28 17:21:21.788 | INFO     | cellfunctions_:get_headers:66 - 利用playwright获取cookie及headers......
+2023-08-28 17:21:22.284 | INFO     | cellfunctions_:get_headers:71 - 启动浏览器上下文....
+2023-08-28 17:21:31.068 | SUCCESS  | cellfunctions_:get_headers:110 - 获取cookie及headers成功
+2023-08-28 17:21:31.280 | SUCCESS  | __main__:<module>:307 - 获取headers成功......
+2023-08-28 17:21:31.282 | SUCCESS  | __main__:mode_a:195 - 单次下载数量:20
+2023-08-28 17:21:31.283 | SUCCESS  | __main__:mode_a:196 - 并发数:20
+2023-08-28 17:21:31.284 | SUCCESS  | __main__:mode_a:197 - 下载图片路径:.\pictures
+2023-08-28 17:21:31.285 | SUCCESS  | __main__:mode_a:198 - 下载次数:200
+2023-08-28 17:21:31.286 | INFO     | __main__:link_db:25 - 连接数据库中...........
+2023-08-28 17:21:31.319 | ERROR    | __main__:mode_a:204 - An error has been caught in function 'mode_a', process 'MainProcess' (7840), thread 'MainThread' (6528):
+Traceback (most recent call last):
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 311, in <module>
+    mode_a()
+    └ <function mode_a at 0x000002DFB1D86520>
+
+> File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 204, in mode_a
+    engine, kimg_table, tags_table = link_db()
+                                     └ <function link_db at 0x000002DFB1D85DA0>
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 55, in link_db
+    raise e
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 38, in link_db
+    engine = create_engine(
+             └ <function create_engine at 0x000002DFA8AEF920>
+
+  File "<string>", line 2, in create_engine
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\util\deprecations.py", line 281, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+           │   │       └ {}
+           │   └ ('mysql+pymysql://root:@localhost/kimgdb',)
+           └ <function create_engine at 0x000002DFA8AEF600>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 601, in create_engine
+    dbapi = dbapi_meth(**dbapi_args)
+            │            └ {}
+            └ <bound method MySQLDialect_pymysql.import_dbapi of <class 'sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql'>>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\pymysql.py", line 75, in import_dbapi
+    return __import__("pymysql")
+
+ModuleNotFoundError: No module named 'pymysql'
+2023-08-28 17:21:31.334 | ERROR    | __main__:mode_a:206 - 没有数据库连接,请检查数据库是否启用
+2023-08-28 17:21:39.144 | ERROR    | __main__:<module>:311 - An error has been caught in function '<module>', process 'MainProcess' (7840), thread 'MainThread' (6528):
+Traceback (most recent call last):
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 204, in mode_a
+    engine, kimg_table, tags_table = link_db()
+                                     └ <function link_db at 0x000002DFB1D85DA0>
+
+TypeError: cannot unpack non-iterable NoneType object
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+> File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 311, in <module>
+    mode_a()
+    └ <function mode_a at 0x000002DFB1D86520>
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 208, in mode_a
+    raise e
+
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+           │    │             └ <frame at 0x000002DFB1D0DF80, file 'c:\\Users\\Administrator\\Desktop\\k_grab1.9\\main.py', line 208, code mode_a>
+           │    └ <function Bdb.dispatch_line at 0x000002DFB2209E40>
+           └ <pdb.Pdb object at 0x000002DFB21C3150>
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+       │    │               └ <class 'bdb.BdbQuit'>
+       │    └ True
+       └ <pdb.Pdb object at 0x000002DFB21C3150>
+
+bdb.BdbQuit
+2023-08-28 17:21:39.144 | SUCCESS  | __main__:<module>:320 - 下载任务完成
+2023-08-28 17:23:55.962 | INFO     | __main__:<module>:293 - 获取headers.......
+2023-08-28 17:23:55.964 | INFO     | __main__:<module>:306 - 自动获取headers.......
+2023-08-28 17:23:56.581 | INFO     | cellfunctions_:get_headers:66 - 利用playwright获取cookie及headers......
+2023-08-28 17:23:57.066 | INFO     | cellfunctions_:get_headers:71 - 启动浏览器上下文....
+2023-08-28 17:24:08.493 | SUCCESS  | cellfunctions_:get_headers:110 - 获取cookie及headers成功
+2023-08-28 17:24:08.669 | SUCCESS  | __main__:<module>:309 - 获取headers成功......
+2023-08-28 17:24:08.669 | SUCCESS  | __main__:mode_a:195 - 单次下载数量:20
+2023-08-28 17:24:08.669 | SUCCESS  | __main__:mode_a:196 - 并发数:20
+2023-08-28 17:24:08.669 | SUCCESS  | __main__:mode_a:197 - 下载图片路径:.\pictures
+2023-08-28 17:24:08.669 | SUCCESS  | __main__:mode_a:198 - 下载次数:200
+2023-08-28 17:24:08.669 | INFO     | __main__:link_db:25 - 连接数据库中...........
+2023-08-28 17:24:08.700 | ERROR    | __main__:mode_a:204 - An error has been caught in function 'mode_a', process 'MainProcess' (724), thread 'MainThread' (1656):
+Traceback (most recent call last):
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 313, in <module>
+    mode_a()
+    └ <function mode_a at 0x0000019AC3E06200>
+
+> File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 204, in mode_a
+    engine, kimg_table, tags_table = link_db()
+                                     └ <function link_db at 0x0000019AC3E05A80>
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 55, in link_db
+    raise e
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 38, in link_db
+    engine = create_engine(
+             └ <function create_engine at 0x0000019ABAB7F880>
+
+  File "<string>", line 2, in create_engine
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\util\deprecations.py", line 281, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+           │   │       └ {}
+           │   └ ('mysql+pymysql://root:@localhost/kimgdb',)
+           └ <function create_engine at 0x0000019ABAB7F560>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 601, in create_engine
+    dbapi = dbapi_meth(**dbapi_args)
+            │            └ {}
+            └ <bound method MySQLDialect_pymysql.import_dbapi of <class 'sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql'>>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\dialects\mysql\pymysql.py", line 75, in import_dbapi
+    return __import__("pymysql")
+
+ModuleNotFoundError: No module named 'pymysql'
+2023-08-28 17:24:08.716 | ERROR    | __main__:mode_a:206 - 没有数据库连接,请检查数据库是否启用
+2023-08-28 17:27:06.461 | INFO     | __main__:<module>:293 - 获取headers.......
+2023-08-28 17:27:06.463 | INFO     | __main__:<module>:306 - 自动获取headers.......
+2023-08-28 17:27:07.050 | INFO     | cellfunctions_:get_headers:66 - 利用playwright获取cookie及headers......
+2023-08-28 17:27:07.513 | INFO     | cellfunctions_:get_headers:71 - 启动浏览器上下文....
+2023-08-28 17:27:16.008 | SUCCESS  | cellfunctions_:get_headers:110 - 获取cookie及headers成功
+2023-08-28 17:27:16.174 | SUCCESS  | __main__:<module>:309 - 获取headers成功......
+2023-08-28 17:27:16.174 | SUCCESS  | __main__:mode_a:195 - 单次下载数量:20
+2023-08-28 17:27:16.174 | SUCCESS  | __main__:mode_a:196 - 并发数:20
+2023-08-28 17:27:16.174 | SUCCESS  | __main__:mode_a:197 - 下载图片路径:.\pictures
+2023-08-28 17:27:16.174 | SUCCESS  | __main__:mode_a:198 - 下载次数:200
+2023-08-28 17:27:16.174 | INFO     | __main__:link_db:25 - 连接数据库中...........
+2023-08-28 17:27:18.272 | ERROR    | __main__:mode_a:204 - An error has been caught in function 'mode_a', process 'MainProcess' (9648), thread 'MainThread' (9772):
+Traceback (most recent call last):
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\pymysql\connections.py", line 644, in connect
+    sock = socket.create_connection(
+           │      └ <function create_connection at 0x0000015DBEBAA2A0>
+           └ <module 'socket' from 'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\socket.py'>
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 851, in create_connection
+    raise exceptions[0]
+          └ []
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 836, in create_connection
+    sock.connect(sa)
+    │    │       └ ('127.0.0.1', 3306)
+    │    └ <method 'connect' of '_socket.socket' objects>
+    └ <socket.socket [closed] fd=-1, family=2, type=1, proto=0>
+
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+    │                        │      └ <function Engine.raw_connection at 0x0000015DC1CE6840>
+    │                        └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+    └ <sqlalchemy.engine.base.Connection object at 0x0000015DCB3C5D50>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3288, in raw_connection
+    return self.pool.connect()
+           │    │    └ <function Pool.connect at 0x0000015DC0FF1EE0>
+           │    └ <sqlalchemy.pool.impl.QueuePool object at 0x0000015DCAA1F150>
+           └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+           │                │         └ <sqlalchemy.pool.impl.QueuePool object at 0x0000015DCAA1F150>
+           │                └ <classmethod(<function _ConnectionFairy._checkout at 0x0000015DC0FF3F60>)>
+           └ <class 'sqlalchemy.pool.base._ConnectionFairy'>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1267, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            │                 │        └ <sqlalchemy.pool.impl.QueuePool object at 0x0000015DCAA1F150>
+            │                 └ <classmethod(<function _ConnectionRecord.checkout at 0x0000015DC0FF2AC0>)>
+            └ <class 'sqlalchemy.pool.base._ConnectionRecord'>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    rec = pool._do_get()
+          │    └ <function QueuePool._do_get at 0x0000015DC1003560>
+          └ <sqlalchemy.pool.impl.QueuePool object at 0x0000015DCAA1F150>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 169, in _do_get
+    with util.safe_reraise():
+         │    └ <class 'sqlalchemy.util.langhelpers.safe_reraise'>
+         └ <module 'sqlalchemy.util' from 'c:\\Users\\Administrator\\Desktop\\k_grab1.9\\.venv\\Lib\\site-packages\\sqlalchemy\\util\\__...
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+          │         │              └ <traceback object at 0x0000015DCB319580>
+          │         └ <method 'with_traceback' of 'BaseException' objects>
+          └ OperationalError(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 167, in _do_get
+    return self._create_connection()
+           │    └ <function Pool._create_connection at 0x0000015DC0FF1C60>
+           └ <sqlalchemy.pool.impl.QueuePool object at 0x0000015DCAA1F150>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+           │                 └ <sqlalchemy.pool.impl.QueuePool object at 0x0000015DCAA1F150>
+           └ <class 'sqlalchemy.pool.base._ConnectionRecord'>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 678, in __init__
+    self.__connect()
+    └ <sqlalchemy.pool.base._ConnectionRecord object at 0x0000015DCB3BA820>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    with util.safe_reraise():
+         │    └ <class 'sqlalchemy.util.langhelpers.safe_reraise'>
+         └ <module 'sqlalchemy.util' from 'c:\\Users\\Administrator\\Desktop\\k_grab1.9\\.venv\\Lib\\site-packages\\sqlalchemy\\util\\__...
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+          │         │              └ <traceback object at 0x0000015DCB31E580>
+          │         └ <method 'with_traceback' of 'BaseException' objects>
+          └ OperationalError(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+    │    │                               │    │               └ <sqlalchemy.pool.base._ConnectionRecord object at 0x0000015DCB3BA820>
+    │    │                               │    └ <function create_engine.<locals>.connect at 0x0000015DCAF86B60>
+    │    │                               └ <sqlalchemy.pool.impl.QueuePool object at 0x0000015DCAA1F150>
+    │    └ <member 'dbapi_connection' of '_ConnectionRecord' objects>
+    └ <sqlalchemy.pool.base._ConnectionRecord object at 0x0000015DCB3BA820>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 637, in connect
+    return dialect.connect(*cargs, **cparams)
+           │       │        │        └ {'host': 'localhost', 'database': 'kimgdb', 'user': 'root', 'client_flag': 2}
+           │       │        └ []
+           │       └ <function DefaultDialect.connect at 0x0000015DC1D820C0>
+           └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x0000015DCB3A6290>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 615, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+           │    │            │        │        └ {'host': 'localhost', 'database': 'kimgdb', 'user': 'root', 'client_flag': 2}
+           │    │            │        └ ()
+           │    │            └ <class 'pymysql.connections.Connection'>
+           │    └ <module 'pymysql' from 'c:\\Users\\Administrator\\Desktop\\k_grab1.9\\.venv\\Lib\\site-packages\\pymysql\\__init__.py'>
+           └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x0000015DCB3A6290>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\pymysql\connections.py", line 358, in __init__
+    self.connect()
+    │    └ <function Connection.connect at 0x0000015DCB433E20>
+    └ <pymysql.connections.Connection object at 0x0000015DC7F35450>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\pymysql\connections.py", line 711, in connect
+    raise exc
+          └ OperationalError(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 313, in <module>
+    mode_a()
+    └ <function mode_a at 0x0000015DCAF86200>
+
+> File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 204, in mode_a
+    engine, kimg_table, tags_table = link_db()
+                                     └ <function link_db at 0x0000015DCAF85A80>
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 55, in link_db
+    raise e
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\main.py", line 41, in link_db
+    engine = engine.connect()
+             │      └ <function Engine.connect at 0x0000015DC1CE67A0>
+             └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3264, in connect
+    return self._connection_cls(self)
+           │    │               └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+           │    └ <class 'sqlalchemy.engine.base.Connection'>
+           └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 147, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+    │          └ <classmethod(<function Connection._handle_dbapi_exception_noconnection at 0x0000015DC1CE4040>)>
+    └ <class 'sqlalchemy.engine.base.Connection'>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2426, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+          │                    │              │                 └ OperationalError(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+          │                    │              └ (<class 'pymysql.err.OperationalError'>, OperationalError(2003, "Can't connect to MySQL server on 'localhost' ([WinError 1006...
+          │                    └ <method 'with_traceback' of 'BaseException' objects>
+          └ OperationalError('(pymysql.err.OperationalError) (2003, "Can\'t connect to MySQL server on \'localhost\' ([WinError 10061] 由于...
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+    │                        │      └ <function Engine.raw_connection at 0x0000015DC1CE6840>
+    │                        └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+    └ <sqlalchemy.engine.base.Connection object at 0x0000015DCB3C5D50>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3288, in raw_connection
+    return self.pool.connect()
+           │    │    └ <function Pool.connect at 0x0000015DC0FF1EE0>
+           │    └ <sqlalchemy.pool.impl.QueuePool object at 0x0000015DCAA1F150>
+           └ Engine(mysql+pymysql://root:***@localhost/kimgdb)
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+           │                │         └ <sqlalchemy.pool.impl.QueuePool object at 0x0000015DCAA1F150>
+           │                └ <classmethod(<function _ConnectionFairy._checkout at 0x0000015DC0FF3F60>)>
+           └ <class 'sqlalchemy.pool.base._ConnectionFairy'>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1267, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            │                 │        └ <sqlalchemy.pool.impl.QueuePool object at 0x0000015DCAA1F150>
+            │                 └ <classmethod(<function _ConnectionRecord.checkout at 0x0000015DC0FF2AC0>)>
+            └ <class 'sqlalchemy.pool.base._ConnectionRecord'>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    rec = pool._do_get()
+          │    └ <function QueuePool._do_get at 0x0000015DC1003560>
+          └ <sqlalchemy.pool.impl.QueuePool object at 0x0000015DCAA1F150>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 169, in _do_get
+    with util.safe_reraise():
+         │    └ <class 'sqlalchemy.util.langhelpers.safe_reraise'>
+         └ <module 'sqlalchemy.util' from 'c:\\Users\\Administrator\\Desktop\\k_grab1.9\\.venv\\Lib\\site-packages\\sqlalchemy\\util\\__...
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+          │         │              └ <traceback object at 0x0000015DCB319580>
+          │         └ <method 'with_traceback' of 'BaseException' objects>
+          └ OperationalError(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 167, in _do_get
+    return self._create_connection()
+           │    └ <function Pool._create_connection at 0x0000015DC0FF1C60>
+           └ <sqlalchemy.pool.impl.QueuePool object at 0x0000015DCAA1F150>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+           │                 └ <sqlalchemy.pool.impl.QueuePool object at 0x0000015DCAA1F150>
+           └ <class 'sqlalchemy.pool.base._ConnectionRecord'>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 678, in __init__
+    self.__connect()
+    └ <sqlalchemy.pool.base._ConnectionRecord object at 0x0000015DCB3BA820>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 902, in __connect
+    with util.safe_reraise():
+         │    └ <class 'sqlalchemy.util.langhelpers.safe_reraise'>
+         └ <module 'sqlalchemy.util' from 'c:\\Users\\Administrator\\Desktop\\k_grab1.9\\.venv\\Lib\\site-packages\\sqlalchemy\\util\\__...
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 147, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+          │         │              └ <traceback object at 0x0000015DCB31E580>
+          │         └ <method 'with_traceback' of 'BaseException' objects>
+          └ OperationalError(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+    │    │                               │    │               └ <sqlalchemy.pool.base._ConnectionRecord object at 0x0000015DCB3BA820>
+    │    │                               │    └ <function create_engine.<locals>.connect at 0x0000015DCAF86B60>
+    │    │                               └ <sqlalchemy.pool.impl.QueuePool object at 0x0000015DCAA1F150>
+    │    └ <member 'dbapi_connection' of '_ConnectionRecord' objects>
+    └ <sqlalchemy.pool.base._ConnectionRecord object at 0x0000015DCB3BA820>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 637, in connect
+    return dialect.connect(*cargs, **cparams)
+           │       │        │        └ {'host': 'localhost', 'database': 'kimgdb', 'user': 'root', 'client_flag': 2}
+           │       │        └ []
+           │       └ <function DefaultDialect.connect at 0x0000015DC1D820C0>
+           └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x0000015DCB3A6290>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 615, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+           │    │            │        │        └ {'host': 'localhost', 'database': 'kimgdb', 'user': 'root', 'client_flag': 2}
+           │    │            │        └ ()
+           │    │            └ <class 'pymysql.connections.Connection'>
+           │    └ <module 'pymysql' from 'c:\\Users\\Administrator\\Desktop\\k_grab1.9\\.venv\\Lib\\site-packages\\pymysql\\__init__.py'>
+           └ <sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql object at 0x0000015DCB3A6290>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\pymysql\connections.py", line 358, in __init__
+    self.connect()
+    │    └ <function Connection.connect at 0x0000015DCB433E20>
+    └ <pymysql.connections.Connection object at 0x0000015DC7F35450>
+  File "c:\Users\Administrator\Desktop\k_grab1.9\.venv\Lib\site-packages\pymysql\connections.py", line 711, in connect
+    raise exc
+          └ OperationalError(2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] 由于目标计算机积极拒绝，无法连接。)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2023-08-28 17:27:18.328 | ERROR    | __main__:mode_a:206 - 没有数据库连接,请检查数据库是否启用

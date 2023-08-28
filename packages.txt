@@ -1,0 +1,17 @@
+# -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+pip install sqlalchemy
+
+pip install beautifulsoup4 httpx
+
+pip install pandas loguru python-dotenv fake_useragent playwright playwright-stealth
+
+pip install aiofiles
+
+python -m playwright install
+
+pip install html5lib lxml html.parser html5
+
+pip install pymysql mysql
+
+#pip install -r requirements.txt

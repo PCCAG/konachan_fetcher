@@ -66,7 +66,7 @@ async def get_headers() -> dict[str, str]:
             logger.info("利用playwright获取cookie及headers......")
             # 启动浏览器
             b = await p.chromium.launch(
-                headless=True, proxy={"server": proxies[list(proxies.keys())[0]]}
+                headless=False, proxy={"server": proxies[list(proxies.keys())[0]]}
             )
             logger.info("启动浏览器上下文....")
             # 启动浏览器上下文
@@ -75,16 +75,20 @@ async def get_headers() -> dict[str, str]:
             page = await context.new_page()
             # 无头模式伪装
             await stealth_async(page)
+
             # 路由,流产图片,实现无图模式
-            await page.route(
-                re__.compile(r"(\.png$)|(\.jpg$)", re__.S),
-                lambda route: route.abort(),
-            )
+            # await page.route(
+            #    re__.compile(r"(\.png$)|(\.jpg$)", re__.S),
+            #    lambda route: route.abort(),
+            # )
+
             re = await page.goto(host)
             await page.click("#links > a:nth-child(1)")
-            await page.wait_for_load_state(timeout=5000)
-            await page.click("div.inner > a.thumb")
-            await page.wait_for_load_state("load", timeout=5000)
+
+            await page.wait_for_load_state("domcontentloaded", timeout=10000)
+            await page.click("#post-list-posts > li > div > a")
+
+            await page.wait_for_load_state("load", timeout=10000)
 
             # 获取所有cookie
             cookies = await context.cookies()
@@ -107,6 +111,8 @@ async def get_headers() -> dict[str, str]:
 
             return headers
         except Exception as e:
+            logger.error("取cookie及headers失败")
+            breakpoint()
             raise e
 
 
@@ -178,10 +184,10 @@ def parse(pid: int, source: str):
         if len(tags_link) == 3:
             return tuple(tags_link)
         else:
-            logger.error(f"https://konachan.com/post/show/{pid}/")
+            logger.error(f"解析错误last: https://konachan.com/post/show/{pid}/")
             return (pid, "寄", "寄")
     except Exception as e:
-        logger.error(f"https://konachan.com/post/show/{pid}/")
+        logger.error(f"解析错误all:  https://konachan.com/post/show/{pid}/")
         return (pid, "寄", "寄")
         # raise e
 

@@ -1,9 +1,19 @@
 {
+  ":authority": "konachan.com",
+  ":method": "GET",
+  ":path": "/",
+  ":scheme": "https",
   "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-  "upgrade-insecure-requests": "1",
-  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/113.0.5672.53 Safari/537.36",
-  "sec-ch-ua": "\"HeadlessChrome\";v=\"113\", \"Chromium\";v=\"113\", \"Not-A.Brand\";v=\"24\"",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "zh-CN,zh;q=0.9",
+  "sec-ch-ua": "\"Not)A;Brand\";v=\"24\", \"Chromium\";v=\"116\"",
   "sec-ch-ua-mobile": "?0",
   "sec-ch-ua-platform": "\"Windows\"",
-  "cookie": "country=MY;blacklisted_tags=%5B%22%22%5D;konachan.com=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWIxNWM2ZmY3ZTIwM2RkNzdiY2UyODFjMDYzOGFkNTc1BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWFGRWtwQWdHeWtocUVIZlFiVXBjUFdPbVlDY0s1aWw2U292NlZaeFk5Y0k9BjsARg%3D%3D--11d9d2758194c600b4e04b5e80183b4a2d96e64a;vote=1;forum_post_last_read_at=%222023-08-27T20%3A54%3A20%2B02%3A00%22"
+  "sec-fetch-dest": "document",
+  "sec-fetch-mode": "navigate",
+  "sec-fetch-site": "none",
+  "sec-fetch-user": "?1",
+  "upgrade-insecure-requests": "1",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+  "cookie": "country=--;blacklisted_tags=%5B%22%22%5D;konachan.com=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTM1ZGIxYzg5YThlZTI3MDhlNGIzZWE1MTZkYjMzYzNkBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVlhV1V5OW83aTF3aWNxUUM0aU1OVDZJeHN1MFJmdVhCeVpIaUVlUEdoQW89BjsARg%3D%3D--ade0356b784d30b6918b82d32a9a40dd505d1380;__utma=235754395.1474841814.1693214831.1693214831.1693214831.1;__utmc=235754395;__utmz=235754395.1693214831.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none);__utmt=1;vote=1;LBSERVERID=ded7041;forum_post_last_read_at=%222023-08-28T11%3A33%3A04%2B02%3A00%22;__utmb=235754395.3.10.1693214831"
 }
