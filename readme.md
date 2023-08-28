@@ -1,7 +1,7 @@
 ### 使用：
 
 * 有数据库启动 main.py
-* 如果没有数据库，启动 get_imags_data.py  (Data\kimg.csv)
+* 如果没有数据库，启动 get_imags_data.py  (数据表：.\Data\kimg.csv)
 
 ### 配置：
 
