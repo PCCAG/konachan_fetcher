@@ -14,7 +14,7 @@ import json
 
 
 # 记录日志
-logger.add("k_spider\\log\\main_log_v2.log")
+logger.add("k_spider\\log\\main_log_v1.9.log")
 
 # 加载配置文件
 load_dotenv()
