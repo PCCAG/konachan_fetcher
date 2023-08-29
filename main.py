@@ -146,7 +146,7 @@ def save_img_and_todb(pids, engine, kimg_table, tags_table):
 
     # breakpoint()
 
-    # 决定这里创建一个tags_unique表,😅
+    # 决定这里创建一个tags_unique表,保存唯一tag,😅
     try:
         logger.debug("创建一个tags_unique表")
 
