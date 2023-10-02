@@ -1,6 +1,6 @@
 ### 使用：
 
-1. 首先使用edge插件[Cookie Editor](https://microsoftedge.microsoft.com/addons/detail/cookie-editor/ajfboaconbpkglpfanbmlfgojgndmhmc)或者其他类似的插件,复制cookie到_cookies_.json , 记得及时更新_cookies_.json.  (ps : 不弄也许也行, 但文件内容要清空)
+1. 首先使用edge插件[Cookie Editor](https://microsoftedge.microsoft.com/addons/detail/cookie-editor/ajfboaconbpkglpfanbmlfgojgndmhmc)或者其他类似的插件,复制图片详情页cookie到_cookies_.json , 记得及时更新_cookies_.json.  (ps : 不弄也许也行, 但文件内容要清空)
 
 ![1696281560468](image/readme/1696281560468.png)
 
