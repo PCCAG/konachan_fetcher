@@ -8,8 +8,10 @@ import contextlib
 import random
 import os
 from dotenv import load_dotenv  # pip install python-dotenv
-from cellfunctions_ import get_headers
-import json
+
+## from cellfunctions_ import read_headers_from_json
+
+## import json
 
 
 # 记录日志
@@ -73,7 +75,7 @@ def save_img_and_todb(pids, engine, kimg_table, tags_table):
         if len(pids) == 0:
             logger.warning("pids为空")
             return False
-        pid_tags_img_path_img_link = asyncio.run(main(pids=pids, headers=headers))
+        pid_tags_img_path_img_link = asyncio.run(main(pids=pids))
         assert len(pid_tags_img_path_img_link) > 0, "最后从main函数没有得到数据"
     except AssertionError as e:  # AssertionError: 最后没有得到数据
         logger.warning("没有得到数据")
@@ -129,7 +131,7 @@ def save_img_and_todb(pids, engine, kimg_table, tags_table):
     # 防止频繁连接更改数据库
 
     # logger.success(f"保存{df_tags.shape[0]-uni_tag()}个tag到数据库")
-    # 考虑用数据库的存储过程实现 或者后面自己处理排重tag
+    # 考虑用数据库的存储过程实现 或者后面自己处理排重tag😅
     # SQl语句
     """
     #查看kmigdb数据库
@@ -148,7 +150,7 @@ def save_img_and_todb(pids, engine, kimg_table, tags_table):
 
     # 决定这里创建一个tags_unique表,保存唯一tag,😅
     try:
-        logger.debug("创建一个tags_unique表")
+        logger.debug("创建一个tags_unique表并保存")
 
         engine.execute(text("DROP TABLE if EXISTS tags_unique;"))
         engine.execute(
@@ -158,13 +160,17 @@ def save_img_and_todb(pids, engine, kimg_table, tags_table):
             text(f"INSERT into tags_unique SELECT DISTINCT * from {tags_table};")
         )
 
-        tags_unique_number = engine.execute(
+        tags_unique_number: tuple = engine.execute(
             text("SELECT count(*) FROM tags_unique;")
         ).fetchone()
-        logger.info(f"{tags_table} 表当前唯一tag数为 : {tags_unique_number}")
+        logger.info(f"{tags_table} 表当前唯一tag数为 : {tags_unique_number[0]}")
+
+        pandas.read_sql(text("SELECT * FROM tags_unique"), engine).to_csv(
+            "k_spider/tags_unique.csv", header=False, index=False
+        )
 
     except Exception as e:
-        logger.warning("创建一个tags_unique表,失败")
+        logger.warning("创建一个tags_unique表并保存.....失败")
 
     # 保存图像数据到数据库
     # 可以不用创建表,没有自动建表有则添加
@@ -280,30 +286,30 @@ def mode_a():  # 随机范围下载模式 从范围内生成一堆数量的图�
 
 
 # 封装一个下载模式 这个拿来测试的
-@logger.catch()
-def mode_b(pids: list = eval(os.getenv("pid_list"))):  # 指定下载模式
-    # print(pids)
-    engine, kimg_table, tags_table = link_db()
-    with engine:
-        try:  # 这里也需要排重处理
-            df_pid = pandas.read_sql(
-                text(f"select distinct pid from {kimg_table};"), engine
-            )
-            df_pid = df_pid["pid"]
-            front = len(pids)
-            pids = list(set(pids) - set(df_pid))
-            later = len(pids)
-            if front - later > 0:
-                logger.info(f"排除{front-later}个重复pid....")
-        except Exception as e:
-            raise e
-        save_img_and_todb(
-            pids,
-            int(os.getenv("sem_times")),
-            engine,
-            kimg_table,
-            tags_table,
-        )
+# @logger.catch()
+# def mode_b(pids: list = eval(os.getenv("pid_list"))):  # 指定下载模式
+#     # print(pids)
+#     engine, kimg_table, tags_table = link_db()
+#     with engine:
+#         try:  # 这里也需要排重处理
+#             df_pid = pandas.read_sql(
+#                 text(f"select distinct pid from {kimg_table};"), engine
+#             )
+#             df_pid = df_pid["pid"]
+#             front = len(pids)
+#             pids = list(set(pids) - set(df_pid))
+#             later = len(pids)
+#             if front - later > 0:
+#                 logger.info(f"排除{front-later}个重复pid....")
+#         except Exception as e:
+#             raise e
+#         save_img_and_todb(
+#             pids,
+#             int(os.getenv("sem_times")),
+#             engine,
+#             kimg_table,
+#             tags_table,
+#         )
 
 
 # sourcery skip: remove-unreachable-code
@@ -314,32 +320,12 @@ if __name__ == "__main__":
 
     for _ in range(1):  # 可能会出现cookie过期
         try:
-            # headers在main函数里面使用,全局
-            logger.debug("尝试从headers_firefox.json获取headers.......")
-            with open("headers_firefox.json", encoding="utf-8") as f:
-                try:
-                    dread = dict(json.load(f))
-                    # dict().keys()
-                    # print(list(dread.keys())[0])
-                    headers = {
-                        d["name"]: d["value"]
-                        for d in dread[list(dread.keys())[0]]["headers"]
-                    }
-                    # print(headers)
-                except Exception as e:
-                    # raise NameError("Not found headers") from e
-                    logger.warning(
-                        "失败,将用函数get_headers()采用playwright无头模式下自动获取headers......."
-                    )
-                    headers = get_headers()
-
-            logger.success("获取headers成功......")
-
             mode = os.getenv("mode")
             if mode == "a":
                 mode_a()
             elif mode == "b":
-                mode_b()
+                # mode_b()
+                pass
             else:
                 continue
         except Exception as e:

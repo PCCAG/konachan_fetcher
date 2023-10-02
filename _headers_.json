@@ -1,9 +1,0 @@
-{
-  "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-  "sec-fetch-dest": "document",
-  "sec-fetch-mode": "navigate",
-  "sec-fetch-site": "none",
-  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.4 Safari/605.1.15",
-  "cookie": "country=--;blacklisted_tags=%5B%22%22%5D;konachan.com=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJThlNzE5ZGRhOTBiNjQ0YTJlYzkxNDA1Mzc5NWYzMGU2BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTluYkJUNWQyNk5RU0hvMlcwaHJvUmJNT29IZDVTVFNQekxkd0dsM1g1WTg9BjsARg%3D%3D--73f251a221494b645eb7fc287ba3d9e99a74000a;vote=1;forum_post_last_read_at=%222023-08-28T17%3A48%3A43%2B02%3A00%22",
-  "Referer": "https://konachan.com/post"
-}

@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 from fake_useragent import UserAgent
 from loguru import logger
-from playwright.sync_api import sync_playwright, Playwright
+from playwright.sync_api import sync_playwright  # , Playwright
 
 # 一个playwright的插件用来伪装无头模式
 # pip install playwright-stealth
@@ -45,8 +45,67 @@ proxies = {"http://": http_proxy, "https://": http_proxy}
 # proxies=None
 
 
+# def read_headers_from_json(jsonfilepath="cookies.json") -> dict:
+#     logger.debug("尝试从cookies.json获取headers 的cookie.......")
+#     with open(jsonfilepath, encoding="utf-8") as f:
+#         try:
+#             dread = dict(json.load(f))
+#             # dict().keys()
+#             # print(list(dread.keys())[0])
+#             headers = {
+#                 d["name"]: d["value"] for d in dread[list(dread.keys())[0]]["headers"]
+#             }
+#             # print(headers)
+#         except Exception as e:
+#             # raise NameError("Not found headers") from e
+#             logger.warning("失败,将用函数get_headers()采用playwright无头模式下自动获取headers.......")
+#             headers = get_headers()
+
+#         logger.success("获取headers成功......")
+
+#         return headers
+
+
+def read_headers_from_json(
+    cookie_json_filepath="_cookies_.json", headers_example="_headers_example.json"
+) -> dict:
+    """
+    默认:
+    从 headers_example="_headers_ example.json" 获取headers模板,
+    从 cookie_json_filepath="cookies.json" 更新headers的cookie字段,
+    如果失败调用get_headers(),
+    返回: headers
+    """
+
+    logger.debug("尝试从cookies.json获取headers 的cookie.......")
+    with open(cookie_json_filepath, encoding="utf-8") as f:
+        try:
+            # dread = dict(json.load(f))
+            d_list: list = json.load(f)
+            # dict().keys()
+            # print(list(dread.keys())[0])
+            headers_cookie = "; ".join([f'{d["name"]}={d["value"]}' for d in d_list])
+            with open(headers_example, encoding="utf-8") as h:
+                headers = dict(json.load(h))
+                headers["cookie"] = headers_cookie
+            # print(headers)
+        except Exception as e:
+            # raise e
+            # raise NameError("Not found headers") from e
+            logger.warning("失败,将用函数get_headers()采用playwright无头模式下自动获取headers.......")
+            headers = get_headers()
+            # headers = {}
+
+        logger.success("获取headers成功......")
+
+        return headers
+
+
 # 一个获取当前ip的函数
 async def current_ip():
+    """
+    一个获取当前ip的函数
+    """
     async with httpx.AsyncClient() as c:
         try:
             re = await c.get(
@@ -60,6 +119,9 @@ async def current_ip():
 # 利用playwright获取cookie及headers
 @logger.catch()
 def get_headers() -> dict[str, str]:
+    """
+    利用playwright获取cookie及headers
+    """
     # 启动演奏
     with sync_playwright() as p:
         try:
@@ -119,11 +181,18 @@ def get_headers() -> dict[str, str]:
 
 
 # 获取单个页面源码
-async def get_source(pid: int, url: str, headers: dict):
+async def get_source(
+    pid: int, url: str, headers: dict, proxies: dict = proxies
+) -> tuple[int, str]:
+    """
+    获取单个页面源码
+    return: pid, source
+
+    """
     # sourcery skip: remove-unreachable-code
     # 异步上下文菜单管理器
     async with httpx.AsyncClient(proxies=proxies) as client:
-        # 这个是重试四次,2333
+        # 这个是重试四次,2333🤣
         for i in range(4):
             try:
                 headers["user-agent"] = UserAgent().random
@@ -160,14 +229,18 @@ async def get_source(pid: int, url: str, headers: dict):
 
 
 # 解析源码得到图片地址和tags
-def parse(pid: int, source: str):
+def parse(pid: int, source: str) -> tuple[int, str, str]:
+    """
+    解析源码得到图片地址和tags.
+    return: pid,tags,img_link
+    """
     # sourcery skip: remove-redundant-continue, remove-unnecessary-else
     # global df_error
     try:
         tags_link = [
             pid,
         ]
-        # 所有解析器试一遍.23333
+        # 所有解析器试一遍.23333🤣
         for param_features in (
             "lxml",
             "html.parser",
@@ -197,7 +270,20 @@ def parse(pid: int, source: str):
 
 
 # 下载图片
-async def save_img(pid: int, img_link: str, tags: str, headers: dict, imgpath: str):
+async def save_img(
+    pid: int,
+    img_link: str,
+    tags: str,
+    headers: dict,
+    imgpath: str,
+    proxies: dict = proxies,
+) -> tuple[int, str, str, str]:
+    """
+    下载图片.
+    返回: return (pid, tags, img_link, img_path)
+
+    """
+
     async def check_ifsuccess_return_responce():
         async with httpx.AsyncClient(proxies=proxies) as clinet:
             for _ in range(3):
@@ -260,3 +346,34 @@ async def save_img(pid: int, img_link: str, tags: str, headers: dict, imgpath: s
         breakpoint()
 
         return (pid, "寄", "寄", "寄")
+
+
+# 😅
+def ensure_file_exists(filepath, file_ecoding="UTF-8") -> bool:
+    """
+    检测文件路径是否存在，如果不存在则创建文件。
+
+    参数：
+    - filepath: 文件路径
+    - file_ecoding: 文件编码
+    return:
+    Ture 这个文件存在
+    False 反之
+    """
+    try:
+        with open(filepath, "r", errors="ignore"):
+            pass
+        return True
+    except FileNotFoundError:
+        # os.makedirs("/".join(filepath.split("/")[:-1]))
+        os.makedirs(os.path.dirname(filepath), exist_ok=True)
+        with open(filepath, "w", errors="ignore", encoding=file_ecoding):
+            pass
+        return False
+    except Exception:
+        print("constom function:  ensure_file_exists,  raise an unknown error ! ?")
+
+
+# # 检测并创建文件路径
+# file_path = r"path\to\your\file.txt"
+# ensure_file_exists(file_path)

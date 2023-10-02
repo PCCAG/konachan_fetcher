@@ -37,6 +37,7 @@ def f_tags(soup: BeautifulSoup):
 
 @logger.catch()
 def f_link(soup: BeautifulSoup):
+    # 就怕你找不到图片😅
     maybe_link = (
         r"""soup.select('li > a.original-file-unchanged.highres-show[href$=".jpg"][id="highres-show"]')""",
         r"""soup.select('li > a.original-file-changed.highres-show[href$=".jpg"][id="highres-show"]')""",

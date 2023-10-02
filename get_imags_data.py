@@ -4,7 +4,13 @@ from loguru import logger  # pip install loguru
 import multiprocessing
 import concurrent.futures
 import os
-from cellfunctions_ import get_source, parse, save_img, get_headers
+from cellfunctions_ import (
+    get_source,
+    parse,
+    save_img,
+    read_headers_from_json,
+    ensure_file_exists,
+)
 import os
 from dotenv import load_dotenv
 import pandas
@@ -16,7 +22,7 @@ load_dotenv()
 
 # 主函数
 # 3个大任务依次传递参数
-# 这里可以用队列进一步改,懒得改了
+# 这里可以用队列进一步改,懒得改了😅,我看得眼花
 # 得到数据
 
 
@@ -25,7 +31,7 @@ async def main(
     pids: list[int],
     sem_times: int = int(os.getenv("sem_times")),  # 并发数 在.env配置
     imgpath: str = os.getenv("IMG_PATH"),  # 保存图片路径,在.env配置
-    headers: dict = {},  # 请求头
+    headers: dict = read_headers_from_json(),  # 请求头
 ) -> list | list[tuple[int, str, str, str]]:  # [(pid,tags,img_path,img_link),....]
     #
     #
@@ -134,10 +140,10 @@ if __name__ == "__main__":
             list(range(int(os.getenv("low")), int(os.getenv("upper")) + 1)),
             int(os.getenv("down_number")),
         )
-        print(pids.__len__())
-        headers = get_headers()
+        print(f"单次并发数量: {pids.__len__()}")
+        # headers = read_headers_from_json()
 
-        rows = asyncio.run(main(pids, headers=headers))
+        rows = asyncio.run(main(pids))
 
         nowtime = pandas.Timestamp.now().strftime("%Y-%m-%d %H:%M:%S")
 
@@ -149,4 +155,44 @@ if __name__ == "__main__":
         df = pandas.DataFrame(
             columns=("pid", "tags", "link", "path", "status", "time"), data=data
         )
-        df.to_csv("./Data/kimg.csv", index=False)
+
+        # 自定义函数确保文件存在
+        if ensure_file_exists("./Data/kimg.csv") == False:
+            df.to_csv("./Data/kimg.csv", index=False, mode="w")
+        ensure_file_exists("./Data/tags.csv")
+
+        df.to_csv(
+            "./Data/kimg.csv",
+            index=False,
+            mode="a",
+            header=False,
+        )
+        # ./Data/tags.csv
+
+        row_tags: list = df["tags"].to_list()
+
+        tags_set: set = set()
+        # for tags in row_tags:
+        #     for tag in tags.split(" "):
+        #         tags_set.add(tag)
+        # 使用内置的集合操作
+        tags_set.update(tag for tags in row_tags for tag in tags.split(" "))
+
+        try:
+            alltags_existed_set: set = set(
+                pandas.read_csv("./Data/tags.csv").iloc[:, 0].to_list()
+            )
+        except Exception as e:
+            alltags_existed_set: set = set()
+            pass
+
+        need_add_tags: list = list(tags_set - alltags_existed_set)
+
+        # 追加进去的是应该为原表中不存在的
+
+        pandas.DataFrame(data=need_add_tags, index=None, columns=None).to_csv(
+            "./Data/tags.csv", mode="a", index=False, header=False
+        )
+
+        # with open("./Data/tags.csv", "a", encoding="UTF-8") as f:
+        #     f.writelines()
