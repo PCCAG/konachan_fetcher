@@ -285,6 +285,41 @@ def mode_a():  # 随机范围下载模式 从范围内生成一堆数量的图�
         logger.warning(f"数据库一共添加了 {total_add_db_data_number} img data....")
 
 
+# sourcery skip: remove-unreachable-code
+if __name__ == "__main__":
+    # logger.disable("ERROR")
+    # logger.add(sys.stdout, level="INFO", enqueue=True)
+    # 移除所有输出目标，禁用所有日志输出
+    if int(os.getenv("EnableLog")) == 0:
+        logger.remove()
+        print("关闭日志")
+    else:
+        print("打开日志")
+        logger.disable("SUCCESS")
+        pass
+    # 外部全局变量 记录一次运行加入数据库数据量
+
+    total_add_db_data_number = 0
+
+    for _ in range(1):
+        try:
+            mode = os.getenv("mode")
+            if mode == "a":
+                mode_a()
+            # elif mode == "b":
+            #     # mode_b()
+            #     pass
+            else:
+                continue
+        except Exception as e:
+            logger.error("在main.py 起始位置出错.......")
+            breakpoint()
+            raise e
+            # continue
+    # raise TimeoutError("下载已完成")
+    logger.success("下载任务完成")
+
+
 # 封装一个下载模式 这个拿来测试的
 # @logger.catch()
 # def mode_b(pids: list = eval(os.getenv("pid_list"))):  # 指定下载模式
@@ -310,38 +345,3 @@ def mode_a():  # 随机范围下载模式 从范围内生成一堆数量的图�
 #             kimg_table,
 #             tags_table,
 #         )
-
-
-# sourcery skip: remove-unreachable-code
-if __name__ == "__main__":
-    # logger.disable("ERROR")
-    # logger.add(sys.stdout, level="INFO", enqueue=True)
-    # 移除所有输出目标，禁用所有日志输出
-    if int(os.getenv("EnableLog")) == 0:
-        logger.remove()
-        print("关闭日志")
-    else:
-        print("打开日志")
-        logger.disable("SUCCESS")
-        pass
-    # 外部全局变量 记录一次运行加入数据库数据量
-
-    total_add_db_data_number = 0
-
-    for _ in range(1):  # 可能会出现cookie过期
-        try:
-            mode = os.getenv("mode")
-            if mode == "a":
-                mode_a()
-            # elif mode == "b":
-            #     # mode_b()
-            #     pass
-            else:
-                continue
-        except Exception as e:
-            logger.error("在main.py 起始位置出错.......")
-            breakpoint()
-            raise e
-            # continue
-    # raise TimeoutError("下载已完成")
-    logger.success("下载任务完成")
