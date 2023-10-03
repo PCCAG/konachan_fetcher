@@ -1,29 +1,41 @@
 ## coding=utf-8
 import asyncio
-from loguru import logger  # pip install loguru
-import multiprocessing
 import concurrent.futures
+import multiprocessing
 import os
+import random
+import sys
+
+import pandas
+
+# from queue import Queue
+import tqdm
+from dotenv import load_dotenv
+from loguru import logger  # pip install loguru
+
 from cellfunctions_ import (
+    Counter,
+    ensure_file_exists,  # counter_sync,
     get_source,
     parse,
-    save_img,
     read_headers_from_json,
-    ensure_file_exists,
+    save_img,
 )
-import os
-from dotenv import load_dotenv
-import pandas
-import random
+
+# from tqdm.contrib.concurrent import process_map
 
 # 加载配置文件
 load_dotenv()
+logger.add("k_spider\\log\\get_imags_data.log")
 # proxies=None
 
 # 主函数
 # 3个大任务依次传递参数
 # 这里可以用队列进一步改,懒得改了😅,我看得眼花
 # 得到数据
+
+# logger.disable("ERROR")
+# logger.add(sys.stdout, level="INFO", enqueue=True)
 
 
 @logger.catch()
@@ -39,57 +51,66 @@ async def main(
     if not os.path.exists(imgpath):
         os.mkdir(imgpath)
         logger.warning("图片路径不存在，已创建")
-    #
 
-    # 并发获取源码
-    # pids是一个pid列表 [pid,...]
-    # 如链接 https://konachan.com/post/show/361874 pid指的是361874 类型int
-    async def process_urls(pids: list[int]):
+    async def process_urls(pids: list[int]) -> set[tuple[int, str]]:
         sem = asyncio.Semaphore(sem_times)  # 并发数
+        get_source_counter = Counter.counter_async(
+            PROCESS_BAR=tqdm.tqdm(
+                total=len(pids),
+                desc="获取源码",
+                unit="i",
+                smoothing=0.5,
+            )
+        )(get_source)
         async with sem:
-            tasks = []  # 并发任务列表
-            for pid in pids:
-                host_path = f"https://konachan.com/post/show/{pid}/"
-
-                # tasks.append(asyncio.ensure_future(get_source(pid,host_path)))
-                # The asyncio.ensure_future() function is deprecated in Python 3.10 in favor of asyncio.create_task().
-                tasks.append(asyncio.create_task(get_source(pid, host_path, headers)))
+            tasks = {
+                asyncio.create_task(
+                    get_source_counter(
+                        pid, f"https://konachan.com/post/show/{pid}/", headers
+                    )
+                )
+                for pid in pids
+            }
 
             r = await asyncio.gather(*tasks, return_exceptions=False)
             # 参数
-            results = [
+            results = {
                 (i, ii) for i, ii in r if ii != "寄"
-            ]  # pid_source=[(pid,source),......]
+            }  # pid_source=[(pid,source),......]
             return results
 
     # pid_source=[(pid,source),......]
+    # tqdm.tqdm.write("")
     pid_source = await process_urls(pids)
+    # tqdm.tqdm.write("")
+
+    # PROCESS_BAR.close()
     if len(pid_source) == 0:
         return []  # 第一步没有东西后面也就没有必要继续了
 
     # 多进程解析
-    def run_tasks(task, pid_source: list[tuple[int, str]]):
+    # 😅
+    def run_tasks(task, pid_source: set[tuple[int, str]]):
         max_workers = min(len(pid_source), multiprocessing.cpu_count())
-        results = []  # 结果列表
+        # results = set()  # 结果集合
         with concurrent.futures.ProcessPoolExecutor(
             max_workers=max_workers
         ) as executor:
-            futures = [
+            futures = {
                 executor.submit(task, pid, source)
                 for pid, source in pid_source
                 if source != "寄"
-            ]
-            for future in concurrent.futures.as_completed(
-                futures
-            ):  # all futures完成时的iterable对象
-                try:
-                    results.append(future.result())
-                    # logger.success("parse......")
-                except Exception as e:
-                    logger.warning("引发 一个 parse error...")
-                    # print(future.result())
-                    # logger.warning(e)
-                    continue
+            }
+
+            results = set()
+            for future in tqdm.tqdm(
+                concurrent.futures.as_completed(futures),
+                total=len(pid_source),
+                desc="解析地址",
+                unit="i",
+                smoothing=0.5,
+            ):
+                results.add(future.result())
         return results
 
     pid_img_link_tags = run_tasks(parse, pid_source)
@@ -97,23 +118,23 @@ async def main(
         return []  # 第二步没有东西后面也就没有必要继续了
 
     # 并发下载图片
-    async def download_imgs(pid_img_link_tags: list[tuple[int, str, str]]):
+    async def download_imgs(pid_img_link_tags: set[tuple[int, str, str]]):
         sem = asyncio.Semaphore(sem_times)  # 并发数
+        save_img_counter = Counter.counter_async(
+            tqdm.tqdm(
+                total=len(pid_img_link_tags),
+                desc="下载图片",
+                unit="i",
+                smoothing=0.5,
+            )
+        )(save_img)
         async with sem:
-            tasks = []  # 并发任务列表
-
-            for pid, img_link, tags in pid_img_link_tags:
-                if tags == "寄" or img_link == "寄":
-                    logger.error("未知解析或下载错误引起...寄")
-                    continue
-                else:
-                    tasks.append(
-                        asyncio.create_task(
-                            save_img(pid, img_link, tags, headers, imgpath)
-                        )
-                    )
-                    # pin += 1
-                # logger.info("append download img task.....")
+            tasks = {
+                asyncio.create_task(
+                    save_img_counter(pid, img_link, tags, headers, imgpath)
+                )
+                for pid, img_link, tags in pid_img_link_tags
+            }
             results = await asyncio.gather(*tasks)
 
             results = [
@@ -121,8 +142,6 @@ async def main(
                 for pid, tags, img_path, img_link in results
                 if tags != "寄" and img_link != "寄" and img_path != "寄"
             ]
-
-            # print(results)
 
             logger.success(f"downloaded {len(results)} img to IMG_PATH......")
             return results
@@ -135,12 +154,27 @@ async def main(
 
 # example test
 if __name__ == "__main__":
+    # logger.disable("ERROR")
+    # logger.add(sys.stdout, level="INFO", enqueue=True)
+    # 移除所有输出目标，禁用所有日志输出
+    if int(os.getenv("EnableLog")) == 0:
+        logger.remove()
+        print("关闭日志")
+    else:
+        print("打开日志")
+        logger.disable("SUCCESS")
+        # logger.s
+        # logger.disable("ERROR")
+        # logger.disable("WARNING")
+        # logger.disable("DEBUG")
+
+        pass
     for _ in range(int(os.getenv("times"))):
         pids = random.sample(
             list(range(int(os.getenv("low")), int(os.getenv("upper")) + 1)),
             int(os.getenv("down_number")),
         )
-        print(f"单次并发数量: {pids.__len__()}")
+        # print(f"单次并发数量: {pids.__len__()}")
         # headers = read_headers_from_json()
 
         rows = asyncio.run(main(pids))

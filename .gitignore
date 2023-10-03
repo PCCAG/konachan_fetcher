@@ -3,3 +3,5 @@
 /.venv
 %k_grab1.9
 /%k_grab1.9/chat_history
+/test
+/get_imags_data copy.py

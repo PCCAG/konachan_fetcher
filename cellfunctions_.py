@@ -1,9 +1,12 @@
 ## coding=utf-8
 import asyncio
+import functools
 import json
 import os
 import random
 import re as re__
+
+# import types
 
 # 异步保存文件的库
 # pip install aiofiles
@@ -45,27 +48,6 @@ proxies = {"http://": http_proxy, "https://": http_proxy}
 # proxies=None
 
 
-# def read_headers_from_json(jsonfilepath="cookies.json") -> dict:
-#     logger.debug("尝试从cookies.json获取headers 的cookie.......")
-#     with open(jsonfilepath, encoding="utf-8") as f:
-#         try:
-#             dread = dict(json.load(f))
-#             # dict().keys()
-#             # print(list(dread.keys())[0])
-#             headers = {
-#                 d["name"]: d["value"] for d in dread[list(dread.keys())[0]]["headers"]
-#             }
-#             # print(headers)
-#         except Exception as e:
-#             # raise NameError("Not found headers") from e
-#             logger.warning("失败,将用函数get_headers()采用playwright无头模式下自动获取headers.......")
-#             headers = get_headers()
-
-#         logger.success("获取headers成功......")
-
-#         return headers
-
-
 def read_headers_from_json(
     cookie_json_filepath="_cookies_.json", headers_example="_headers_example.json"
 ) -> dict:
@@ -77,7 +59,7 @@ def read_headers_from_json(
     返回: headers
     """
 
-    logger.debug("尝试从cookies.json获取headers 的cookie.......")
+    # logger.debug("尝试从cookies.json获取headers 的cookie.......")
     with open(cookie_json_filepath, encoding="utf-8") as f:
         try:
             # dread = dict(json.load(f))
@@ -92,11 +74,13 @@ def read_headers_from_json(
         except Exception as e:
             # raise e
             # raise NameError("Not found headers") from e
-            logger.warning("失败,将用函数get_headers()采用playwright无头模式下自动获取headers.......")
+            logger.warning(
+                "尝试从cookies.json获取headers 的cookie失败,将用函数get_headers()采用playwright无头模式下自动获取headers"
+            )
             headers = get_headers()
             # headers = {}
 
-        logger.success("获取headers成功......")
+        # logger.success("获取headers成功......")
 
         return headers
 
@@ -180,7 +164,64 @@ def get_headers() -> dict[str, str]:
             raise e
 
 
-# 获取单个页面源码
+class Counter:
+    def __init__(self) -> None:
+        pass
+
+    # 默认
+    class PROCESS_BAR_NONE:
+        def update(*arg, **kwargs):
+            pass
+
+    @staticmethod
+    def counter_async(PROCESS_BAR=PROCESS_BAR_NONE()):
+        """
+        参数装饰器 : 传入PROCESS_BAR 实现对原函数进度控制.
+        例如: PROCESS_BAR = tqdm.tqdm(total=200, desc="Processing", unit="item"),
+        tqdm.tqdm进度条(import tqdm),
+        需要在其他文件导入并覆写原异步函数,
+        newfunc = counter_async(PROCESS_BAR=tqdm.tqdm(total=200, desc="Test", unit="item"))(example)
+        """
+        ##PROCESS_BAR = tqdm.tqdm()
+
+        def async_counter(func):
+            @functools.wraps(func)
+            async def wrapper(*args, **kwargs):
+                result = await func(*args, **kwargs)
+                wrapper.processcount.update(1)
+                if wrapper.processcount.n == wrapper.processcount.total:
+                    wrapper.processcount.close()
+
+                return result
+
+            wrapper.processcount = async_counter.processcount
+            return wrapper
+
+        async_counter.processcount = PROCESS_BAR
+        return async_counter
+
+    @staticmethod
+    def counter_sync(PROCESS_BAR=PROCESS_BAR_NONE()):
+        """
+        不支持多进程😅
+        """
+
+        def sync_counter(func):
+            @functools.wraps(func)
+            def wrapper(*args, **kwargs):
+                r = func(*args, **kwargs)
+                wrapper.processcount.update(1)
+                if wrapper.processcount.n == wrapper.processcount.total:
+                    wrapper.processcount.close()
+                return r
+
+            wrapper.processcount = sync_counter.processcount
+            return wrapper
+
+        sync_counter.processcount = PROCESS_BAR
+        return sync_counter
+
+
 async def get_source(
     pid: int, url: str, headers: dict, proxies: dict = proxies
 ) -> tuple[int, str]:
@@ -206,9 +247,9 @@ async def get_source(
                     logger.error(f"https://konachan.com/post/show/{pid}/")
                     return (pid, "寄")
                 elif len(res) < 2000:
-                    # logger.warning("源码长度不对")
+                    logger.warning("源码长度不对")
                     await asyncio.sleep(random.randint(1, 4))
-                    # logger.warning(f"https://konachan.com/post/show/{pid}/")
+                    logger.warning(f"https://konachan.com/post/show/{pid}/")
                     continue
                 elif re.status_code == 403:
                     logger.error("403无法访问")
@@ -224,11 +265,12 @@ async def get_source(
                 # lg.warning("re link")
                 continue
         logger.error("源码 nothing!")
-        # logger.error(f"https://konachan.com/post/show/{pid}/")
+        logger.error(f"https://konachan.com/post/show/{pid}/")
         return (pid, "寄")
 
 
 # 解析源码得到图片地址和tags
+# @counter
 def parse(pid: int, source: str) -> tuple[int, str, str]:
     """
     解析源码得到图片地址和tags.
@@ -270,6 +312,7 @@ def parse(pid: int, source: str) -> tuple[int, str, str]:
 
 
 # 下载图片
+# @counter
 async def save_img(
     pid: int,
     img_link: str,
@@ -281,7 +324,6 @@ async def save_img(
     """
     下载图片.
     返回: return (pid, tags, img_link, img_path)
-
     """
 
     async def check_ifsuccess_return_responce():
@@ -290,6 +332,7 @@ async def save_img(
                 try:
                     headers["user-agent"] = UserAgent().random
                     re = await clinet.get(img_link, headers=headers, timeout=300)
+                    assert re.status_code == 200, "请求图片状态码:{re.status_code}"
                     return re
                 except Exception:
                     logger.warning(f"下载图片重试: https://konachan.com/post/show/{pid}")
@@ -325,7 +368,7 @@ async def save_img(
 
             async with aiofiles.open(img_path, "wb") as f:
                 await f.write(re.content)
-                logger.debug(f"保存图片中......{pid}")
+                # logger.debug(f"保存图片中......{pid}")
 
             if tags != "寄" and img_link != "寄" and img_path != "寄":
                 logger.success("下载图片成功")
@@ -355,7 +398,7 @@ def ensure_file_exists(filepath, file_ecoding="UTF-8") -> bool:
 
     参数：
     - filepath: 文件路径
-    - file_ecoding: 文件编码
+    - file_ecoding: 创建的文件编码
     return:
     Ture 这个文件存在
     False 反之

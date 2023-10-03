@@ -15,7 +15,7 @@ from dotenv import load_dotenv  # pip install python-dotenv
 
 
 # 记录日志
-logger.add("k_spider\\log\\main_log_v1.9.log")
+logger.add("k_spider\\log\\main.log")
 
 # 加载配置文件
 load_dotenv()
@@ -282,7 +282,7 @@ def mode_a():  # 随机范围下载模式 从范围内生成一堆数量的图�
 
             save_img_and_todb(pids, engine, kimg_table, tags_table)
 
-        logger.success(f"数据库一共添加了 {total_add_db_data_number} img data....")
+        logger.warning(f"数据库一共添加了 {total_add_db_data_number} img data....")
 
 
 # 封装一个下载模式 这个拿来测试的
@@ -314,6 +314,16 @@ def mode_a():  # 随机范围下载模式 从范围内生成一堆数量的图�
 
 # sourcery skip: remove-unreachable-code
 if __name__ == "__main__":
+    # logger.disable("ERROR")
+    # logger.add(sys.stdout, level="INFO", enqueue=True)
+    # 移除所有输出目标，禁用所有日志输出
+    if int(os.getenv("EnableLog")) == 0:
+        logger.remove()
+        print("关闭日志")
+    else:
+        print("打开日志")
+        logger.disable("SUCCESS")
+        pass
     # 外部全局变量 记录一次运行加入数据库数据量
 
     total_add_db_data_number = 0
@@ -323,9 +333,9 @@ if __name__ == "__main__":
             mode = os.getenv("mode")
             if mode == "a":
                 mode_a()
-            elif mode == "b":
-                # mode_b()
-                pass
+            # elif mode == "b":
+            #     # mode_b()
+            #     pass
             else:
                 continue
         except Exception as e:
