@@ -1,0 +1,41 @@
+2023-10-04 00:45:27.730 | SUCCESS  | __main__:mode_a:227 - 单次下载数量:5
+2023-10-04 00:45:27.731 | SUCCESS  | __main__:mode_a:228 - 并发数:5
+2023-10-04 00:45:27.732 | SUCCESS  | __main__:mode_a:229 - 下载图片路径:./kimage
+2023-10-04 00:45:27.733 | SUCCESS  | __main__:mode_a:230 - 下载次数:200
+2023-10-04 00:45:27.734 | DEBUG    | __main__:link_db:27 - 连接数据库中...........
+2023-10-04 00:45:27.813 | SUCCESS  | __main__:link_db:50 - 数据表: kimgdb
+2023-10-04 00:45:27.814 | SUCCESS  | __main__:link_db:51 - 图像数据表: newkimg
+2023-10-04 00:45:27.815 | SUCCESS  | __main__:link_db:52 - tag数据表: tags
+2023-10-04 00:45:27.816 | SUCCESS  | __main__:link_db:54 - link dbas 准备导入数据.....
+2023-10-04 00:45:28.004 | INFO     | __main__:mode_a:254 - 数据库共有20030条图像数据
+2023-10-04 00:45:29.180 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:30.095 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:30.103 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:30.109 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:30.121 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:37.620 | SUCCESS  | cellfunctions_:save_img:375 - 下载图片成功: ./kimage/358053.jpg
+2023-10-04 00:45:38.592 | SUCCESS  | cellfunctions_:save_img:375 - 下载图片成功: ./kimage/360405.jpg
+2023-10-04 00:45:38.713 | SUCCESS  | cellfunctions_:save_img:375 - 下载图片成功: ./kimage/360300.jpg
+2023-10-04 00:45:47.041 | SUCCESS  | cellfunctions_:save_img:375 - 下载图片成功: ./kimage/358628.jpg
+2023-10-04 00:45:47.087 | SUCCESS  | cellfunctions_:save_img:375 - 下载图片成功: ./kimage/355095.jpg
+2023-10-04 00:45:47.089 | SUCCESS  | get_imags_data:download_imgs:147 - downloaded 5 img to IMG_PATH......
+2023-10-04 00:45:47.092 | SUCCESS  | __main__:save_img_and_todb:110 - imported: ./kimage/355095.jpg
+2023-10-04 00:45:47.096 | SUCCESS  | __main__:save_img_and_todb:110 - imported: ./kimage/360300.jpg
+2023-10-04 00:45:47.099 | SUCCESS  | __main__:save_img_and_todb:110 - imported: ./kimage/358628.jpg
+2023-10-04 00:45:47.101 | SUCCESS  | __main__:save_img_and_todb:110 - imported: ./kimage/360405.jpg
+2023-10-04 00:45:47.104 | SUCCESS  | __main__:save_img_and_todb:110 - imported: ./kimage/358053.jpg
+2023-10-04 00:45:47.119 | DEBUG    | __main__:save_img_and_todb:153 - 创建一个tags_unique表并保存
+2023-10-04 00:45:47.542 | INFO     | __main__:save_img_and_todb:166 - tags 表当前唯一tag数为 : 17956
+2023-10-04 00:45:47.694 | SUCCESS  | __main__:save_img_and_todb:191 - DataBase had added 5 img data...
+2023-10-04 00:45:47.696 | WARNING  | __main__:mode_a:285 - 数据库一共添加了 5 img data....
+2023-10-04 00:45:47.697 | DEBUG    | __main__:link_db:27 - 连接数据库中...........
+2023-10-04 00:45:47.703 | SUCCESS  | __main__:link_db:50 - 数据表: kimgdb
+2023-10-04 00:45:47.704 | SUCCESS  | __main__:link_db:51 - 图像数据表: newkimg
+2023-10-04 00:45:47.705 | SUCCESS  | __main__:link_db:52 - tag数据表: tags
+2023-10-04 00:45:47.706 | SUCCESS  | __main__:link_db:54 - link dbas 准备导入数据.....
+2023-10-04 00:45:47.809 | INFO     | __main__:mode_a:254 - 数据库共有20035条图像数据
+2023-10-04 00:45:49.198 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:49.273 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:49.288 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:49.378 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:49.952 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功

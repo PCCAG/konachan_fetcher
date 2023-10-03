@@ -1,0 +1,175 @@
+2023-10-04 00:25:05.989 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:06.063 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:06.694 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:06.723 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:07.030 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:09.635 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/363162.jpg
+2023-10-04 00:25:11.257 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358195.jpg
+2023-10-04 00:25:11.460 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360731.jpg
+2023-10-04 00:25:13.967 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361196.jpg
+2023-10-04 00:25:15.693 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362340.jpg
+2023-10-04 00:25:15.695 | SUCCESS  | __main__:download_imgs:149 - downloaded 5 img to IMG_PATH......
+2023-10-04 00:25:17.285 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:17.390 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:17.392 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:17.933 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:17.946 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:19.413 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358616.jpg
+2023-10-04 00:25:21.084 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362152.jpg
+2023-10-04 00:25:21.446 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358562.jpg
+2023-10-04 00:25:22.546 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/356093.jpg
+2023-10-04 00:25:23.076 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/355413.jpg
+2023-10-04 00:25:23.078 | SUCCESS  | __main__:download_imgs:149 - downloaded 5 img to IMG_PATH......
+2023-10-04 00:25:24.801 | ERROR    | cellfunctions_:get_source:246 - 357881图片不存在或者被删除了
+2023-10-04 00:25:24.801 | ERROR    | cellfunctions_:get_source:247 - https://konachan.com/post/show/357881/
+2023-10-04 00:25:25.337 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:25.342 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:25.342 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:25.349 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:30.533 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357045.jpg
+2023-10-04 00:25:30.957 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/356870.jpg
+2023-10-04 00:25:31.029 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357004.jpg
+2023-10-04 00:25:31.936 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358172.jpg
+2023-10-04 00:25:31.937 | SUCCESS  | __main__:download_imgs:149 - downloaded 4 img to IMG_PATH......
+2023-10-04 00:25:33.662 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:33.781 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:34.487 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:34.488 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:34.521 | ERROR    | cellfunctions_:get_source:246 - 356448图片不存在或者被删除了
+2023-10-04 00:25:34.521 | ERROR    | cellfunctions_:get_source:247 - https://konachan.com/post/show/356448/
+2023-10-04 00:25:36.761 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362701.jpg
+2023-10-04 00:25:37.736 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362255.jpg
+2023-10-04 00:25:38.005 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/355309.jpg
+2023-10-04 00:25:38.104 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360391.jpg
+2023-10-04 00:25:38.105 | SUCCESS  | __main__:download_imgs:149 - downloaded 4 img to IMG_PATH......
+2023-10-04 00:25:39.779 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:40.332 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:40.353 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:40.655 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:40.671 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:44.177 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357891.jpg
+2023-10-04 00:25:48.016 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360030.jpg
+2023-10-04 00:25:48.909 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361479.jpg
+2023-10-04 00:25:49.172 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/356217.jpg
+2023-10-04 00:25:50.349 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361780.jpg
+2023-10-04 00:25:50.351 | SUCCESS  | __main__:download_imgs:149 - downloaded 5 img to IMG_PATH......
+2023-10-04 00:25:52.299 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:52.428 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:53.193 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:53.496 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:53.634 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:56.952 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/359228.jpg
+2023-10-04 00:25:57.119 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362533.jpg
+2023-10-04 00:25:57.125 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/355801.jpg
+2023-10-04 00:25:57.136 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360808.jpg
+2023-10-04 00:25:57.295 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360922.jpg
+2023-10-04 00:25:57.297 | SUCCESS  | __main__:download_imgs:149 - downloaded 5 img to IMG_PATH......
+2023-10-04 00:25:59.528 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:59.530 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:59.863 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:59.868 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:25:59.879 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:26:02.255 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/359714.jpg
+2023-10-04 00:26:02.942 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/363277.jpg
+2023-10-04 00:26:03.438 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358051.jpg
+2023-10-04 00:26:03.945 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362439.jpg
+2023-10-04 00:26:04.159 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361786.jpg
+2023-10-04 00:26:04.160 | SUCCESS  | __main__:download_imgs:149 - downloaded 5 img to IMG_PATH......
+2023-10-04 00:26:05.826 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:26:05.830 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:26:05.844 | ERROR    | cellfunctions_:get_source:246 - 355638图片不存在或者被删除了
+2023-10-04 00:26:05.844 | ERROR    | cellfunctions_:get_source:247 - https://konachan.com/post/show/355638/
+2023-10-04 00:26:05.921 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:26:06.466 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:26:09.965 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/356694.jpg
+2023-10-04 00:26:10.500 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/359515.jpg
+2023-10-04 00:26:11.163 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/356916.jpg
+2023-10-04 00:26:13.503 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357291.jpg
+2023-10-04 00:26:13.505 | SUCCESS  | __main__:download_imgs:149 - downloaded 4 img to IMG_PATH......
+2023-10-04 00:26:15.186 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:26:15.215 | ERROR    | cellfunctions_:get_source:246 - 356668图片不存在或者被删除了
+2023-10-04 00:26:15.215 | ERROR    | cellfunctions_:get_source:247 - https://konachan.com/post/show/356668/
+2023-10-04 00:26:15.304 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:26:15.751 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:26:15.769 | SUCCESS  | cellfunctions_:get_source:258 - 获取源码成功
+2023-10-04 00:26:17.082 | SUCCESS  | cellfunctions_:save_img:374 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/355832.jpg
+2023-10-04 00:44:41.785 | WARNING  | __main__:main:54 - 图片路径不存在，已创建
+2023-10-04 00:44:44.294 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:44:44.365 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:44:44.372 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:44:44.403 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:44:44.433 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:44:51.046 | SUCCESS  | cellfunctions_:save_img:375 - 下载图片成功: ./kimage/355268.jpg
+2023-10-04 00:44:51.464 | SUCCESS  | cellfunctions_:save_img:375 - 下载图片成功: ./kimage/357161.jpg
+2023-10-04 00:44:52.047 | SUCCESS  | cellfunctions_:save_img:375 - 下载图片成功: ./kimage/356762.jpg
+2023-10-04 00:44:53.257 | SUCCESS  | cellfunctions_:save_img:375 - 下载图片成功: ./kimage/355906.jpg
+2023-10-04 00:44:53.340 | SUCCESS  | cellfunctions_:save_img:375 - 下载图片成功: ./kimage/360561.jpg
+2023-10-04 00:44:53.342 | SUCCESS  | __main__:download_imgs:147 - downloaded 5 img to IMG_PATH......
+2023-10-04 00:44:55.262 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:44:55.272 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:44:55.288 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:44:55.501 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:44:55.881 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:02.568 | SUCCESS  | cellfunctions_:save_img:375 - 下载图片成功: ./kimage/360165.jpg
+2023-10-04 00:45:04.185 | SUCCESS  | cellfunctions_:save_img:375 - 下载图片成功: ./kimage/358964.jpg
+2023-10-04 00:45:04.186 | SUCCESS  | cellfunctions_:save_img:375 - 下载图片成功: ./kimage/359435.jpg
+2023-10-04 00:45:04.753 | SUCCESS  | cellfunctions_:save_img:375 - 下载图片成功: ./kimage/362083.jpg
+2023-10-04 00:45:06.673 | SUCCESS  | cellfunctions_:save_img:375 - 下载图片成功: ./kimage/359909.jpg
+2023-10-04 00:45:06.675 | SUCCESS  | __main__:download_imgs:147 - downloaded 5 img to IMG_PATH......
+2023-10-04 00:45:08.685 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:08.703 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:08.720 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:09.020 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:09.081 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:13.104 | SUCCESS  | cellfunctions_:save_img:375 - 下载图片成功: ./kimage/359750.jpg
+2023-10-04 00:45:15.915 | SUCCESS  | cellfunctions_:save_img:375 - 下载图片成功: ./kimage/362183.jpg
+2023-10-04 00:45:17.398 | SUCCESS  | cellfunctions_:save_img:375 - 下载图片成功: ./kimage/357114.jpg
+2023-10-04 00:45:18.283 | SUCCESS  | cellfunctions_:save_img:375 - 下载图片成功: ./kimage/361889.jpg
+2023-10-04 00:45:18.306 | SUCCESS  | cellfunctions_:save_img:375 - 下载图片成功: ./kimage/357927.jpg
+2023-10-04 00:45:18.308 | SUCCESS  | __main__:download_imgs:147 - downloaded 5 img to IMG_PATH......
+2023-10-04 00:45:19.775 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:19.953 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:20.082 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:20.085 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:20.380 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:27.730 | SUCCESS  | __main__:mode_a:227 - 单次下载数量:5
+2023-10-04 00:45:27.731 | SUCCESS  | __main__:mode_a:228 - 并发数:5
+2023-10-04 00:45:27.732 | SUCCESS  | __main__:mode_a:229 - 下载图片路径:./kimage
+2023-10-04 00:45:27.733 | SUCCESS  | __main__:mode_a:230 - 下载次数:200
+2023-10-04 00:45:27.734 | DEBUG    | __main__:link_db:27 - 连接数据库中...........
+2023-10-04 00:45:27.813 | SUCCESS  | __main__:link_db:50 - 数据表: kimgdb
+2023-10-04 00:45:27.814 | SUCCESS  | __main__:link_db:51 - 图像数据表: newkimg
+2023-10-04 00:45:27.815 | SUCCESS  | __main__:link_db:52 - tag数据表: tags
+2023-10-04 00:45:27.816 | SUCCESS  | __main__:link_db:54 - link dbas 准备导入数据.....
+2023-10-04 00:45:28.004 | INFO     | __main__:mode_a:254 - 数据库共有20030条图像数据
+2023-10-04 00:45:29.180 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:30.095 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:30.103 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:30.109 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:30.121 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:37.620 | SUCCESS  | cellfunctions_:save_img:375 - 下载图片成功: ./kimage/358053.jpg
+2023-10-04 00:45:38.592 | SUCCESS  | cellfunctions_:save_img:375 - 下载图片成功: ./kimage/360405.jpg
+2023-10-04 00:45:38.713 | SUCCESS  | cellfunctions_:save_img:375 - 下载图片成功: ./kimage/360300.jpg
+2023-10-04 00:45:47.041 | SUCCESS  | cellfunctions_:save_img:375 - 下载图片成功: ./kimage/358628.jpg
+2023-10-04 00:45:47.087 | SUCCESS  | cellfunctions_:save_img:375 - 下载图片成功: ./kimage/355095.jpg
+2023-10-04 00:45:47.089 | SUCCESS  | get_imags_data:download_imgs:147 - downloaded 5 img to IMG_PATH......
+2023-10-04 00:45:47.092 | SUCCESS  | __main__:save_img_and_todb:110 - imported: ./kimage/355095.jpg
+2023-10-04 00:45:47.096 | SUCCESS  | __main__:save_img_and_todb:110 - imported: ./kimage/360300.jpg
+2023-10-04 00:45:47.099 | SUCCESS  | __main__:save_img_and_todb:110 - imported: ./kimage/358628.jpg
+2023-10-04 00:45:47.101 | SUCCESS  | __main__:save_img_and_todb:110 - imported: ./kimage/360405.jpg
+2023-10-04 00:45:47.104 | SUCCESS  | __main__:save_img_and_todb:110 - imported: ./kimage/358053.jpg
+2023-10-04 00:45:47.119 | DEBUG    | __main__:save_img_and_todb:153 - 创建一个tags_unique表并保存
+2023-10-04 00:45:47.542 | INFO     | __main__:save_img_and_todb:166 - tags 表当前唯一tag数为 : 17956
+2023-10-04 00:45:47.694 | SUCCESS  | __main__:save_img_and_todb:191 - DataBase had added 5 img data...
+2023-10-04 00:45:47.696 | WARNING  | __main__:mode_a:285 - 数据库一共添加了 5 img data....
+2023-10-04 00:45:47.697 | DEBUG    | __main__:link_db:27 - 连接数据库中...........
+2023-10-04 00:45:47.703 | SUCCESS  | __main__:link_db:50 - 数据表: kimgdb
+2023-10-04 00:45:47.704 | SUCCESS  | __main__:link_db:51 - 图像数据表: newkimg
+2023-10-04 00:45:47.705 | SUCCESS  | __main__:link_db:52 - tag数据表: tags
+2023-10-04 00:45:47.706 | SUCCESS  | __main__:link_db:54 - link dbas 准备导入数据.....
+2023-10-04 00:45:47.809 | INFO     | __main__:mode_a:254 - 数据库共有20035条图像数据
+2023-10-04 00:45:49.198 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:49.273 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:49.288 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:49.378 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功
+2023-10-04 00:45:49.952 | SUCCESS  | cellfunctions_:get_source:259 - 获取源码成功

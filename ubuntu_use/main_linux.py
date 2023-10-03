@@ -1,9 +1,9 @@
 ## coding=utf-8
-import asyncio
+# import asyncio
 from sqlalchemy import create_engine, text
 import pandas
 from loguru import logger  # pip install loguru
-from get_imags_data import main
+from get_imags_data_linux import main
 import contextlib
 import random
 import os
@@ -18,7 +18,7 @@ from dotenv import load_dotenv  # pip install python-dotenv
 logger.add("k_spider/log/main.log")
 
 # 加载配置文件
-load_dotenv()
+load_dotenv("./ubuntu.env")
 
 
 # 连接数据库 mysql
@@ -57,7 +57,7 @@ def link_db():  # return engine, kimg_table, tags_table
     except Exception as e:
         logger.error("连接数据库失败")
         breakpoint()
-        # raise e
+        raise e
 
 
 # 保存数据到本地与数据库
@@ -121,7 +121,7 @@ def save_img_and_todb(pids, engine, kimg_table, tags_table):
     # 保存tags到数据库
     # 可以不用创建表,没有自动建表有则添加
     df_tags.to_sql(tags_table, engine, if_exists="append", index=False)
-    df_tags.to_csv(f"k_spider\\{tags_table}.csv", mode="a", index=False, header=False)
+    df_tags.to_csv(f"k_spider/{tags_table}.csv", mode="a", index=False, header=False)
     # engine.execute(text())
 
     # 查看有效添加tag数量(tag唯一,排除重复)
@@ -177,7 +177,7 @@ def save_img_and_todb(pids, engine, kimg_table, tags_table):
     df.to_sql(kimg_table, engine, if_exists="append", index=False)
 
     # 文件备份一下
-    df.to_csv(f"k_spider\\{kimg_table}.csv", mode="a", index=False, header=False)
+    df.to_csv(f"k_spider/{kimg_table}.csv", mode="a", index=False, header=False)
     # ,header=["pid","tags","path","link","status"])
 
     """logger.info("wait 3 s .......")

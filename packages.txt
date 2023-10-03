@@ -1,10 +1,23 @@
 # -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-pip install sqlalchemy
+pip install sqlalchemy -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-pip install beautifulsoup4 httpx
+pip install beautifulsoup4 httpx -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-pip install pandas loguru python-dotenv fake_useragent playwright playwright-stealth
+pip install pandas
+
+pip install loguru 
+
+pip install python-dotenv 
+
+pip install fake_useragent 
+
+pip install playwright 
+
+pip install playwright-stealth 
+
+
+i https://pypi.tuna.tsinghua.edu.cn/simple
 
 pip install aiofiles
 
@@ -14,10 +27,10 @@ pip install html5lib lxml html.parser html5
 
 pip install pymysql mysql
 
-#pip install -r requirements.txt
+#pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 pip install alive-progress -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 pip install progressbar2 -i https://pypi.tuna.tsinghua.edu.cn/simple
 
-pip install trio
+pip install trio -i https://pypi.tuna.tsinghua.edu.cn/simple

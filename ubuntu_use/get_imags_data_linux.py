@@ -6,7 +6,7 @@ import os
 import random
 
 # import sys
-
+import uvloop
 import pandas
 
 # from queue import Queue
@@ -14,7 +14,7 @@ import tqdm
 from dotenv import load_dotenv
 from loguru import logger  # pip install loguru
 
-from cellfunctions_ import (
+from cellfunctions_linux import (
     Counter,
     ensure_file_exists,  # counter_sync,
     get_source,
@@ -26,7 +26,7 @@ from cellfunctions_ import (
 # from tqdm.contrib.concurrent import process_map
 
 # 加载配置文件
-load_dotenv()
+load_dotenv("./ubuntu.env")
 logger.add("k_spider/log/get_imags_data.log")
 # proxies=None
 
@@ -46,6 +46,9 @@ def main(
     imgpath: str = os.getenv("IMG_PATH"),  # 保存图片路径,在.env配置
     headers: dict = read_headers_from_json(),  # 请求头
 ) -> list | list[tuple[int, str, str, str]]:  # [(pid,tags,img_path,img_link),....]
+    #
+    # 启动uvloop策略
+    asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
     #
     #
     # 图片路径不存在，则创建
@@ -82,6 +85,7 @@ def main(
 
     # pid_source=[(pid,source),......]
     # tqdm.tqdm.write("")
+    # asyncio.set_event_loop()
     pid_source = asyncio.run(process_urls(pids))
     # tqdm.tqdm.write("")
 
@@ -163,7 +167,7 @@ if __name__ == "__main__":
         print("关闭日志")
     else:
         print("打开日志")
-        logger.disable("SUCCESS")
+        # logger.disable("SUCCESS")
         # logger.s
         # logger.disable("ERROR")
         # logger.disable("WARNING")
@@ -177,6 +181,8 @@ if __name__ == "__main__":
         )
         # print(f"单次并发数量: {pids.__len__()}")
         # headers = read_headers_from_json()
+
+        # asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
 
         rows = main(pids)
 

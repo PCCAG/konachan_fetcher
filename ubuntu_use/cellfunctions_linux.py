@@ -26,7 +26,7 @@ from parse_tags_link import f_link, f_tags
 
 
 # 加载配置文件
-load_dotenv()
+load_dotenv("./ubuntu.env")
 
 
 ##k站主页
@@ -50,7 +50,7 @@ proxies = {"http://": http_proxy, "https://": http_proxy}
 
 
 def read_headers_from_json(
-    cookie_json_filepath="_cookies_.json", headers_example="_headers_example.json"
+    cookie_json_filepath="../_cookies_.json", headers_example="../_headers_example.json"
 ) -> dict:
     """
     默认:
