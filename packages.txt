@@ -19,3 +19,5 @@ pip install pymysql mysql
 pip install alive-progress -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 pip install progressbar2 -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+pip install trio
