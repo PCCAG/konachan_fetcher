@@ -1,0 +1,1590 @@
+2023-10-04 00:50:35.930 | SUCCESS  | __main__:mode_a:227 - 单次下载数量:5
+2023-10-04 00:50:35.930 | SUCCESS  | __main__:mode_a:228 - 并发数:5
+2023-10-04 00:50:35.931 | SUCCESS  | __main__:mode_a:229 - 下载图片路径:/mnt/f/database_learn/k_spider/pictures12
+2023-10-04 00:50:35.932 | SUCCESS  | __main__:mode_a:230 - 下载次数:200
+2023-10-04 00:50:35.932 | DEBUG    | __main__:link_db:27 - 连接数据库中...........
+2023-10-04 00:50:35.942 | ERROR    | __main__:link_db:58 - 连接数据库失败
+2023-10-04 01:01:55.464 | ERROR    | __main__:mode_a:236 - An error has been caught in function 'mode_a', process 'MainProcess' (567), thread 'MainThread' (140196579282944):
+Traceback (most recent call last):
+
+  File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 308, in <module>
+    mode_a()
+    └ <function mode_a at 0x7f81ebeba7a0>
+
+> File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 236, in mode_a
+    engine, kimg_table, tags_table = link_db()
+                                     └ <function link_db at 0x7f81ebeba0e0>
+
+  File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 59, in link_db
+    breakpoint()
+
+  File "/usr/lib/python3.10/bdb.py", line 94, in trace_dispatch
+    return self.dispatch_return(frame, arg)
+           │    │               │      └ None
+           │    │               └ <frame at 0x55ddbb21a5b0, file '/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py', line 59, code link_db>
+           │    └ <function Bdb.dispatch_return at 0x7f81ebf469e0>
+           └ <pdb.Pdb object at 0x7f81ebe96cb0>
+  File "/usr/lib/python3.10/bdb.py", line 156, in dispatch_return
+    if self.quitting: raise BdbQuit
+       │    │               └ <class 'bdb.BdbQuit'>
+       │    └ True
+       └ <pdb.Pdb object at 0x7f81ebe96cb0>
+
+bdb.BdbQuit
+2023-10-04 01:01:55.477 | ERROR    | __main__:mode_a:238 - 没有数据库连接,请检查数据库是否启用
+2023-10-04 01:02:03.800 | ERROR    | __main__:<module>:308 - An error has been caught in function '<module>', process 'MainProcess' (567), thread 'MainThread' (140196579282944):
+Traceback (most recent call last):
+
+  File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 236, in mode_a
+    engine, kimg_table, tags_table = link_db()
+                                     └ <function link_db at 0x7f81ebeba0e0>
+
+TypeError: cannot unpack non-iterable NoneType object
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+> File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 308, in <module>
+    mode_a()
+    └ <function mode_a at 0x7f81ebeba7a0>
+
+  File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 240, in mode_a
+    raise e
+
+  File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 240, in mode_a
+    raise e
+
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+           │    │             └ <frame at 0x55ddbbc48460, file '/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py', line 240, code mode_a>
+           │    └ <function Bdb.dispatch_line at 0x7f81ebf468c0>
+           └ <pdb.Pdb object at 0x7f81ebe96950>
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+       │    │               └ <class 'bdb.BdbQuit'>
+       │    └ True
+       └ <pdb.Pdb object at 0x7f81ebe96950>
+
+bdb.BdbQuit
+2023-10-04 01:02:03.805 | SUCCESS  | __main__:<module>:320 - 下载任务完成
+2023-10-04 01:02:07.827 | SUCCESS  | __main__:mode_a:227 - 单次下载数量:5
+2023-10-04 01:02:07.828 | SUCCESS  | __main__:mode_a:228 - 并发数:5
+2023-10-04 01:02:07.829 | SUCCESS  | __main__:mode_a:229 - 下载图片路径:/mnt/f/database_learn/k_spider/pictures12
+2023-10-04 01:02:07.829 | SUCCESS  | __main__:mode_a:230 - 下载次数:200
+2023-10-04 01:02:07.830 | DEBUG    | __main__:link_db:27 - 连接数据库中...........
+2023-10-04 01:02:07.838 | ERROR    | __main__:link_db:58 - 连接数据库失败
+2023-10-04 01:02:12.545 | ERROR    | __main__:mode_a:236 - An error has been caught in function 'mode_a', process 'MainProcess' (579), thread 'MainThread' (140572982308864):
+Traceback (most recent call last):
+
+  File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 308, in <module>
+    mode_a()
+    └ <function mode_a at 0x7fd98f4ae7a0>
+
+> File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 236, in mode_a
+    engine, kimg_table, tags_table = link_db()
+                                     └ <function link_db at 0x7fd98f4ae0e0>
+
+  File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 59, in link_db
+    breakpoint()
+
+  File "/usr/lib/python3.10/bdb.py", line 94, in trace_dispatch
+    return self.dispatch_return(frame, arg)
+           │    │               │      └ None
+           │    │               └ <frame at 0x5622ee77a670, file '/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py', line 59, code link_db>
+           │    └ <function Bdb.dispatch_return at 0x7fd98f33a9e0>
+           └ <pdb.Pdb object at 0x7fd98f48acb0>
+  File "/usr/lib/python3.10/bdb.py", line 156, in dispatch_return
+    if self.quitting: raise BdbQuit
+       │    │               └ <class 'bdb.BdbQuit'>
+       │    └ True
+       └ <pdb.Pdb object at 0x7fd98f48acb0>
+
+bdb.BdbQuit
+2023-10-04 01:02:12.549 | ERROR    | __main__:mode_a:238 - 没有数据库连接,请检查数据库是否启用
+2023-10-04 01:02:15.017 | ERROR    | __main__:<module>:308 - An error has been caught in function '<module>', process 'MainProcess' (579), thread 'MainThread' (140572982308864):
+Traceback (most recent call last):
+
+  File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 236, in mode_a
+    engine, kimg_table, tags_table = link_db()
+                                     └ <function link_db at 0x7fd98f4ae0e0>
+
+TypeError: cannot unpack non-iterable NoneType object
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+> File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 308, in <module>
+    mode_a()
+    └ <function mode_a at 0x7fd98f4ae7a0>
+
+  File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 240, in mode_a
+    raise e
+
+  File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 240, in mode_a
+    raise e
+
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+           │    │             └ <frame at 0x5622eef13ae0, file '/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py', line 240, code mode_a>
+           │    └ <function Bdb.dispatch_line at 0x7fd98f33a8c0>
+           └ <pdb.Pdb object at 0x7fd98f48ab30>
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+       │    │               └ <class 'bdb.BdbQuit'>
+       │    └ True
+       └ <pdb.Pdb object at 0x7fd98f48ab30>
+
+bdb.BdbQuit
+2023-10-04 01:02:15.022 | SUCCESS  | __main__:<module>:320 - 下载任务完成
+2023-10-04 01:04:50.990 | SUCCESS  | __main__:mode_a:227 - 单次下载数量:5
+2023-10-04 01:04:50.991 | SUCCESS  | __main__:mode_a:228 - 并发数:5
+2023-10-04 01:04:50.992 | SUCCESS  | __main__:mode_a:229 - 下载图片路径:/mnt/f/database_learn/k_spider/pictures12
+2023-10-04 01:04:50.992 | SUCCESS  | __main__:mode_a:230 - 下载次数:200
+2023-10-04 01:04:50.993 | DEBUG    | __main__:link_db:27 - 连接数据库中...........
+2023-10-04 01:04:51.000 | ERROR    | __main__:link_db:58 - 连接数据库失败
+2023-10-04 01:04:56.086 | ERROR    | __main__:mode_a:236 - An error has been caught in function 'mode_a', process 'MainProcess' (591), thread 'MainThread' (140094018588672):
+Traceback (most recent call last):
+
+  File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 308, in <module>
+    mode_a()
+    └ <function mode_a at 0x7f6a0ad5a7a0>
+
+> File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 236, in mode_a
+    engine, kimg_table, tags_table = link_db()
+                                     └ <function link_db at 0x7f6a0ad5a0e0>
+
+  File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 59, in link_db
+    breakpoint()
+
+  File "/usr/lib/python3.10/bdb.py", line 94, in trace_dispatch
+    return self.dispatch_return(frame, arg)
+           │    │               │      └ None
+           │    │               └ <frame at 0x560c7f64b1f0, file '/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py', line 59, code link_db>
+           │    └ <function Bdb.dispatch_return at 0x7f6a0abea9e0>
+           └ <pdb.Pdb object at 0x7f6a0ad36ad0>
+  File "/usr/lib/python3.10/bdb.py", line 156, in dispatch_return
+    if self.quitting: raise BdbQuit
+       │    │               └ <class 'bdb.BdbQuit'>
+       │    └ True
+       └ <pdb.Pdb object at 0x7f6a0ad36ad0>
+
+bdb.BdbQuit
+2023-10-04 01:04:56.091 | ERROR    | __main__:mode_a:238 - 没有数据库连接,请检查数据库是否启用
+2023-10-04 01:05:06.128 | ERROR    | __main__:<module>:308 - An error has been caught in function '<module>', process 'MainProcess' (591), thread 'MainThread' (140094018588672):
+Traceback (most recent call last):
+
+  File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 236, in mode_a
+    engine, kimg_table, tags_table = link_db()
+                                     └ <function link_db at 0x7f6a0ad5a0e0>
+
+TypeError: cannot unpack non-iterable NoneType object
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+> File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 308, in <module>
+    mode_a()
+    └ <function mode_a at 0x7f6a0ad5a7a0>
+
+  File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 240, in mode_a
+    raise e
+
+  File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 240, in mode_a
+    raise e
+
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+           │    │             └ <frame at 0x560c7fed71f0, file '/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py', line 240, code mode_a>
+           │    └ <function Bdb.dispatch_line at 0x7f6a0abea8c0>
+           └ <pdb.Pdb object at 0x7f6a0ad36950>
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+       │    │               └ <class 'bdb.BdbQuit'>
+       │    └ True
+       └ <pdb.Pdb object at 0x7f6a0ad36950>
+
+bdb.BdbQuit
+2023-10-04 01:05:06.133 | SUCCESS  | __main__:<module>:320 - 下载任务完成
+2023-10-04 01:13:20.923 | SUCCESS  | __main__:mode_a:227 - 单次下载数量:5
+2023-10-04 01:13:20.923 | SUCCESS  | __main__:mode_a:228 - 并发数:5
+2023-10-04 01:13:20.924 | SUCCESS  | __main__:mode_a:229 - 下载图片路径:/mnt/f/database_learn/k_spider/pictures12
+2023-10-04 01:13:20.924 | SUCCESS  | __main__:mode_a:230 - 下载次数:200
+2023-10-04 01:13:20.925 | DEBUG    | __main__:link_db:27 - 连接数据库中...........
+2023-10-04 01:13:20.933 | ERROR    | __main__:link_db:58 - 连接数据库失败
+2023-10-04 01:13:52.196 | ERROR    | __main__:mode_a:236 - An error has been caught in function 'mode_a', process 'MainProcess' (731), thread 'MainThread' (139774603694080):
+Traceback (most recent call last):
+
+  File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 308, in <module>
+    mode_a()
+    └ <function mode_a at 0x7f1fac3867a0>
+
+> File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 236, in mode_a
+    engine, kimg_table, tags_table = link_db()
+                                     └ <function link_db at 0x7f1fac3860e0>
+
+  File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 59, in link_db
+    breakpoint()
+
+  File "/usr/lib/python3.10/bdb.py", line 94, in trace_dispatch
+    return self.dispatch_return(frame, arg)
+           │    │               │      └ None
+           │    │               └ <frame at 0x563e86e7a1f0, file '/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py', line 59, code link_db>
+           │    └ <function Bdb.dispatch_return at 0x7f1fac2169e0>
+           └ <pdb.Pdb object at 0x7f1fac362ad0>
+  File "/usr/lib/python3.10/bdb.py", line 156, in dispatch_return
+    if self.quitting: raise BdbQuit
+       │    │               └ <class 'bdb.BdbQuit'>
+       │    └ True
+       └ <pdb.Pdb object at 0x7f1fac362ad0>
+
+bdb.BdbQuit
+2023-10-04 01:13:52.200 | ERROR    | __main__:mode_a:238 - 没有数据库连接,请检查数据库是否启用
+2023-10-04 01:13:52.861 | ERROR    | __main__:<module>:308 - An error has been caught in function '<module>', process 'MainProcess' (731), thread 'MainThread' (139774603694080):
+Traceback (most recent call last):
+
+  File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 236, in mode_a
+    engine, kimg_table, tags_table = link_db()
+                                     └ <function link_db at 0x7f1fac3860e0>
+
+TypeError: cannot unpack non-iterable NoneType object
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+> File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 308, in <module>
+    mode_a()
+    └ <function mode_a at 0x7f1fac3867a0>
+
+  File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 240, in mode_a
+    raise e
+
+  File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 240, in mode_a
+    raise e
+
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+           │    │             └ <frame at 0x563e873e56c0, file '/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py', line 240, code mode_a>
+           │    └ <function Bdb.dispatch_line at 0x7f1fac2168c0>
+           └ <pdb.Pdb object at 0x7f1fac362950>
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+       │    │               └ <class 'bdb.BdbQuit'>
+       │    └ True
+       └ <pdb.Pdb object at 0x7f1fac362950>
+
+bdb.BdbQuit
+2023-10-04 01:13:52.866 | SUCCESS  | __main__:<module>:320 - 下载任务完成
+2023-10-04 01:13:55.262 | SUCCESS  | __main__:mode_a:227 - 单次下载数量:5
+2023-10-04 01:13:55.263 | SUCCESS  | __main__:mode_a:228 - 并发数:5
+2023-10-04 01:13:55.263 | SUCCESS  | __main__:mode_a:229 - 下载图片路径:/mnt/f/database_learn/k_spider/pictures12
+2023-10-04 01:13:55.264 | SUCCESS  | __main__:mode_a:230 - 下载次数:200
+2023-10-04 01:13:55.264 | DEBUG    | __main__:link_db:27 - 连接数据库中...........
+2023-10-04 01:13:55.272 | ERROR    | __main__:link_db:58 - 连接数据库失败
+2023-10-04 01:14:07.365 | ERROR    | __main__:mode_a:236 - An error has been caught in function 'mode_a', process 'MainProcess' (743), thread 'MainThread' (140658041163776):
+Traceback (most recent call last):
+
+  File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 308, in <module>
+    mode_a()
+    └ <function mode_a at 0x7fed5d3067a0>
+
+> File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 236, in mode_a
+    engine, kimg_table, tags_table = link_db()
+                                     └ <function link_db at 0x7fed5d3060e0>
+
+  File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 60, in link_db
+    raise e
+
+  File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 40, in link_db
+    engine = create_engine(
+             └ <function create_engine at 0x7fed7f288310>
+
+  File "<string>", line 2, in create_engine
+  File "/home/sss/.local/lib/python3.10/site-packages/sqlalchemy/util/deprecations.py", line 281, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+           │   │       └ {}
+           │   └ ('mysql+pymysql://ubuntu:12345678999@172.27.144.1/kimgdb',)
+           └ <function create_engine at 0x7fed7f288160>
+  File "/home/sss/.local/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 601, in create_engine
+    dbapi = dbapi_meth(**dbapi_args)
+            │            └ {}
+            └ <bound method MySQLDialect_pymysql.import_dbapi of <class 'sqlalchemy.dialects.mysql.pymysql.MySQLDialect_pymysql'>>
+  File "/home/sss/.local/lib/python3.10/site-packages/sqlalchemy/dialects/mysql/pymysql.py", line 75, in import_dbapi
+    return __import__("pymysql")
+
+ModuleNotFoundError: No module named 'pymysql'
+2023-10-04 01:14:08.550 | ERROR    | __main__:mode_a:238 - 没有数据库连接,请检查数据库是否启用
+2023-10-04 01:14:20.326 | ERROR    | __main__:<module>:308 - An error has been caught in function '<module>', process 'MainProcess' (743), thread 'MainThread' (140658041163776):
+Traceback (most recent call last):
+
+  File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 236, in mode_a
+    engine, kimg_table, tags_table = link_db()
+                                     └ <function link_db at 0x7fed5d3060e0>
+
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+           │    │             └ <frame at 0x7fed606b8b80, file '/home/sss/.local/lib/python3.10/site-packages/loguru/_logger.py', line 1278, code catch_wrapper>
+           │    └ <function Bdb.dispatch_line at 0x7fed5d3968c0>
+           └ <pdb.Pdb object at 0x7fed5d30cfd0>
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+       │    │               └ <class 'bdb.BdbQuit'>
+       │    └ True
+       └ <pdb.Pdb object at 0x7fed5d30cfd0>
+
+bdb.BdbQuit
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+> File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 308, in <module>
+    mode_a()
+    └ <function mode_a at 0x7fed5d3067a0>
+
+  File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 240, in mode_a
+    raise e
+
+  File "/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py", line 240, in mode_a
+    raise e
+
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+           │    │             └ <frame at 0x55c0f2ac8820, file '/mnt/d/ybxi and python/k_grab1.9/ubuntu_use/main_linux.py', line 240, code mode_a>
+           │    └ <function Bdb.dispatch_line at 0x7fed5d3968c0>
+           └ <pdb.Pdb object at 0x7fed5d30d240>
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+       │    │               └ <class 'bdb.BdbQuit'>
+       │    └ True
+       └ <pdb.Pdb object at 0x7fed5d30d240>
+
+bdb.BdbQuit
+2023-10-04 01:14:20.336 | SUCCESS  | __main__:<module>:320 - 下载任务完成
+2023-10-04 01:17:17.831 | SUCCESS  | __main__:mode_a:227 - 单次下载数量:5
+2023-10-04 01:17:17.832 | SUCCESS  | __main__:mode_a:228 - 并发数:5
+2023-10-04 01:17:17.832 | SUCCESS  | __main__:mode_a:229 - 下载图片路径:/mnt/f/database_learn/k_spider/pictures12
+2023-10-04 01:17:17.833 | SUCCESS  | __main__:mode_a:230 - 下载次数:200
+2023-10-04 01:17:17.833 | DEBUG    | __main__:link_db:27 - 连接数据库中...........
+2023-10-04 01:17:27.027 | SUCCESS  | __main__:link_db:50 - 数据表: kimgdb
+2023-10-04 01:17:27.027 | SUCCESS  | __main__:link_db:51 - 图像数据表: newkimg
+2023-10-04 01:17:27.028 | SUCCESS  | __main__:link_db:52 - tag数据表: tags
+2023-10-04 01:17:27.029 | SUCCESS  | __main__:link_db:54 - link dbas 准备导入数据.....
+2023-10-04 01:17:27.116 | INFO     | __main__:mode_a:254 - 数据库共有20035条图像数据
+2023-10-04 01:17:28.645 | ERROR    | cellfunctions_linux:get_source:247 - 355642图片不存在或者被删除了
+2023-10-04 01:17:28.646 | ERROR    | cellfunctions_linux:get_source:248 - https://konachan.com/post/show/355642/
+2023-10-04 01:17:29.218 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:17:29.219 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:17:29.225 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:17:29.582 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:17:31.670 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/359032.jpg
+2023-10-04 01:17:33.497 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/355686.jpg
+2023-10-04 01:17:34.263 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/356670.jpg
+2023-10-04 01:17:35.031 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/356402.jpg
+2023-10-04 01:17:35.033 | SUCCESS  | get_imags_data_linux:download_imgs:150 - downloaded 4 img to IMG_PATH......
+2023-10-04 01:17:35.037 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/359032.jpg
+2023-10-04 01:17:35.040 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/356670.jpg
+2023-10-04 01:17:35.041 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/356402.jpg
+2023-10-04 01:17:35.043 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/355686.jpg
+2023-10-04 01:17:35.057 | DEBUG    | __main__:save_img_and_todb:153 - 创建一个tags_unique表并保存
+2023-10-04 01:17:35.454 | INFO     | __main__:save_img_and_todb:166 - tags 表当前唯一tag数为 : 17959
+2023-10-04 01:17:35.582 | SUCCESS  | __main__:save_img_and_todb:191 - DataBase had added 4 img data...
+2023-10-04 01:17:35.583 | WARNING  | __main__:mode_a:285 - 数据库一共添加了 4 img data....
+2023-10-04 01:17:35.584 | DEBUG    | __main__:link_db:27 - 连接数据库中...........
+2023-10-04 01:17:35.589 | SUCCESS  | __main__:link_db:50 - 数据表: kimgdb
+2023-10-04 01:17:35.590 | SUCCESS  | __main__:link_db:51 - 图像数据表: newkimg
+2023-10-04 01:17:35.590 | SUCCESS  | __main__:link_db:52 - tag数据表: tags
+2023-10-04 01:17:35.591 | SUCCESS  | __main__:link_db:54 - link dbas 准备导入数据.....
+2023-10-04 01:17:35.676 | INFO     | __main__:mode_a:254 - 数据库共有20039条图像数据
+2023-10-04 01:17:35.679 | INFO     | __main__:mode_a:281 - 排除1个重复pid....
+2023-10-04 01:17:37.592 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:17:37.633 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:17:37.968 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:17:37.970 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:17:39.462 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/363001.jpg
+2023-10-04 01:17:40.980 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360761.jpg
+2023-10-04 01:17:41.352 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358225.jpg
+2023-10-04 01:17:42.134 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357425.jpg
+2023-10-04 01:17:42.137 | SUCCESS  | get_imags_data_linux:download_imgs:150 - downloaded 4 img to IMG_PATH......
+2023-10-04 01:17:42.139 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357425.jpg
+2023-10-04 01:17:42.141 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360761.jpg
+2023-10-04 01:17:42.143 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/363001.jpg
+2023-10-04 01:17:42.145 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358225.jpg
+2023-10-04 01:17:42.161 | DEBUG    | __main__:save_img_and_todb:153 - 创建一个tags_unique表并保存
+2023-10-04 01:17:42.545 | INFO     | __main__:save_img_and_todb:166 - tags 表当前唯一tag数为 : 17960
+2023-10-04 01:17:42.630 | SUCCESS  | __main__:save_img_and_todb:191 - DataBase had added 4 img data...
+2023-10-04 01:17:42.632 | WARNING  | __main__:mode_a:285 - 数据库一共添加了 8 img data....
+2023-10-04 01:17:42.632 | DEBUG    | __main__:link_db:27 - 连接数据库中...........
+2023-10-04 01:17:42.637 | SUCCESS  | __main__:link_db:50 - 数据表: kimgdb
+2023-10-04 01:17:42.638 | SUCCESS  | __main__:link_db:51 - 图像数据表: newkimg
+2023-10-04 01:17:42.638 | SUCCESS  | __main__:link_db:52 - tag数据表: tags
+2023-10-04 01:17:42.639 | SUCCESS  | __main__:link_db:54 - link dbas 准备导入数据.....
+2023-10-04 01:17:42.746 | INFO     | __main__:mode_a:254 - 数据库共有20043条图像数据
+2023-10-04 01:17:42.749 | INFO     | __main__:mode_a:281 - 排除1个重复pid....
+2023-10-04 01:17:44.751 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:17:45.034 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:17:45.040 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:17:45.047 | ERROR    | cellfunctions_linux:get_source:247 - 362937图片不存在或者被删除了
+2023-10-04 01:17:45.048 | ERROR    | cellfunctions_linux:get_source:248 - https://konachan.com/post/show/362937/
+2023-10-04 01:17:45.932 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360335.jpg
+2023-10-04 01:17:48.044 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361662.jpg
+2023-10-04 01:17:54.662 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357153.jpg
+2023-10-04 01:17:54.664 | SUCCESS  | get_imags_data_linux:download_imgs:150 - downloaded 3 img to IMG_PATH......
+2023-10-04 01:17:54.667 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360335.jpg
+2023-10-04 01:17:54.669 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/361662.jpg
+2023-10-04 01:17:54.670 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357153.jpg
+2023-10-04 01:17:54.680 | DEBUG    | __main__:save_img_and_todb:153 - 创建一个tags_unique表并保存
+2023-10-04 01:17:55.078 | INFO     | __main__:save_img_and_todb:166 - tags 表当前唯一tag数为 : 17962
+2023-10-04 01:17:55.182 | SUCCESS  | __main__:save_img_and_todb:191 - DataBase had added 3 img data...
+2023-10-04 01:17:55.184 | WARNING  | __main__:mode_a:285 - 数据库一共添加了 11 img data....
+2023-10-04 01:17:55.184 | DEBUG    | __main__:link_db:27 - 连接数据库中...........
+2023-10-04 01:17:55.189 | SUCCESS  | __main__:link_db:50 - 数据表: kimgdb
+2023-10-04 01:17:55.190 | SUCCESS  | __main__:link_db:51 - 图像数据表: newkimg
+2023-10-04 01:17:55.190 | SUCCESS  | __main__:link_db:52 - tag数据表: tags
+2023-10-04 01:17:55.191 | SUCCESS  | __main__:link_db:54 - link dbas 准备导入数据.....
+2023-10-04 01:17:55.297 | INFO     | __main__:mode_a:254 - 数据库共有20046条图像数据
+2023-10-04 01:17:55.300 | INFO     | __main__:mode_a:281 - 排除1个重复pid....
+2023-10-04 01:17:57.326 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:17:57.327 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:17:57.354 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:17:57.366 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:18:00.237 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360804.jpg
+2023-10-04 01:18:00.409 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360484.jpg
+2023-10-04 01:18:02.135 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357536.jpg
+2023-10-04 01:18:13.801 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/356296.jpg
+2023-10-04 01:18:13.803 | SUCCESS  | get_imags_data_linux:download_imgs:150 - downloaded 4 img to IMG_PATH......
+2023-10-04 01:18:13.806 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357536.jpg
+2023-10-04 01:18:13.808 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/356296.jpg
+2023-10-04 01:18:13.809 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360804.jpg
+2023-10-04 01:18:13.811 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360484.jpg
+2023-10-04 01:18:13.822 | DEBUG    | __main__:save_img_and_todb:153 - 创建一个tags_unique表并保存
+2023-10-04 01:18:14.201 | INFO     | __main__:save_img_and_todb:166 - tags 表当前唯一tag数为 : 17965
+2023-10-04 01:18:14.286 | SUCCESS  | __main__:save_img_and_todb:191 - DataBase had added 4 img data...
+2023-10-04 01:18:14.288 | WARNING  | __main__:mode_a:285 - 数据库一共添加了 15 img data....
+2023-10-04 01:18:14.288 | DEBUG    | __main__:link_db:27 - 连接数据库中...........
+2023-10-04 01:18:14.294 | SUCCESS  | __main__:link_db:50 - 数据表: kimgdb
+2023-10-04 01:18:14.295 | SUCCESS  | __main__:link_db:51 - 图像数据表: newkimg
+2023-10-04 01:18:14.295 | SUCCESS  | __main__:link_db:52 - tag数据表: tags
+2023-10-04 01:18:14.296 | SUCCESS  | __main__:link_db:54 - link dbas 准备导入数据.....
+2023-10-04 01:18:14.368 | INFO     | __main__:mode_a:254 - 数据库共有20050条图像数据
+2023-10-04 01:18:15.853 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:18:16.478 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:18:16.496 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:18:16.500 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:18:16.768 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:18:20.209 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362489.jpg
+2023-10-04 01:18:21.533 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362944.jpg
+2023-10-04 01:18:22.049 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362468.jpg
+2023-10-04 01:18:22.058 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360947.jpg
+2023-10-04 01:18:23.310 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361150.jpg
+2023-10-04 01:18:23.312 | SUCCESS  | get_imags_data_linux:download_imgs:150 - downloaded 5 img to IMG_PATH......
+2023-10-04 01:18:23.314 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/362468.jpg
+2023-10-04 01:18:23.316 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/362489.jpg
+2023-10-04 01:18:23.317 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/361150.jpg
+2023-10-04 01:18:23.319 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360947.jpg
+2023-10-04 01:18:23.320 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/362944.jpg
+2023-10-04 01:18:23.330 | DEBUG    | __main__:save_img_and_todb:153 - 创建一个tags_unique表并保存
+2023-10-04 01:18:23.721 | INFO     | __main__:save_img_and_todb:166 - tags 表当前唯一tag数为 : 17968
+2023-10-04 01:18:23.844 | SUCCESS  | __main__:save_img_and_todb:191 - DataBase had added 5 img data...
+2023-10-04 01:18:23.846 | WARNING  | __main__:mode_a:285 - 数据库一共添加了 20 img data....
+2023-10-04 01:18:23.846 | DEBUG    | __main__:link_db:27 - 连接数据库中...........
+2023-10-04 01:18:23.852 | SUCCESS  | __main__:link_db:50 - 数据表: kimgdb
+2023-10-04 01:18:23.853 | SUCCESS  | __main__:link_db:51 - 图像数据表: newkimg
+2023-10-04 01:18:23.854 | SUCCESS  | __main__:link_db:52 - tag数据表: tags
+2023-10-04 01:18:23.855 | SUCCESS  | __main__:link_db:54 - link dbas 准备导入数据.....
+2023-10-04 01:18:23.928 | INFO     | __main__:mode_a:254 - 数据库共有20055条图像数据
+2023-10-04 01:18:25.408 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:18:26.034 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:18:26.040 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:18:26.041 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:18:26.051 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:18:27.172 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/363211.jpg
+2023-10-04 01:18:29.444 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/355065.jpg
+2023-10-04 01:18:31.359 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357954.jpg
+2023-10-04 01:18:31.473 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360081.jpg
+2023-10-04 01:18:31.558 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/355415.jpg
+2023-10-04 01:18:31.561 | SUCCESS  | get_imags_data_linux:download_imgs:150 - downloaded 5 img to IMG_PATH......
+2023-10-04 01:18:31.563 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/355415.jpg
+2023-10-04 01:18:31.565 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/355065.jpg
+2023-10-04 01:18:31.567 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/363211.jpg
+2023-10-04 01:18:31.568 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360081.jpg
+2023-10-04 01:18:31.570 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357954.jpg
+2023-10-04 01:18:31.580 | DEBUG    | __main__:save_img_and_todb:153 - 创建一个tags_unique表并保存
+2023-10-04 01:18:31.988 | INFO     | __main__:save_img_and_todb:166 - tags 表当前唯一tag数为 : 17968
+2023-10-04 01:18:32.120 | SUCCESS  | __main__:save_img_and_todb:191 - DataBase had added 5 img data...
+2023-10-04 01:18:32.121 | WARNING  | __main__:mode_a:285 - 数据库一共添加了 25 img data....
+2023-10-04 01:18:32.122 | DEBUG    | __main__:link_db:27 - 连接数据库中...........
+2023-10-04 01:18:32.127 | SUCCESS  | __main__:link_db:50 - 数据表: kimgdb
+2023-10-04 01:18:32.128 | SUCCESS  | __main__:link_db:51 - 图像数据表: newkimg
+2023-10-04 01:18:32.128 | SUCCESS  | __main__:link_db:52 - tag数据表: tags
+2023-10-04 01:18:32.129 | SUCCESS  | __main__:link_db:54 - link dbas 准备导入数据.....
+2023-10-04 01:18:32.206 | INFO     | __main__:mode_a:254 - 数据库共有20060条图像数据
+2023-10-04 01:18:32.209 | INFO     | __main__:mode_a:281 - 排除1个重复pid....
+2023-10-04 01:18:33.747 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:18:34.216 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:18:34.235 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:18:34.488 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:18:36.719 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/356749.jpg
+2023-10-04 01:18:38.106 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361269.jpg
+2023-10-04 01:18:39.025 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/355971.jpg
+2023-10-04 01:18:50.592 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/359999.jpg
+2023-10-04 01:18:50.595 | SUCCESS  | get_imags_data_linux:download_imgs:150 - downloaded 4 img to IMG_PATH......
+2023-10-04 01:18:50.598 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/355971.jpg
+2023-10-04 01:18:50.600 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/361269.jpg
+2023-10-04 01:18:50.601 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/356749.jpg
+2023-10-04 01:18:50.603 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/359999.jpg
+2023-10-04 01:18:50.613 | DEBUG    | __main__:save_img_and_todb:153 - 创建一个tags_unique表并保存
+2023-10-04 01:18:51.010 | INFO     | __main__:save_img_and_todb:166 - tags 表当前唯一tag数为 : 17969
+2023-10-04 01:18:51.098 | SUCCESS  | __main__:save_img_and_todb:191 - DataBase had added 4 img data...
+2023-10-04 01:18:51.099 | WARNING  | __main__:mode_a:285 - 数据库一共添加了 29 img data....
+2023-10-04 01:18:51.100 | DEBUG    | __main__:link_db:27 - 连接数据库中...........
+2023-10-04 01:18:51.106 | SUCCESS  | __main__:link_db:50 - 数据表: kimgdb
+2023-10-04 01:18:51.106 | SUCCESS  | __main__:link_db:51 - 图像数据表: newkimg
+2023-10-04 01:18:51.107 | SUCCESS  | __main__:link_db:52 - tag数据表: tags
+2023-10-04 01:18:51.108 | SUCCESS  | __main__:link_db:54 - link dbas 准备导入数据.....
+2023-10-04 01:18:51.222 | INFO     | __main__:mode_a:254 - 数据库共有20064条图像数据
+2023-10-04 01:18:51.225 | INFO     | __main__:mode_a:281 - 排除1个重复pid....
+2023-10-04 01:18:52.617 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:18:53.281 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:18:53.308 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:18:53.313 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:18:56.343 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358205.jpg
+2023-10-04 01:18:57.316 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357451.jpg
+2023-10-04 01:18:59.785 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357169.jpg
+2023-10-04 01:19:03.077 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/355622.jpg
+2023-10-04 01:19:03.079 | SUCCESS  | get_imags_data_linux:download_imgs:150 - downloaded 4 img to IMG_PATH......
+2023-10-04 01:19:03.081 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358205.jpg
+2023-10-04 01:19:03.083 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357451.jpg
+2023-10-04 01:19:03.085 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/355622.jpg
+2023-10-04 01:19:03.086 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357169.jpg
+2023-10-04 01:19:03.097 | DEBUG    | __main__:save_img_and_todb:153 - 创建一个tags_unique表并保存
+2023-10-04 01:19:03.491 | INFO     | __main__:save_img_and_todb:166 - tags 表当前唯一tag数为 : 17969
+2023-10-04 01:19:03.579 | SUCCESS  | __main__:save_img_and_todb:191 - DataBase had added 4 img data...
+2023-10-04 01:19:03.580 | WARNING  | __main__:mode_a:285 - 数据库一共添加了 33 img data....
+2023-10-04 01:19:03.581 | DEBUG    | __main__:link_db:27 - 连接数据库中...........
+2023-10-04 01:19:03.586 | SUCCESS  | __main__:link_db:50 - 数据表: kimgdb
+2023-10-04 01:19:03.586 | SUCCESS  | __main__:link_db:51 - 图像数据表: newkimg
+2023-10-04 01:19:03.587 | SUCCESS  | __main__:link_db:52 - tag数据表: tags
+2023-10-04 01:19:03.588 | SUCCESS  | __main__:link_db:54 - link dbas 准备导入数据.....
+2023-10-04 01:19:03.699 | INFO     | __main__:mode_a:254 - 数据库共有20068条图像数据
+2023-10-04 01:19:05.165 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:19:05.449 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:19:05.921 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:19:05.993 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:19:06.045 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:19:08.581 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358419.jpg
+2023-10-04 01:19:09.091 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361698.jpg
+2023-10-04 01:19:09.833 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/355031.jpg
+2023-10-04 01:19:09.941 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358748.jpg
+2023-10-04 01:20:55.370 | SUCCESS  | __main__:mode_a:227 - 单次下载数量:50
+2023-10-04 01:20:55.371 | SUCCESS  | __main__:mode_a:228 - 并发数:50
+2023-10-04 01:20:55.371 | SUCCESS  | __main__:mode_a:229 - 下载图片路径:/mnt/f/database_learn/k_spider/pictures12
+2023-10-04 01:20:55.372 | SUCCESS  | __main__:mode_a:230 - 下载次数:200
+2023-10-04 01:20:55.372 | DEBUG    | __main__:link_db:27 - 连接数据库中...........
+2023-10-04 01:20:55.399 | SUCCESS  | __main__:link_db:50 - 数据表: kimgdb
+2023-10-04 01:20:55.400 | SUCCESS  | __main__:link_db:51 - 图像数据表: newkimg
+2023-10-04 01:20:55.400 | SUCCESS  | __main__:link_db:52 - tag数据表: tags
+2023-10-04 01:20:55.401 | SUCCESS  | __main__:link_db:54 - link dbas 准备导入数据.....
+2023-10-04 01:20:55.476 | INFO     | __main__:mode_a:254 - 数据库共有20068条图像数据
+2023-10-04 01:20:55.479 | INFO     | __main__:mode_a:281 - 排除2个重复pid....
+2023-10-04 01:21:01.238 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:01.279 | ERROR    | cellfunctions_linux:get_source:247 - 357147图片不存在或者被删除了
+2023-10-04 01:21:01.280 | ERROR    | cellfunctions_linux:get_source:248 - https://konachan.com/post/show/357147/
+2023-10-04 01:21:01.441 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:01.462 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:01.476 | ERROR    | cellfunctions_linux:get_source:247 - 356643图片不存在或者被删除了
+2023-10-04 01:21:01.477 | ERROR    | cellfunctions_linux:get_source:248 - https://konachan.com/post/show/356643/
+2023-10-04 01:21:01.530 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.531 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.532 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.572 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.595 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.596 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.613 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.622 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.623 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.634 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.635 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.636 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.648 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:01.665 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.706 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.709 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:01.710 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.711 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:01.735 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.754 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.755 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.780 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.799 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:01.800 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.801 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.802 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:01.807 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:01.840 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.860 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.871 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.872 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.881 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.893 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.895 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.896 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.913 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.914 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:01.917 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:02.028 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:02.042 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:02.068 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:02.136 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:02.174 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:02.533 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/355711/
+2023-10-04 01:21:02.574 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/355389/
+2023-10-04 01:21:02.596 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/360450/
+2023-10-04 01:21:02.613 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/357874/
+2023-10-04 01:21:02.623 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/359282/
+2023-10-04 01:21:02.624 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/357695/
+2023-10-04 01:21:02.801 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358659/
+2023-10-04 01:21:02.841 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/355349/
+2023-10-04 01:21:02.882 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358310/
+2023-10-04 01:21:02.901 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/362147/
+2023-10-04 01:21:03.306 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:03.407 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:03.424 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:03.496 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:03.530 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:03.534 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/355999/
+2023-10-04 01:21:03.622 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:03.637 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/361396/
+2023-10-04 01:21:03.708 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/362808/
+2023-10-04 01:21:03.711 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/355435/
+2023-10-04 01:21:03.754 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/362825/
+2023-10-04 01:21:03.788 | ERROR    | cellfunctions_linux:get_source:247 - 358659图片不存在或者被删除了
+2023-10-04 01:21:03.788 | ERROR    | cellfunctions_linux:get_source:248 - https://konachan.com/post/show/358659/
+2023-10-04 01:21:03.816 | ERROR    | cellfunctions_linux:get_source:247 - 355349图片不存在或者被删除了
+2023-10-04 01:21:03.817 | ERROR    | cellfunctions_linux:get_source:248 - https://konachan.com/post/show/355349/
+2023-10-04 01:21:03.862 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/355709/
+2023-10-04 01:21:03.872 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/359731/
+2023-10-04 01:21:03.915 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/362349/
+2023-10-04 01:21:03.918 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358195/
+2023-10-04 01:21:03.924 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:04.171 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:04.371 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:04.385 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:04.418 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:04.419 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:04.520 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:04.597 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/357876/
+2023-10-04 01:21:04.635 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/362014/
+2023-10-04 01:21:04.638 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/360113/
+2023-10-04 01:21:04.665 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/356465/
+2023-10-04 01:21:04.669 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:04.687 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:04.737 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/356512/
+2023-10-04 01:21:04.756 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/363029/
+2023-10-04 01:21:04.782 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/357552/
+2023-10-04 01:21:04.802 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/359538/
+2023-10-04 01:21:04.896 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/363341/
+2023-10-04 01:21:04.914 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/360564/
+2023-10-04 01:21:04.971 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:05.113 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:05.270 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:05.271 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:05.276 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:05.409 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:05.418 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/362349/
+2023-10-04 01:21:05.420 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358195/
+2023-10-04 01:21:05.436 | ERROR    | cellfunctions_linux:get_source:247 - 357876图片不存在或者被删除了
+2023-10-04 01:21:05.436 | ERROR    | cellfunctions_linux:get_source:248 - https://konachan.com/post/show/357876/
+2023-10-04 01:21:05.483 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:05.532 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/356002/
+2023-10-04 01:21:05.629 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:05.746 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:05.873 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/355056/
+2023-10-04 01:21:05.898 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358708/
+2023-10-04 01:21:05.927 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:06.114 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/356465/
+2023-10-04 01:21:06.125 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:06.173 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/355435/
+2023-10-04 01:21:06.271 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:06.272 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/359538/
+2023-10-04 01:21:06.373 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/359731/
+2023-10-04 01:21:06.386 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:06.558 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:06.635 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:06.880 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:21:07.122 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:07.193 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:07.279 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:07.351 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:07.411 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/360564/
+2023-10-04 01:21:08.636 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:08.882 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/359731/
+2023-10-04 01:21:09.274 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/356512/
+2023-10-04 01:21:09.277 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/357552/
+2023-10-04 01:21:09.637 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/355435/
+2023-10-04 01:21:09.766 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:09.928 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/362349/
+2023-10-04 01:21:10.138 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:10.139 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:10.473 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:10.803 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:21:16.897 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/359538.jpg
+2023-10-04 01:21:16.910 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/363029.jpg
+2023-10-04 01:21:18.577 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357552.jpg
+2023-10-04 01:21:18.606 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/359731.jpg
+2023-10-04 01:21:21.162 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358195.jpg
+2023-10-04 01:21:22.937 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/355893.jpg
+2023-10-04 01:21:24.745 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362531.jpg
+2023-10-04 01:21:28.289 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/355711.jpg
+2023-10-04 01:21:29.523 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/356340.jpg
+2023-10-04 01:21:29.683 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361768.jpg
+2023-10-04 01:21:31.597 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360327.jpg
+2023-10-04 01:21:32.273 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/356465.jpg
+2023-10-04 01:21:33.882 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360566.jpg
+2023-10-04 01:21:41.561 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/355389.jpg
+2023-10-04 01:21:42.734 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360113.jpg
+2023-10-04 01:21:46.017 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357591.jpg
+2023-10-04 01:21:49.070 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358310.jpg
+2023-10-04 01:21:49.842 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/355999
+2023-10-04 01:21:50.441 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/363341.jpg
+2023-10-04 01:21:50.597 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357874.jpg
+2023-10-04 01:21:51.634 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360564.jpg
+2023-10-04 01:21:51.886 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/355435
+2023-10-04 01:21:51.889 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/358796
+2023-10-04 01:21:51.890 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/362147
+2023-10-04 01:21:54.287 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362349.gif
+2023-10-04 01:21:55.287 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/356002.jpg
+2023-10-04 01:21:56.974 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/356512
+2023-10-04 01:21:56.980 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/357819
+2023-10-04 01:21:56.981 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/358708
+2023-10-04 01:21:56.981 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/357695
+2023-10-04 01:21:57.345 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360468.jpg
+2023-10-04 01:21:57.690 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362808.jpg
+2023-10-04 01:21:59.290 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362825.jpg
+2023-10-04 01:22:01.273 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357139.jpg
+2023-10-04 01:22:01.597 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/355709
+2023-10-04 01:22:01.598 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/362014
+2023-10-04 01:22:01.716 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/355056.jpg
+2023-10-04 01:22:02.685 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362147.jpg
+2023-10-04 01:22:02.808 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/356767.jpg
+2023-10-04 01:22:05.224 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/359282.jpg
+2023-10-04 01:22:05.803 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358796.jpg
+2023-10-04 01:22:07.466 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361396.jpg
+2023-10-04 01:22:09.190 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360450.jpg
+2023-10-04 01:22:12.632 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362897.jpg
+2023-10-04 01:22:13.062 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/356512.jpg
+2023-10-04 01:22:15.783 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/355435.jpg
+2023-10-04 01:22:16.458 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357819.jpg
+2023-10-04 01:22:18.890 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358708.jpg
+2023-10-04 01:22:19.400 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357695.jpg
+2023-10-04 01:22:19.709 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/355709.jpg
+2023-10-04 01:22:20.840 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362014.jpg
+2023-10-04 01:22:26.198 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/355999.jpg
+2023-10-04 01:22:39.992 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/359733.jpg
+2023-10-04 01:22:39.995 | SUCCESS  | get_imags_data_linux:download_imgs:150 - downloaded 43 img to IMG_PATH......
+2023-10-04 01:22:39.999 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/356002.jpg
+2023-10-04 01:22:40.002 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357695.jpg
+2023-10-04 01:22:40.004 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/359733.jpg
+2023-10-04 01:22:40.005 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360327.jpg
+2023-10-04 01:22:40.007 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/356465.jpg
+2023-10-04 01:22:40.008 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/355435.jpg
+2023-10-04 01:22:40.010 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/359538.jpg
+2023-10-04 01:22:40.011 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/361396.jpg
+2023-10-04 01:22:40.013 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357874.jpg
+2023-10-04 01:22:40.015 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/355711.jpg
+2023-10-04 01:22:40.016 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/355893.jpg
+2023-10-04 01:22:40.018 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357591.jpg
+2023-10-04 01:22:40.019 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360113.jpg
+2023-10-04 01:22:40.021 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360564.jpg
+2023-10-04 01:22:40.022 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/356767.jpg
+2023-10-04 01:22:40.024 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/359731.jpg
+2023-10-04 01:22:40.026 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/362897.jpg
+2023-10-04 01:22:40.027 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/363029.jpg
+2023-10-04 01:22:40.028 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/362147.jpg
+2023-10-04 01:22:40.029 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/361768.jpg
+2023-10-04 01:22:40.031 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/362349.gif
+2023-10-04 01:22:40.032 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358796.jpg
+2023-10-04 01:22:40.034 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358310.jpg
+2023-10-04 01:22:40.036 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357552.jpg
+2023-10-04 01:22:40.037 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360450.jpg
+2023-10-04 01:22:40.039 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/355709.jpg
+2023-10-04 01:22:40.040 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/362808.jpg
+2023-10-04 01:22:40.041 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/359282.jpg
+2023-10-04 01:22:40.043 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/362825.jpg
+2023-10-04 01:22:40.044 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357139.jpg
+2023-10-04 01:22:40.046 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360566.jpg
+2023-10-04 01:22:40.048 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357819.jpg
+2023-10-04 01:22:40.050 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/355056.jpg
+2023-10-04 01:22:40.051 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/362531.jpg
+2023-10-04 01:22:40.053 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/356512.jpg
+2023-10-04 01:22:40.054 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358708.jpg
+2023-10-04 01:22:40.055 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/363341.jpg
+2023-10-04 01:22:40.057 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358195.jpg
+2023-10-04 01:22:40.058 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360468.jpg
+2023-10-04 01:22:40.060 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/355999.jpg
+2023-10-04 01:22:40.062 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/355389.jpg
+2023-10-04 01:22:40.063 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/362014.jpg
+2023-10-04 01:22:40.065 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/356340.jpg
+2023-10-04 01:22:40.126 | DEBUG    | __main__:save_img_and_todb:153 - 创建一个tags_unique表并保存
+2023-10-04 01:22:40.681 | INFO     | __main__:save_img_and_todb:166 - tags 表当前唯一tag数为 : 17987
+2023-10-04 01:22:40.770 | SUCCESS  | __main__:save_img_and_todb:191 - DataBase had added 43 img data...
+2023-10-04 01:22:40.771 | WARNING  | __main__:mode_a:285 - 数据库一共添加了 43 img data....
+2023-10-04 01:22:40.772 | DEBUG    | __main__:link_db:27 - 连接数据库中...........
+2023-10-04 01:22:40.778 | SUCCESS  | __main__:link_db:50 - 数据表: kimgdb
+2023-10-04 01:22:40.778 | SUCCESS  | __main__:link_db:51 - 图像数据表: newkimg
+2023-10-04 01:22:40.779 | SUCCESS  | __main__:link_db:52 - tag数据表: tags
+2023-10-04 01:22:40.779 | SUCCESS  | __main__:link_db:54 - link dbas 准备导入数据.....
+2023-10-04 01:22:40.855 | INFO     | __main__:mode_a:254 - 数据库共有20111条图像数据
+2023-10-04 01:22:40.858 | INFO     | __main__:mode_a:281 - 排除5个重复pid....
+2023-10-04 01:22:45.875 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:45.906 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:46.005 | ERROR    | cellfunctions_linux:get_source:247 - 361299图片不存在或者被删除了
+2023-10-04 01:22:46.006 | ERROR    | cellfunctions_linux:get_source:248 - https://konachan.com/post/show/361299/
+2023-10-04 01:22:46.024 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:46.025 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:46.037 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:46.038 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:46.047 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:46.052 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:46.059 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:46.137 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:46.203 | ERROR    | cellfunctions_linux:get_source:247 - 357530图片不存在或者被删除了
+2023-10-04 01:22:46.204 | ERROR    | cellfunctions_linux:get_source:248 - https://konachan.com/post/show/357530/
+2023-10-04 01:22:46.205 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:46.381 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:46.401 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:46.406 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:46.408 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:46.409 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:46.412 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:46.414 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:46.499 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:46.504 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:46.563 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:46.577 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:46.578 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:46.580 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:46.601 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:46.642 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:46.648 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:46.671 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:46.676 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:46.683 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:46.700 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:46.701 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:46.703 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:46.784 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:46.897 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:46.903 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:46.922 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:46.953 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:46.971 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:47.001 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:47.022 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:47.025 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/361969/
+2023-10-04 01:22:47.031 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:47.033 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:47.054 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358899/
+2023-10-04 01:22:47.403 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/355892/
+2023-10-04 01:22:47.408 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/359266/
+2023-10-04 01:22:47.413 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/359356/
+2023-10-04 01:22:47.644 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/356120/
+2023-10-04 01:22:47.650 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/356888/
+2023-10-04 01:22:48.023 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:48.070 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:48.254 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:48.271 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:48.289 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:48.415 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/362952/
+2023-10-04 01:22:48.540 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:48.541 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:48.579 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/357913/
+2023-10-04 01:22:48.702 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/360299/
+2023-10-04 01:22:48.704 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/356961/
+2023-10-04 01:22:48.904 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/360367/
+2023-10-04 01:22:48.924 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/355757/
+2023-10-04 01:22:48.955 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/359526/
+2023-10-04 01:22:48.973 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/356772/
+2023-10-04 01:22:49.003 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/357415/
+2023-10-04 01:22:49.023 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358641/
+2023-10-04 01:22:49.033 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/357246/
+2023-10-04 01:22:49.038 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358737/
+2023-10-04 01:22:49.047 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/362052/
+2023-10-04 01:22:49.060 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358998/
+2023-10-04 01:22:49.374 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:49.514 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:49.548 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:49.549 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:49.557 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:49.584 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:49.593 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:49.881 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:50.026 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/359236/
+2023-10-04 01:22:50.029 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:50.032 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/362170/
+2023-10-04 01:22:50.040 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358608/
+2023-10-04 01:22:50.114 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:50.115 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:50.134 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:50.400 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:50.407 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/361730/
+2023-10-04 01:22:50.495 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:50.544 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:50.550 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358737/
+2023-10-04 01:22:50.603 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/360674/
+2023-10-04 01:22:50.704 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/362882/
+2023-10-04 01:22:50.785 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358303/
+2023-10-04 01:22:50.853 | ERROR    | cellfunctions_linux:get_source:247 - 359236图片不存在或者被删除了
+2023-10-04 01:22:50.854 | ERROR    | cellfunctions_linux:get_source:248 - https://konachan.com/post/show/359236/
+2023-10-04 01:22:50.971 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:51.011 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:22:51.282 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:51.423 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:51.505 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:51.560 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/362052/
+2023-10-04 01:22:51.586 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358998/
+2023-10-04 01:22:51.619 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:52.563 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:52.570 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:53.013 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/360674/
+2023-10-04 01:22:53.546 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358608/
+2023-10-04 01:22:53.549 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/357246/
+2023-10-04 01:22:53.837 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:54.534 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:22:54.595 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:00.195 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/356120.jpg
+2023-10-04 01:23:00.355 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/359266.jpg
+2023-10-04 01:23:00.671 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/358303
+2023-10-04 01:23:00.973 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361271.jpg
+2023-10-04 01:23:01.358 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/362052
+2023-10-04 01:23:03.856 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362952.jpg
+2023-10-04 01:23:04.030 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/359356
+2023-10-04 01:23:04.042 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/361969
+2023-10-04 01:23:04.082 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/358916
+2023-10-04 01:23:04.083 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/361446
+2023-10-04 01:23:04.781 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358641.jpg
+2023-10-04 01:23:06.333 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360299.jpg
+2023-10-04 01:23:07.091 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358899.jpg
+2023-10-04 01:23:08.710 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/359176.jpg
+2023-10-04 01:23:09.280 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/363072.jpg
+2023-10-04 01:23:09.426 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/355757.jpg
+2023-10-04 01:23:09.478 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360674.jpg
+2023-10-04 01:23:09.639 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/356689
+2023-10-04 01:23:09.641 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/360367
+2023-10-04 01:23:09.643 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/358608
+2023-10-04 01:23:09.644 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/362935
+2023-10-04 01:23:12.363 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357246.jpg
+2023-10-04 01:23:12.477 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362170.jpg
+2023-10-04 01:23:12.623 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357415.jpg
+2023-10-04 01:23:13.064 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361446.jpg
+2023-10-04 01:23:13.196 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/359019.jpg
+2023-10-04 01:23:13.355 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362191.jpg
+2023-10-04 01:23:16.802 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362192.jpg
+2023-10-04 01:23:16.837 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/359356.jpg
+2023-10-04 01:23:17.329 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358998.jpg
+2023-10-04 01:23:19.252 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/356772.jpg
+2023-10-04 01:23:21.247 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362882.jpg
+2023-10-04 01:23:22.308 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361969.jpg
+2023-10-04 01:23:23.181 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/356961.jpg
+2023-10-04 01:23:24.328 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357321.jpg
+2023-10-04 01:23:25.394 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361854.jpg
+2023-10-04 01:23:26.822 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357913.jpg
+2023-10-04 01:23:27.018 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/356239.jpg
+2023-10-04 01:23:27.166 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358916.jpg
+2023-10-04 01:23:28.224 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362502.jpg
+2023-10-04 01:23:28.335 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/355892.jpg
+2023-10-04 01:23:28.785 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358737.jpg
+2023-10-04 01:23:28.866 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360367.jpg
+2023-10-04 01:23:29.600 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/359526.jpg
+2023-10-04 01:23:30.640 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360579.jpg
+2023-10-04 01:23:30.902 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/356689.jpg
+2023-10-04 01:23:31.608 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361730.jpg
+2023-10-04 01:23:35.991 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362935.jpg
+2023-10-04 01:23:36.089 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/356888.jpg
+2023-10-04 01:23:36.288 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362052.jpg
+2023-10-04 01:23:37.584 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358303.jpg
+2023-10-04 01:23:38.575 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358608.jpg
+2023-10-04 01:23:38.577 | SUCCESS  | get_imags_data_linux:download_imgs:150 - downloaded 42 img to IMG_PATH......
+2023-10-04 01:23:38.580 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/362952.jpg
+2023-10-04 01:23:38.582 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/362882.jpg
+2023-10-04 01:23:38.583 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/362191.jpg
+2023-10-04 01:23:38.584 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/359356.jpg
+2023-10-04 01:23:38.586 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/356689.jpg
+2023-10-04 01:23:38.588 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/361969.jpg
+2023-10-04 01:23:38.589 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/359526.jpg
+2023-10-04 01:23:38.590 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/356120.jpg
+2023-10-04 01:23:38.592 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/356239.jpg
+2023-10-04 01:23:38.593 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/362935.jpg
+2023-10-04 01:23:38.595 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360579.jpg
+2023-10-04 01:23:38.596 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358899.jpg
+2023-10-04 01:23:38.598 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358608.jpg
+2023-10-04 01:23:38.599 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/362170.jpg
+2023-10-04 01:23:38.601 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/362192.jpg
+2023-10-04 01:23:38.602 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/361730.jpg
+2023-10-04 01:23:38.604 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/361271.jpg
+2023-10-04 01:23:38.605 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358303.jpg
+2023-10-04 01:23:38.607 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/356888.jpg
+2023-10-04 01:23:38.608 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357913.jpg
+2023-10-04 01:23:38.610 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/355757.jpg
+2023-10-04 01:23:38.611 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/359019.jpg
+2023-10-04 01:23:38.613 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/362052.jpg
+2023-10-04 01:23:38.614 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/356961.jpg
+2023-10-04 01:23:38.615 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/363072.jpg
+2023-10-04 01:23:38.617 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/356772.jpg
+2023-10-04 01:23:38.618 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357415.jpg
+2023-10-04 01:23:38.619 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357246.jpg
+2023-10-04 01:23:38.620 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360299.jpg
+2023-10-04 01:23:38.621 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357321.jpg
+2023-10-04 01:23:38.622 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/361854.jpg
+2023-10-04 01:23:38.624 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/361446.jpg
+2023-10-04 01:23:38.625 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358641.jpg
+2023-10-04 01:23:38.626 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358916.jpg
+2023-10-04 01:23:38.628 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/359266.jpg
+2023-10-04 01:23:38.629 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360367.jpg
+2023-10-04 01:23:38.631 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/362502.jpg
+2023-10-04 01:23:38.632 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360674.jpg
+2023-10-04 01:23:38.633 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/355892.jpg
+2023-10-04 01:23:38.634 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/359176.jpg
+2023-10-04 01:23:38.635 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358737.jpg
+2023-10-04 01:23:38.636 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358998.jpg
+2023-10-04 01:23:38.688 | DEBUG    | __main__:save_img_and_todb:153 - 创建一个tags_unique表并保存
+2023-10-04 01:23:39.174 | INFO     | __main__:save_img_and_todb:166 - tags 表当前唯一tag数为 : 18002
+2023-10-04 01:23:39.265 | SUCCESS  | __main__:save_img_and_todb:191 - DataBase had added 42 img data...
+2023-10-04 01:23:39.266 | WARNING  | __main__:mode_a:285 - 数据库一共添加了 85 img data....
+2023-10-04 01:23:39.267 | DEBUG    | __main__:link_db:27 - 连接数据库中...........
+2023-10-04 01:23:39.271 | SUCCESS  | __main__:link_db:50 - 数据表: kimgdb
+2023-10-04 01:23:39.272 | SUCCESS  | __main__:link_db:51 - 图像数据表: newkimg
+2023-10-04 01:23:39.273 | SUCCESS  | __main__:link_db:52 - tag数据表: tags
+2023-10-04 01:23:39.273 | SUCCESS  | __main__:link_db:54 - link dbas 准备导入数据.....
+2023-10-04 01:23:39.348 | INFO     | __main__:mode_a:254 - 数据库共有20153条图像数据
+2023-10-04 01:23:39.352 | INFO     | __main__:mode_a:281 - 排除10个重复pid....
+2023-10-04 01:23:43.786 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:23:43.832 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:43.834 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:43.835 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:23:43.867 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:23:43.878 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:23:43.880 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:43.928 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:43.936 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:23:43.967 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:23:43.980 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:23:43.981 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:43.986 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:23:44.004 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:44.006 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:23:44.011 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:44.040 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:23:44.087 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:44.136 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:23:44.154 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:44.173 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:23:44.175 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:44.213 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:44.263 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:44.265 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:44.486 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:44.487 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:23:44.491 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:23:44.502 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:23:44.519 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:23:44.560 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:44.788 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358607/
+2023-10-04 01:23:44.834 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:44.861 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:23:44.866 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:23:44.868 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/355503/
+2023-10-04 01:23:44.872 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:23:45.023 | ERROR    | cellfunctions_linux:get_source:247 - 356648图片不存在或者被删除了
+2023-10-04 01:23:45.025 | ERROR    | cellfunctions_linux:get_source:248 - https://konachan.com/post/show/356648/
+2023-10-04 01:23:45.032 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:23:45.125 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:23:45.133 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:23:45.162 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:45.520 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/356554/
+2023-10-04 01:23:45.580 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:45.693 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:45.838 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/361769/
+2023-10-04 01:23:45.863 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/355631/
+2023-10-04 01:23:45.969 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/361193/
+2023-10-04 01:23:45.981 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/361155/
+2023-10-04 01:23:46.042 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/359617/
+2023-10-04 01:23:46.139 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/360492/
+2023-10-04 01:23:46.174 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/361286/
+2023-10-04 01:23:46.401 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:46.489 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/357492/
+2023-10-04 01:23:46.634 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:46.654 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:23:46.679 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:23:46.721 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:46.779 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:46.811 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:46.881 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358695/
+2023-10-04 01:23:46.902 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:47.009 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358030/
+2023-10-04 01:23:47.341 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:47.493 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/361732/
+2023-10-04 01:23:47.504 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/363408/
+2023-10-04 01:23:47.713 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:47.835 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:47.868 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/360628/
+2023-10-04 01:23:47.872 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/361989/
+2023-10-04 01:23:47.938 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/361293/
+2023-10-04 01:23:47.986 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/356231/
+2023-10-04 01:23:48.035 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/356260/
+2023-10-04 01:23:48.134 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/362627/
+2023-10-04 01:23:48.326 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:48.351 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:48.646 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:23:48.677 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:48.678 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:48.767 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:48.868 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:48.954 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:49.127 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/361448/
+2023-10-04 01:23:49.648 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/362627/
+2023-10-04 01:23:49.681 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/361286/
+2023-10-04 01:23:50.007 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:50.499 | ERROR    | cellfunctions_linux:get_source:247 - 362627图片不存在或者被删除了
+2023-10-04 01:23:50.500 | ERROR    | cellfunctions_linux:get_source:248 - https://konachan.com/post/show/362627/
+2023-10-04 01:23:50.589 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:50.656 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/360492/
+2023-10-04 01:23:51.523 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:23:56.593 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357492.jpg
+2023-10-04 01:23:56.735 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357226.jpg
+2023-10-04 01:23:56.961 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/356231.jpg
+2023-10-04 01:23:56.963 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/363408.jpg
+2023-10-04 01:23:59.579 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/359331.jpg
+2023-10-04 01:23:59.746 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/360492
+2023-10-04 01:24:00.768 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362435.jpg
+2023-10-04 01:24:01.260 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/355503
+2023-10-04 01:24:01.267 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/356856
+2023-10-04 01:24:01.268 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/361238
+2023-10-04 01:24:02.814 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/359617.jpg
+2023-10-04 01:24:04.172 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360455.jpg
+2023-10-04 01:24:06.657 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360486.jpg
+2023-10-04 01:24:06.793 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358611.jpg
+2023-10-04 01:24:06.842 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358454.jpg
+2023-10-04 01:24:11.894 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361769.jpg
+2023-10-04 01:24:12.835 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/355631.jpg
+2023-10-04 01:24:14.188 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361155.jpg
+2023-10-04 01:24:14.967 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361732.jpg
+2023-10-04 01:24:15.083 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358102.jpg
+2023-10-04 01:24:15.264 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357833.jpg
+2023-10-04 01:24:15.538 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361193.jpg
+2023-10-04 01:24:17.461 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/356554.jpg
+2023-10-04 01:24:20.141 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358315.jpg
+2023-10-04 01:24:32.151 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358607.jpg
+2023-10-04 01:24:37.181 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/356260.jpg
+2023-10-04 01:24:37.596 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361989.jpg
+2023-10-04 01:24:42.340 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360426.jpg
+2023-10-04 01:24:42.660 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360064.jpg
+2023-10-04 01:24:46.839 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361448.jpg
+2023-10-04 01:24:47.507 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361286.jpg
+2023-10-04 01:24:47.522 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/359416
+2023-10-04 01:24:49.162 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361293.jpg
+2023-10-04 01:24:49.712 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358030.jpg
+2023-10-04 01:24:50.670 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/359675.jpg
+2023-10-04 01:24:51.372 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360628.jpg
+2023-10-04 01:24:52.419 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/359747.jpg
+2023-10-04 01:24:52.674 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361238.jpg
+2023-10-04 01:24:54.154 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/359416.jpg
+2023-10-04 01:24:54.219 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360492.jpg
+2023-10-04 01:24:54.673 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358695.jpg
+2023-10-04 01:24:54.909 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/356856.jpg
+2023-10-04 01:24:55.197 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/355503.jpg
+2023-10-04 01:24:55.199 | SUCCESS  | get_imags_data_linux:download_imgs:150 - downloaded 38 img to IMG_PATH......
+2023-10-04 01:24:55.203 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/359675.jpg
+2023-10-04 01:24:55.205 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/361732.jpg
+2023-10-04 01:24:55.206 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360492.jpg
+2023-10-04 01:24:55.208 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358315.jpg
+2023-10-04 01:24:55.209 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360628.jpg
+2023-10-04 01:24:55.211 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/356231.jpg
+2023-10-04 01:24:55.213 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/359331.jpg
+2023-10-04 01:24:55.214 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357492.jpg
+2023-10-04 01:24:55.215 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/361193.jpg
+2023-10-04 01:24:55.217 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/361989.jpg
+2023-10-04 01:24:55.218 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360486.jpg
+2023-10-04 01:24:55.220 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/361286.jpg
+2023-10-04 01:24:55.221 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360455.jpg
+2023-10-04 01:24:55.223 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/356554.jpg
+2023-10-04 01:24:55.224 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/363408.jpg
+2023-10-04 01:24:55.226 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360426.jpg
+2023-10-04 01:24:55.227 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/361448.jpg
+2023-10-04 01:24:55.229 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358695.jpg
+2023-10-04 01:24:55.230 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/362435.jpg
+2023-10-04 01:24:55.231 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358607.jpg
+2023-10-04 01:24:55.233 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357226.jpg
+2023-10-04 01:24:55.234 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358102.jpg
+2023-10-04 01:24:55.235 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358454.jpg
+2023-10-04 01:24:55.237 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/356260.jpg
+2023-10-04 01:24:55.239 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357833.jpg
+2023-10-04 01:24:55.241 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/359617.jpg
+2023-10-04 01:24:55.242 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/361155.jpg
+2023-10-04 01:24:55.244 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/361769.jpg
+2023-10-04 01:24:55.245 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360064.jpg
+2023-10-04 01:24:55.247 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/359747.jpg
+2023-10-04 01:24:55.248 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/355631.jpg
+2023-10-04 01:24:55.250 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/355503.jpg
+2023-10-04 01:24:55.252 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/361293.jpg
+2023-10-04 01:24:55.253 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/361238.jpg
+2023-10-04 01:24:55.255 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358030.jpg
+2023-10-04 01:24:55.257 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/356856.jpg
+2023-10-04 01:24:55.258 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358611.jpg
+2023-10-04 01:24:55.260 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/359416.jpg
+2023-10-04 01:24:55.306 | DEBUG    | __main__:save_img_and_todb:153 - 创建一个tags_unique表并保存
+2023-10-04 01:24:55.810 | INFO     | __main__:save_img_and_todb:166 - tags 表当前唯一tag数为 : 18014
+2023-10-04 01:24:55.906 | SUCCESS  | __main__:save_img_and_todb:191 - DataBase had added 38 img data...
+2023-10-04 01:24:55.907 | WARNING  | __main__:mode_a:285 - 数据库一共添加了 123 img data....
+2023-10-04 01:24:55.908 | DEBUG    | __main__:link_db:27 - 连接数据库中...........
+2023-10-04 01:24:55.914 | SUCCESS  | __main__:link_db:50 - 数据表: kimgdb
+2023-10-04 01:24:55.915 | SUCCESS  | __main__:link_db:51 - 图像数据表: newkimg
+2023-10-04 01:24:55.915 | SUCCESS  | __main__:link_db:52 - tag数据表: tags
+2023-10-04 01:24:55.916 | SUCCESS  | __main__:link_db:54 - link dbas 准备导入数据.....
+2023-10-04 01:24:56.033 | INFO     | __main__:mode_a:254 - 数据库共有20191条图像数据
+2023-10-04 01:24:56.036 | INFO     | __main__:mode_a:281 - 排除6个重复pid....
+2023-10-04 01:25:00.890 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:00.906 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:00.908 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:00.966 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:00.967 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:00.968 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:00.973 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:01.016 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:01.017 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:01.028 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:01.143 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:01.166 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:01.196 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:01.248 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:01.337 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:01.338 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:01.395 | ERROR    | cellfunctions_linux:get_source:247 - 360533图片不存在或者被删除了
+2023-10-04 01:25:01.396 | ERROR    | cellfunctions_linux:get_source:248 - https://konachan.com/post/show/360533/
+2023-10-04 01:25:01.397 | ERROR    | cellfunctions_linux:get_source:247 - 360088图片不存在或者被删除了
+2023-10-04 01:25:01.397 | ERROR    | cellfunctions_linux:get_source:248 - https://konachan.com/post/show/360088/
+2023-10-04 01:25:01.400 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:01.502 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:01.520 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:01.584 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:01.646 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:01.718 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:01.723 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:01.725 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:01.769 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:01.800 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:01.801 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:01.826 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:01.835 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:01.837 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:01.839 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:01.871 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:01.872 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:01.874 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:01.892 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/362065/
+2023-10-04 01:25:01.900 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:01.908 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358941/
+2023-10-04 01:25:01.967 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:01.968 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:01.969 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/355229/
+2023-10-04 01:25:01.972 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:01.975 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/357855/
+2023-10-04 01:25:02.018 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358490/
+2023-10-04 01:25:02.152 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:02.161 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:02.168 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358332/
+2023-10-04 01:25:02.182 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:02.417 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:02.418 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:02.519 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:02.697 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:02.725 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/361667/
+2023-10-04 01:25:02.743 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:02.800 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/355348/
+2023-10-04 01:25:02.806 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/355260/
+2023-10-04 01:25:02.838 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358648/
+2023-10-04 01:25:02.841 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358526/
+2023-10-04 01:25:02.873 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/359701/
+2023-10-04 01:25:02.908 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/361636/
+2023-10-04 01:25:02.968 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/360708/
+2023-10-04 01:25:02.999 | ERROR    | cellfunctions_linux:get_source:247 - 358332图片不存在或者被删除了
+2023-10-04 01:25:03.000 | ERROR    | cellfunctions_linux:get_source:248 - https://konachan.com/post/show/358332/
+2023-10-04 01:25:03.017 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/356618/
+2023-10-04 01:25:03.235 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:03.267 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:03.276 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:03.287 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:03.291 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:03.397 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:03.419 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/355229/
+2023-10-04 01:25:03.498 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:03.512 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:03.614 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:03.708 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:03.969 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/362236/
+2023-10-04 01:25:03.973 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/360587/
+2023-10-04 01:25:04.246 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:04.521 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358490/
+2023-10-04 01:25:04.726 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/357296/
+2023-10-04 01:25:04.779 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:04.796 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:04.968 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/359389/
+2023-10-04 01:25:05.154 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/357280/
+2023-10-04 01:25:05.237 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/355348/
+2023-10-04 01:25:05.267 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358526/
+2023-10-04 01:25:05.277 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358648/
+2023-10-04 01:25:05.361 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:05.418 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/357855/
+2023-10-04 01:25:05.758 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:05.828 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/360418/
+2023-10-04 01:25:05.837 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/360200/
+2023-10-04 01:25:05.873 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/357588/
+2023-10-04 01:25:05.876 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/355576/
+2023-10-04 01:25:05.901 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/361340/
+2023-10-04 01:25:06.162 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/361436/
+2023-10-04 01:25:06.188 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:06.292 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/359701/
+2023-10-04 01:25:06.296 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:06.399 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/360708/
+2023-10-04 01:25:06.445 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:06.458 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:06.496 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:06.596 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:06.834 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:25:07.114 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:07.239 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:07.256 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:07.403 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:07.500 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/356618/
+2023-10-04 01:25:07.537 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:07.590 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:07.869 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:08.375 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:08.837 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/360708/
+2023-10-04 01:25:09.668 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:25:15.235 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/359912
+2023-10-04 01:25:15.236 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/356245
+2023-10-04 01:25:15.266 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/355348
+2023-10-04 01:25:15.267 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/361636
+2023-10-04 01:25:15.838 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/360481
+2023-10-04 01:25:15.970 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/359701.jpg
+2023-10-04 01:25:16.945 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/359389.jpg
+2023-10-04 01:25:18.439 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358526.jpg
+2023-10-04 01:25:20.110 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360418.jpg
+2023-10-04 01:25:21.284 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357791.jpg
+2023-10-04 01:25:21.780 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/360200
+2023-10-04 01:25:22.098 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/357082
+2023-10-04 01:25:22.721 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358535.jpg
+2023-10-04 01:25:23.215 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357280.jpg
+2023-10-04 01:25:23.702 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/356618.jpg
+2023-10-04 01:25:24.217 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358962.jpg
+2023-10-04 01:25:24.308 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/355608.jpg
+2023-10-04 01:25:25.088 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358941.jpg
+2023-10-04 01:25:30.629 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361667.jpg
+2023-10-04 01:25:30.914 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/359973.jpg
+2023-10-04 01:25:31.302 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357296.jpg
+2023-10-04 01:25:33.367 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361436.jpg
+2023-10-04 01:25:33.940 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360481.jpg
+2023-10-04 01:25:35.924 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361340.jpg
+2023-10-04 01:25:36.102 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/355576.jpg
+2023-10-04 01:25:36.623 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360708.jpg
+2023-10-04 01:25:39.901 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362236.jpg
+2023-10-04 01:25:42.630 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357369.jpg
+2023-10-04 01:25:43.047 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/355260.jpg
+2023-10-04 01:25:43.124 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358490.jpg
+2023-10-04 01:25:43.507 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358033.jpg
+2023-10-04 01:25:44.095 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360587.jpg
+2023-10-04 01:25:44.552 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/355229
+2023-10-04 01:25:44.558 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/360236
+2023-10-04 01:25:44.558 | WARNING  | cellfunctions_linux:check_ifsuccess_return_responce:339 - 下载图片重试: https://konachan.com/post/show/358648
+2023-10-04 01:25:44.799 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357588.jpg
+2023-10-04 01:25:47.016 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357082.jpg
+2023-10-04 01:25:47.795 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360200.jpg
+2023-10-04 01:25:48.844 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/363034.jpg
+2023-10-04 01:25:53.102 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/355229.jpg
+2023-10-04 01:25:53.612 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358433.jpg
+2023-10-04 01:25:55.766 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/355348.jpg
+2023-10-04 01:25:58.145 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/358648.jpg
+2023-10-04 01:25:58.665 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/360236.jpg
+2023-10-04 01:25:58.700 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/362065.jpg
+2023-10-04 01:26:04.871 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357029.jpg
+2023-10-04 01:26:05.741 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/359912.jpg
+2023-10-04 01:26:10.201 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/361636.jpg
+2023-10-04 01:26:10.633 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357855.jpg
+2023-10-04 01:26:10.980 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/357065.jpg
+2023-10-04 01:26:11.296 | SUCCESS  | cellfunctions_linux:save_img:375 - 下载图片成功: /mnt/f/database_learn/k_spider/pictures12/356245.jpg
+2023-10-04 01:26:11.299 | SUCCESS  | get_imags_data_linux:download_imgs:150 - downloaded 41 img to IMG_PATH......
+2023-10-04 01:26:11.302 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/359912.jpg
+2023-10-04 01:26:11.304 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/355608.jpg
+2023-10-04 01:26:11.306 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358433.jpg
+2023-10-04 01:26:11.308 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/356245.jpg
+2023-10-04 01:26:11.309 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360587.jpg
+2023-10-04 01:26:11.311 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358526.jpg
+2023-10-04 01:26:11.312 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358535.jpg
+2023-10-04 01:26:11.314 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358033.jpg
+2023-10-04 01:26:11.315 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/355229.jpg
+2023-10-04 01:26:11.317 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357065.jpg
+2023-10-04 01:26:11.318 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/361340.jpg
+2023-10-04 01:26:11.319 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/359973.jpg
+2023-10-04 01:26:11.321 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/355348.jpg
+2023-10-04 01:26:11.322 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/361436.jpg
+2023-10-04 01:26:11.324 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360418.jpg
+2023-10-04 01:26:11.325 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360200.jpg
+2023-10-04 01:26:11.327 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357082.jpg
+2023-10-04 01:26:11.328 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/362236.jpg
+2023-10-04 01:26:11.330 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/363034.jpg
+2023-10-04 01:26:11.332 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/361636.jpg
+2023-10-04 01:26:11.334 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358962.jpg
+2023-10-04 01:26:11.336 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/356618.jpg
+2023-10-04 01:26:11.337 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357296.jpg
+2023-10-04 01:26:11.338 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358941.jpg
+2023-10-04 01:26:11.340 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360236.jpg
+2023-10-04 01:26:11.341 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/361667.jpg
+2023-10-04 01:26:11.342 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357791.jpg
+2023-10-04 01:26:11.343 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/359389.jpg
+2023-10-04 01:26:11.345 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357029.jpg
+2023-10-04 01:26:11.346 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357369.jpg
+2023-10-04 01:26:11.347 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357588.jpg
+2023-10-04 01:26:11.349 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/359701.jpg
+2023-10-04 01:26:11.350 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/355260.jpg
+2023-10-04 01:26:11.351 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360708.jpg
+2023-10-04 01:26:11.353 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358648.jpg
+2023-10-04 01:26:11.354 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/360481.jpg
+2023-10-04 01:26:11.356 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/358490.jpg
+2023-10-04 01:26:11.357 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357280.jpg
+2023-10-04 01:26:11.358 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/362065.jpg
+2023-10-04 01:26:11.359 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/355576.jpg
+2023-10-04 01:26:11.360 | SUCCESS  | __main__:save_img_and_todb:110 - imported: /mnt/f/database_learn/k_spider/pictures12/357855.jpg
+2023-10-04 01:26:11.420 | DEBUG    | __main__:save_img_and_todb:153 - 创建一个tags_unique表并保存
+2023-10-04 01:26:11.912 | INFO     | __main__:save_img_and_todb:166 - tags 表当前唯一tag数为 : 18028
+2023-10-04 01:26:12.006 | SUCCESS  | __main__:save_img_and_todb:191 - DataBase had added 41 img data...
+2023-10-04 01:26:12.008 | WARNING  | __main__:mode_a:285 - 数据库一共添加了 164 img data....
+2023-10-04 01:26:12.009 | DEBUG    | __main__:link_db:27 - 连接数据库中...........
+2023-10-04 01:26:12.015 | SUCCESS  | __main__:link_db:50 - 数据表: kimgdb
+2023-10-04 01:26:12.016 | SUCCESS  | __main__:link_db:51 - 图像数据表: newkimg
+2023-10-04 01:26:12.016 | SUCCESS  | __main__:link_db:52 - tag数据表: tags
+2023-10-04 01:26:12.017 | SUCCESS  | __main__:link_db:54 - link dbas 准备导入数据.....
+2023-10-04 01:26:12.138 | INFO     | __main__:mode_a:254 - 数据库共有20232条图像数据
+2023-10-04 01:26:12.141 | INFO     | __main__:mode_a:281 - 排除3个重复pid....
+2023-10-04 01:26:17.085 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:17.141 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:17.142 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:17.166 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:17.168 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:17.183 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:17.188 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:17.303 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:17.313 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:17.337 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:17.338 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:17.467 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:17.468 | ERROR    | cellfunctions_linux:get_source:247 - 357916图片不存在或者被删除了
+2023-10-04 01:26:17.469 | ERROR    | cellfunctions_linux:get_source:248 - https://konachan.com/post/show/357916/
+2023-10-04 01:26:17.470 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:17.496 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:17.563 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:17.565 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:17.672 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:17.721 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:17.747 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:17.748 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:17.756 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:17.757 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:17.779 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:17.786 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:17.995 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:18.080 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:18.090 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:18.119 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:18.122 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:18.147 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:18.152 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:18.167 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/359967/
+2023-10-04 01:26:18.190 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:18.196 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:18.198 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:18.203 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:18.220 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:18.221 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:18.273 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:18.297 | ERROR    | cellfunctions_linux:get_source:247 - 355926图片不存在或者被删除了
+2023-10-04 01:26:18.298 | ERROR    | cellfunctions_linux:get_source:248 - https://konachan.com/post/show/355926/
+2023-10-04 01:26:18.313 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:18.361 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:18.362 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:18.481 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:18.483 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:18.483 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:18.498 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/362842/
+2023-10-04 01:26:18.735 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:18.750 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/359544/
+2023-10-04 01:26:18.950 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:19.121 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/359870/
+2023-10-04 01:26:19.169 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/360640/
+2023-10-04 01:26:19.189 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/356573/
+2023-10-04 01:26:19.350 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:19.468 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/359715/
+2023-10-04 01:26:19.483 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358926/
+2023-10-04 01:26:19.527 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:19.788 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/362044/
+2023-10-04 01:26:19.866 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:19.968 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:19.975 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:20.122 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/356003/
+2023-10-04 01:26:20.145 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/357090/
+2023-10-04 01:26:20.148 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/363076/
+2023-10-04 01:26:20.191 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/361851/
+2023-10-04 01:26:20.204 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/355909/
+2023-10-04 01:26:20.347 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:20.351 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:20.363 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/356425/
+2023-10-04 01:26:20.366 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/362057/
+2023-10-04 01:26:20.471 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/359699/
+2023-10-04 01:26:20.483 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/357235/
+2023-10-04 01:26:20.580 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:20.613 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:20.686 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:20.758 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/355238/
+2023-10-04 01:26:20.761 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358393/
+2023-10-04 01:26:20.780 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/363025/
+2023-10-04 01:26:20.824 | ERROR    | cellfunctions_linux:get_source:247 - 357090图片不存在或者被删除了
+2023-10-04 01:26:20.825 | ERROR    | cellfunctions_linux:get_source:248 - https://konachan.com/post/show/357090/
+2023-10-04 01:26:20.861 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:20.912 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:20.914 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:20.965 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:21.214 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:21.315 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/356788/
+2023-10-04 01:26:21.318 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/357774/
+2023-10-04 01:26:21.339 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/358841/
+2023-10-04 01:26:21.341 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/361789/
+2023-10-04 01:26:21.357 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:21.598 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:21.749 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/357786/
+2023-10-04 01:26:21.800 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:22.082 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/359068/
+2023-10-04 01:26:22.129 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:22.155 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:22.157 | WARNING  | cellfunctions_linux:get_source:251 - 源码长度不对
+2023-10-04 01:26:22.198 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/359879/
+2023-10-04 01:26:22.222 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/360660/
+2023-10-04 01:26:22.225 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:22.232 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
+2023-10-04 01:26:22.512 | ERROR    | cellfunctions_linux:get_source:247 - 357786图片不存在或者被删除了
+2023-10-04 01:26:22.513 | ERROR    | cellfunctions_linux:get_source:248 - https://konachan.com/post/show/357786/
+2023-10-04 01:26:22.688 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/355909/
+2023-10-04 01:26:22.801 | WARNING  | cellfunctions_linux:get_source:253 - https://konachan.com/post/show/361789/
+2023-10-04 01:26:22.990 | SUCCESS  | cellfunctions_linux:get_source:259 - 获取源码成功
