@@ -4,6 +4,8 @@ import concurrent.futures
 import multiprocessing
 import os
 import random
+from rich.progress import track
+from rich.style import Style
 
 # import sys
 
@@ -65,6 +67,9 @@ def main(
                 smoothing=0.5,
             )
         )(get_source)
+        # get_source_counter = Counter.counter_async_rich(
+        #     total=len(pids), description="获取源码"
+        # )(get_source)
         async with sem:
             tasks = {
                 asyncio.create_task(
@@ -131,6 +136,10 @@ def main(
                 smoothing=0.5,
             )
         )(save_img)
+        # save_img_counter = Counter.counter_async_rich(
+        #     total=len(pid_img_link_tags),
+        #     description="下载图片",
+        # )(save_img)
         async with sem:
             tasks = {
                 asyncio.create_task(

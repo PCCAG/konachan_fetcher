@@ -5,6 +5,19 @@ import json
 import os
 import random
 import re as re__
+from rich.progress import Progress
+from rich.style import Style
+from rich.progress import (
+    BarColumn,
+    DownloadColumn,
+    Progress,
+    TaskID,
+    TextColumn,
+    TimeRemainingColumn,
+    TransferSpeedColumn,
+    SpinnerColumn,
+    TimeElapsedColumn,
+)
 
 # import types
 
@@ -38,9 +51,14 @@ host = "https://konachan.com"
 # proxies = {"http://": "http://127.0.0.1:10809", "https://": "http://127.0.0.1:10809"}
 http_proxy = os.getenv("http_proxy")
 http_proxy2 = os.getenv("http_proxy2")
+
+if not http_proxy2.startswith("http://"):
+    http_proxy2 = http_proxy
+
 proxies = {"http://": http_proxy, "https://": http_proxy}
 proxies2 = {"http://": http_proxy2, "https://": http_proxy2}
 proxies_list = [proxies, proxies2]
+
 # logger.warning(f"代理: {http_proxy}")
 
 # # httpx的socks5代理好像有问题
@@ -234,6 +252,103 @@ class Counter:
 
         sync_counter.processcount = PROCESS_BAR
         return sync_counter
+
+    @staticmethod
+    def counter_async_rich(
+        description: str,
+        start: bool = True,
+        total: float | None = 100,
+        completed: int = 0,
+        visible: bool = True,
+        Progress: Progress = Progress(
+            "[progress.description]{task.description}({task.completed}/{task.total})",
+            SpinnerColumn(finished_text="[green]✔"),
+            BarColumn(
+                style=Style(color="red"),
+                complete_style=Style(color="green", bold=True),
+                finished_style=Style(color="green"),
+            ),
+            "[progress.percentage]{task.percentage:>3.2f}%",
+            "[yellow]⏱",
+            TimeElapsedColumn(),
+            # "[cyan]⏳",
+            # TimeRemainingColumn(),
+            # TransferSpeedColumn(),
+        ),
+        **fields,
+    ):
+        """
+                封装rich Process的一个参数装饰器
+
+                (method) def add_task(
+            description: str,
+            start: bool = True,
+            total: float | None = 100,
+            completed: int = 0,
+            visible: bool = True,
+            **fields: Any
+        ) -> TaskID
+        Add a new 'task' to the Progress display.
+
+        Args:
+            description (str): A description of the task.
+            start (bool, optional): Start the task immediately (to calculate elapsed time). If set to False,
+                you will need to call start manually. Defaults to True.
+            total (float, optional): Number of total steps in the progress if known.
+                Set to None to render a pulsing animation. Defaults to 100.
+            completed (int, optional): Number of steps completed so far. Defaults to 0.
+            visible (bool, optional): Enable display of the task. Defaults to True.
+            **fields (str): Additional data fields required for rendering.
+
+        Returns:
+            TaskID: An ID you can use when calling update.
+
+        """
+        # process = Progress(
+        #     "[progress.description]{task.description}({task.completed}/{task.total})",
+        #     SpinnerColumn(finished_text="[green]✔"),
+        #     BarColumn(
+        #         style=Style(color="red"),
+        #         complete_style=Style(color="green", bold=True),
+        #         finished_style=Style(color="green"),
+        #     ),
+        #     "[progress.percentage]{task.percentage:>3.2f}%",
+        #     "[yellow]⏱",
+        #     TimeElapsedColumn(),
+        #     # "[cyan]⏳",
+        #     # TimeRemainingColumn(),
+        #     # TransferSpeedColumn(),
+        # )
+        process = Progress
+        process_bar = process.add_task(
+            description=description,
+            start=start,
+            total=total,
+            completed=completed,
+            visible=visible,
+            fields=fields,
+        )
+        process.start()
+
+        def async_counter(func):
+            @functools.wraps(func)
+            async def wrapper(*args, **kwargs):
+                result = await func(*args, **kwargs)
+                wrapper.process.update(wrapper.process_bar, advance=1, refresh=True)
+                if (
+                    wrapper.process.tasks[wrapper.process_bar].completed
+                    == wrapper.process.tasks[wrapper.process_bar].total
+                ):
+                    wrapper.process.stop()
+                return result
+
+            wrapper.process_bar = async_counter.process_bar
+            wrapper.process = async_counter.process
+            return wrapper
+
+        async_counter.process_bar = process_bar
+        async_counter.process = process
+        return async_counter
 
 
 async def get_source(
