@@ -5,6 +5,7 @@ import os
 current_dir = os.path.dirname(__file__)
 cookie_json_filepath = os.path.join(current_dir, "_cookies_.json")
 headers_example = os.path.join(current_dir, "_headers_example.json")
+save_headers_json_file_path = os.path.join(current_dir, "headers.json")
 
 
 def read_headers_from_json(
@@ -40,6 +41,8 @@ def read_headers_from_json(
             # print(headers)
         # except Exception as e:
         #     raise e
+    with open(save_headers_json_file_path, "w", encoding="UTF-8", errors="ignoew") as f:
+        json.dump(obj=headers, fp=f, ensure_ascii=False, indent=2)
 
         return headers
 
