@@ -1,10 +1,12 @@
 ## coding=utf-8
 import asyncio
 import functools
-import json
+
+# import json
 import os
 import random
-import re as re__
+
+# import re as re__
 
 # import types
 
@@ -16,11 +18,12 @@ from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 from fake_useragent import UserAgent
 from loguru import logger
-from playwright.sync_api import sync_playwright  # , Playwright
+
+# from playwright.sync_api import sync_playwright  # , Playwright
 
 # 一个playwright的插件用来伪装无头模式
 # pip install playwright-stealth
-from playwright_stealth import stealth_sync
+# from playwright_stealth import stealth_sync
 
 from parse_tags_link import f_link, f_tags
 
@@ -49,120 +52,122 @@ proxies = {"http://": http_proxy, "https://": http_proxy}
 # proxies=None
 
 
-def read_headers_from_json(
-    cookie_json_filepath="_cookies_.json", headers_example="_headers_example.json"
-) -> dict:
-    """
-    默认:
-    从 headers_example="_headers_ example.json" 获取headers模板,
-    从 cookie_json_filepath="cookies.json" 更新headers的cookie字段,
-    如果失败调用get_headers(),
-    返回: headers
-    """
+# def read_headers_from_json(
+#     cookie_json_filepath="_cookies_.json", headers_example="_headers_example.json"
+# ) -> dict:
+#     """
+#     默认:
+#     从 headers_example="_headers_ example.json" 获取headers模板,
+#     从 cookie_json_filepath="cookies.json" 更新headers的cookie字段,
+#     如果失败调用get_headers(),
+#     返回: headers
+#     """
 
-    # logger.debug("尝试从cookies.json获取headers 的cookie.......")
-    with open(cookie_json_filepath, encoding="utf-8") as f:
-        try:
-            # dread = dict(json.load(f))
-            d_list: list = json.load(f)
-            # dict().keys()
-            # print(list(dread.keys())[0])
-            headers_cookie = "; ".join([f'{d["name"]}={d["value"]}' for d in d_list])
-            with open(headers_example, encoding="utf-8") as h:
-                headers = dict(json.load(h))
-                headers["cookie"] = headers_cookie
-            # print(headers)
-        except Exception as e:
-            # raise e
-            # raise NameError("Not found headers") from e
-            logger.warning(
-                "尝试从cookies.json获取headers 的cookie失败,将用函数get_headers()采用playwright无头模式下自动获取headers"
-            )
-            headers = get_headers()
-            # headers = {}
+#     # logger.debug("尝试从cookies.json获取headers 的cookie.......")
+#     with open(cookie_json_filepath, encoding="utf-8") as f:
+#         try:
+#             # dread = dict(json.load(f))
+#             d_list: list = json.load(f)
+#             # dict().keys()
+#             # print(list(dread.keys())[0])
+#             headers_cookie = "; ".join([f'{d["name"]}={d["value"]}' for d in d_list])
+#             with open(headers_example, encoding="utf-8") as h:
+#                 headers = dict(json.load(h))
+#                 headers["cookie"] = headers_cookie
+#             # print(headers)
+#         except Exception as e:
+#             # raise e
+#             # raise NameError("Not found headers") from e
+#             logger.warning(
+#                 "尝试从cookies.json获取headers 的cookie失败,将用函数get_headers()采用playwright无头模式下自动获取headers"
+#             )
+#             headers = get_headers()
+#             # headers = {}
 
-        # logger.success("获取headers成功......")
+#         # logger.success("获取headers成功......")
 
-        return headers
-
-
-# 一个获取当前ip的函数
-async def current_ip():
-    """
-    一个获取当前ip的函数
-    """
-    async with httpx.AsyncClient() as c:
-        try:
-            re = await c.get(
-                "http://whois.pconline.com.cn/ipJson.jsp", params={"json": "true"}
-            )
-            return re.json() if len(re.json()["ip"]) > 4 else {"ip": "没有获取到"}
-        except Exception as e:
-            raise e
+#         return headers
 
 
-# 利用playwright获取cookie及headers
-@logger.catch()
-def get_headers() -> dict[str, str]:
-    """
-    利用playwright获取cookie及headers
-    """
-    # 启动演奏
-    with sync_playwright() as p:
-        try:
-            logger.debug("利用playwright获取cookie及headers......")
-            # 启动浏览器
-            b = p.webkit.launch(
-                headless=True, proxy={"server": proxies[list(proxies.keys())[0]]}
-            )
-            logger.debug("启动浏览器上下文....")
-            # 启动浏览器上下文
-            context = b.new_context()
+# # 一个获取当前ip的函数
+# async def current_ip():
+#     """
+#     一个获取当前ip的函数
+#     """
+#     async with httpx.AsyncClient() as c:
+#         try:
+#             re = await c.get(
+#                 "http://whois.pconline.com.cn/ipJson.jsp", params={"json": "true"}
+#             )
+#             return re.json() if len(re.json()["ip"]) > 4 else {"ip": "没有获取到"}
+#         except Exception as e:
+#             raise e
 
-            page = context.new_page()
-            # 无头模式伪装
-            stealth_sync(page)
 
-            # 路由,流产图片,实现无图模式
-            page.route(
-                re__.compile(r"(\.png$)|(\.jpg$)|(\.gif$)", re__.S),
-                lambda route: route.abort(),
-            )
+# # 利用playwright获取cookie及headers
+# @logger.catch()
+# def get_headers() -> dict[str, str]:
+#     """
+#     利用playwright获取cookie及headers
+#     """
+#     # 启动演奏
+#     with sync_playwright() as p:
+#         try:
+#             logger.debug("利用playwright获取cookie及headers......")
+#             # 启动浏览器
+#             b = p.webkit.launch(
+#                 headless=True, proxy={"server": proxies[list(proxies.keys())[0]]}  # type: ignore
+#             )
+#             logger.debug("启动浏览器上下文....")
+#             # 启动浏览器上下文
+#             context = b.new_context()
 
-            re = page.goto(host)
-            page.click("#links > a:nth-child(1)")
+#             page = context.new_page()
+#             # 无头模式伪装
+#             stealth_sync(page)
 
-            page.wait_for_load_state("domcontentloaded", timeout=10000)
-            page.click("#post-list-posts > li > div > a")
+#             # 路由,流产图片,实现无图模式
+#             page.route(
+#                 re__.compile(r"(\.png$)|(\.jpg$)|(\.gif$)", re__.S),
+#                 lambda route: route.abort(),
+#             )
 
-            page.wait_for_load_state("domcontentloaded", timeout=10000)
+#             re = page.goto(host)
+#             page.click("#links > a:nth-child(1)")
 
-            # 获取所有cookie
-            cookies = context.cookies()
-            # 获取请求头
-            headers = re.request.headers
-            headers["cookie"] = "".join(
-                f"{i['name']}={i['value']};"
-                if pin != len(cookies) - 1
-                else f"{i['name']}={i['value']}"
-                for pin, i in enumerate(cookies)
-            )
-            headers["Referer"] = r"https://konachan.com/post"
+#             page.wait_for_load_state("domcontentloaded", timeout=10000)
+#             page.click("#post-list-posts > li > div > a")
 
-            with open("_headers_.json", "w", encoding="UTF-8", errors="ignore") as f:
-                json.dump(headers, fp=f, ensure_ascii=False, indent=2)
+#             page.wait_for_load_state("domcontentloaded", timeout=10000)
 
-            page.close()
-            context.close()
-            b.close
+#             # 获取所有cookie
+#             cookies = context.cookies()
+#             # 获取请求头
+#             headers = re.request.headers  # type: ignore
+#             headers["cookie"] = "".join(
+#                 (
+#                     f"{i['name']}={i['value']};"
+#                     if pin != len(cookies) - 1
+#                     else f"{i['name']}={i['value']}"
+#                 )
+#                 for pin, i in enumerate(cookies)
+#             )
+#             headers["Referer"] = r"https://konachan.com/post"
 
-            logger.success("获取cookie及headers成功")
+#             with open("_headers_.json", "w", encoding="UTF-8", errors="ignore") as f:
+#                 json.dump(headers, fp=f, ensure_ascii=False, indent=2)
 
-            return headers
-        except Exception as e:
-            logger.error("取cookie及headers失败,请尝试检查代理是否出错")
-            breakpoint()
-            raise e
+#             page.close()
+#             context.close()
+#             b.close
+
+#             logger.success("获取cookie及headers成功")
+
+#             return headers
+#         except Exception as e:
+#             logger.error("取cookie及headers失败,请尝试检查代理是否出错")
+#             breakpoint()
+#             raise e
 
 
 class Counter:
@@ -189,16 +194,16 @@ class Counter:
             @functools.wraps(func)
             async def wrapper(*args, **kwargs):
                 result = await func(*args, **kwargs)
-                wrapper.processcount.update(1)
-                if wrapper.processcount.n == wrapper.processcount.total:
-                    wrapper.processcount.close()
+                wrapper.processcount.update(1)  # type: ignore
+                if wrapper.processcount.n == wrapper.processcount.total:  # type: ignore
+                    wrapper.processcount.close()  # type: ignore
 
                 return result
 
-            wrapper.processcount = async_counter.processcount
+            wrapper.processcount = async_counter.processcount  # type: ignore
             return wrapper
 
-        async_counter.processcount = PROCESS_BAR
+        async_counter.processcount = PROCESS_BAR  # type: ignore
         return async_counter
 
     @staticmethod
@@ -211,15 +216,15 @@ class Counter:
             @functools.wraps(func)
             def wrapper(*args, **kwargs):
                 r = func(*args, **kwargs)
-                wrapper.processcount.update(1)
-                if wrapper.processcount.n == wrapper.processcount.total:
-                    wrapper.processcount.close()
+                wrapper.processcount.update(1)  # type: ignore
+                if wrapper.processcount.n == wrapper.processcount.total:  # type: ignore
+                    wrapper.processcount.close()  # type: ignore
                 return r
 
-            wrapper.processcount = sync_counter.processcount
+            wrapper.processcount = sync_counter.processcount  # type: ignore
             return wrapper
 
-        sync_counter.processcount = PROCESS_BAR
+        sync_counter.processcount = PROCESS_BAR  # type: ignore
         return sync_counter
 
 
@@ -297,12 +302,12 @@ def parse(pid: int, source: str) -> tuple[int, str, str]:
             tags = f_tags(soup)
             link = f_link(soup)
             if (tags != False) and (link != False):
-                tags_link.extend((link, tags))
+                tags_link.extend((link, tags))  # type: ignore
                 break
             else:
                 continue
         if len(tags_link) == 3:
-            return tuple(tags_link)
+            return tuple(tags_link)  # type: ignore
         else:
             logger.error(f"解析错误last: https://konachan.com/post/show/{pid}/")
             return (pid, "寄", "寄")
@@ -336,7 +341,9 @@ async def save_img(
                     assert re.status_code == 200, "请求图片状态码:{re.status_code}"
                     return re
                 except Exception:
-                    logger.warning(f"下载图片重试: https://konachan.com/post/show/{pid}")
+                    logger.warning(
+                        f"下载图片重试: https://konachan.com/post/show/{pid}"
+                    )
                     await asyncio.sleep(random.randint(1, 4))
                     continue
             return False
@@ -393,7 +400,7 @@ async def save_img(
 
 
 # 😅
-def ensure_file_exists(filepath, file_ecoding="UTF-8") -> bool:
+def ensure_file_exists(filepath, file_ecoding="UTF-8") -> bool:  # type: ignore
     """
     检测文件路径是否存在，如果不存在则创建文件。
 

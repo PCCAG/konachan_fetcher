@@ -1,5 +1,5 @@
 ## coding=utf-8
-import asyncio
+# import asyncio
 from sqlalchemy import create_engine, text
 import pandas
 from loguru import logger  # pip install loguru
@@ -69,7 +69,7 @@ def save_img_and_todb(pids, engine, kimg_table, tags_table):
     # 表结构
     # 表数据添加到数据库
     columns = ("pid", "tags", "link", "path", "status", "time")
-    df = pandas.DataFrame(columns=columns)
+    df = pandas.DataFrame(columns=columns)  # type: ignore
     # 执行main 得到数据
     try:
         if len(pids) == 0:
@@ -106,7 +106,7 @@ def save_img_and_todb(pids, engine, kimg_table, tags_table):
         else:
             # status=1
             times = pandas.Timestamp.now().strftime("%Y-%m-%d %H:%M:%S")
-            df.loc[pid] = [pid, tags, img_path, img_link, 1, times]
+            df.loc[pid] = [pid, tags, img_path, img_link, 1, times]  # type: ignore
             logger.success(f"imported: {img_link}")
             total_add_db_data_number__ += 1
 
@@ -205,16 +205,16 @@ def mode_a():  # 随机范围下载模式 从范围内生成一堆数量的图�
     # 获取一些变量 单次下载数量 等待时间 并发获取源码与下载图片的并发数
     try:
         down_number = os.getenv("down_number")
-        down_number = int(down_number)
+        down_number = int(down_number)  # type: ignore
 
         sem_times = os.getenv("sem_times")
-        sem_times = int(sem_times)
+        sem_times = int(sem_times)  # type: ignore
 
         low, upper = os.getenv("low"), os.getenv("upper")
-        low, upper = int(low), int(upper) + 1
+        low, upper = int(low), int(upper) + 1  # type: ignore
 
         times = os.getenv("times")
-        times = int(times)
+        times = int(times)  # type: ignore
 
         assert isinstance(down_number, int), "单次下载数量请输入整数"
         assert isinstance(sem_times, int), "并发数请输出整数"
@@ -233,12 +233,12 @@ def mode_a():  # 随机范围下载模式 从范围内生成一堆数量的图�
     for _ in range(times):
         # 如果没有数据库连接,会出现 TypeError: cannot unpack non-iterable NoneType object
         try:
-            engine, kimg_table, tags_table = link_db()
+            engine, kimg_table, tags_table = link_db()  # type: ignore
         except Exception as e:
             logger.error("没有数据库连接,请检查数据库是否启用")
             breakpoint()
             raise e
-        with engine:
+        with engine:  # type: ignore
             # 排除重复pid
             try:
                 df_pid = pandas.read_sql(
@@ -290,7 +290,7 @@ if __name__ == "__main__":
     # logger.disable("ERROR")
     # logger.add(sys.stdout, level="INFO", enqueue=True)
     # 移除所有输出目标，禁用所有日志输出
-    if int(os.getenv("EnableLog")) == 0:
+    if int(os.getenv("EnableLog")) == 0:  # type: ignore
         logger.remove()
         print("关闭日志")
     else:

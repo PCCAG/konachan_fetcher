@@ -19,9 +19,11 @@ from cellfunctions_ import (
     ensure_file_exists,  # counter_sync,
     get_source,
     parse,
-    read_headers_from_json,
+    # read_headers_from_json,
     save_img,
 )
+
+from penetrate_cloudflare.read_head_cookie import read_headers_from_json
 
 # from tqdm.contrib.concurrent import process_map
 
@@ -42,8 +44,8 @@ logger.add("k_spider/log/get_imags_data.log")
 @logger.catch()
 def main(
     pids: list[int],
-    sem_times: int = int(os.getenv("sem_times")),  # 并发数 在.env配置
-    imgpath: str = os.getenv("IMG_PATH"),  # 保存图片路径,在.env配置
+    sem_times: int = int(os.getenv("sem_times")),  # 并发数 在.env配置 # type: ignore
+    imgpath: str = os.getenv("IMG_PATH"),  # 保存图片路径,在.env配置 # type: ignore
     headers: dict = read_headers_from_json(),  # 请求头
 ) -> list | list[tuple[int, str, str, str]]:  # [(pid,tags,img_path,img_link),....]
     #
@@ -56,7 +58,7 @@ def main(
     async def process_urls(pids: list[int]) -> set[tuple[int, str]]:
         sem = asyncio.Semaphore(sem_times)  # 并发数
         get_source_counter = Counter.counter_async(
-            PROCESS_BAR=tqdm.tqdm(
+            PROCESS_BAR=tqdm.tqdm(  # type: ignore
                 total=len(pids),
                 desc="获取源码",
                 unit="i",
@@ -122,7 +124,7 @@ def main(
     async def download_imgs(pid_img_link_tags: set[tuple[int, str, str]]):
         sem = asyncio.Semaphore(sem_times)  # 并发数
         save_img_counter = Counter.counter_async(
-            tqdm.tqdm(
+            tqdm.tqdm(  # type: ignore
                 total=len(pid_img_link_tags),
                 desc="下载图片",
                 unit="i",
@@ -158,7 +160,7 @@ if __name__ == "__main__":
     # logger.disable("ERROR")
     # logger.add(sys.stdout, level="INFO", enqueue=True)
     # 移除所有输出目标，禁用所有日志输出
-    if int(os.getenv("EnableLog")) == 0:
+    if int(os.getenv("EnableLog")) == 0:  # type: ignore
         logger.remove()
         print("关闭日志")
     else:
@@ -170,10 +172,10 @@ if __name__ == "__main__":
         # logger.disable("DEBUG")
 
         pass
-    for _ in range(int(os.getenv("times"))):
+    for _ in range(int(os.getenv("times"))):  # type: ignore
         pids = random.sample(
-            list(range(int(os.getenv("low")), int(os.getenv("upper")) + 1)),
-            int(os.getenv("down_number")),
+            list(range(int(os.getenv("low")), int(os.getenv("upper")) + 1)),  # type: ignore
+            int(os.getenv("down_number")),  # type: ignore
         )
         # print(f"单次并发数量: {pids.__len__()}")
         # headers = read_headers_from_json()
@@ -188,7 +190,7 @@ if __name__ == "__main__":
         ]
 
         df = pandas.DataFrame(
-            columns=("pid", "tags", "link", "path", "status", "time"), data=data
+            columns=("pid", "tags", "link", "path", "status", "time"), data=data  # type: ignore
         )
 
         # 自定义函数确保文件存在

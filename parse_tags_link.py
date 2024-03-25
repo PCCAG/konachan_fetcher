@@ -51,9 +51,9 @@ def f_link(soup: BeautifulSoup):
     try:
         for i in maybe_link:
             links = check(i, soup=soup)
-            if links == False & len(links) == 0:
+            if links == False & len(links) == 0:  # type: ignore
                 continue
-            for link in links:
+            for link in links:  # type: ignore
                 try:
                     if isinstance(link, Tag) and (len(link["href"]) > 35):
                         return link["href"]

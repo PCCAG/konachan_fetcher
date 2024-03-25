@@ -1,11 +1,23 @@
 ### 使用：
 
-1. 首先使用edge插件[Cookie Editor](https://microsoftedge.microsoft.com/addons/detail/cookie-editor/ajfboaconbpkglpfanbmlfgojgndmhmc)或者其他类似的插件,复制图片详情页cookie到_cookies_.json , 记得及时更新_cookies_.json.  (ps : 不弄也许也行, 但文件内容要清空)
+clone:
 
-![1696281560468](image/readme/1696281560468.png)
+- 因为我喜欢设分支, 所以建议只克隆最新分支就好
 
-2. 有数据库启动 main.py
-3. 如果没有数据库，启动 get_imags_data.py
+```bash
+git clone --single-branch --branch 2.0 https://github.com/PCCAG/konachan_fetcher.git
+```
+
+- 首先使用插件[Cookie Editor](https://microsoftedge.microsoft.com/addons/detail/cookie-editor/ajfboaconbpkglpfanbmlfgojgndmhmc)或者其他类似的插件,复制图片详情页cookie到```penetrate_cloudflare\_cookies_.json``` , 记得及时更新_cookies_.json.
+- 为了绕过cf盾🤔,复制手动绕过了一次headers到```penetrate_cloudflare\_headers_example.json```, 我用的是firefox
+
+![1711387166746](image/readme/1711387166746.png)
+
+
+### 启动
+
+1. 有数据库启动 main.py
+2. 如果没有数据库，启动 get_imags_data.py
 
 ### 依赖：
 

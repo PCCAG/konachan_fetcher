@@ -1,0 +1,62 @@
+{
+  "请求头 (1.298 kB)": {
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+      },
+      {
+        "name": "Accept-Encoding",
+        "value": "gzip, deflate, br"
+      },
+      {
+        "name": "Accept-Language",
+        "value": "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      },
+      {
+        "name": "Cookie",
+        "value": "vote=1; cf_clearance=ad0Qxzo0nRg_D3Qn3ReWCtAlo82fw59B_4cC1rNRmew-1711382203-1.0.1.1-hl0OAENAAM5rY8wXBksfSGXTtc7iO62G5T7_BIcqXRU7vlczqhrAwdhbDybYNWH2GlK5M6WET_kk7nnXaiUkqA; forum_post_last_read_at=%222024-03-25T17%3A16%3A53%2B01%3A00%22; country=US; blacklisted_tags=%5B%22%22%5D; konachan.com=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTNlNDEyNGEyYTIzM2MxZDM2MTc1ZTI0YWQzMzM1ZmQ0BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMUtENjl4clRxS1htdC9rNTMzZmtleHdTSXFJT0hTWnJaR0RvOVRoVDhqTGs9BjsARg%3D%3D--9a6e62d49ce195d27f48f993a95b57114fe516b8; __utma=235754395.1526281764.1711382224.1711382224.1711382224.1; __utmb=235754395.7.10.1711382224; __utmc=235754395; __utmz=235754395.1711382224.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmt=1"
+      },
+      {
+        "name": "Host",
+        "value": "konachan.com"
+      },
+      {
+        "name": "Referer",
+        "value": "https://konachan.com/post"
+      },
+      {
+        "name": "Sec-Fetch-Dest",
+        "value": "document"
+      },
+      {
+        "name": "Sec-Fetch-Mode",
+        "value": "navigate"
+      },
+      {
+        "name": "Sec-Fetch-Site",
+        "value": "same-origin"
+      },
+      {
+        "name": "Sec-Fetch-User",
+        "value": "?1"
+      },
+      {
+        "name": "TE",
+        "value": "trailers"
+      },
+      {
+        "name": "Upgrade-Insecure-Requests",
+        "value": "1"
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0"
+      }
+    ]
+  }
+}
